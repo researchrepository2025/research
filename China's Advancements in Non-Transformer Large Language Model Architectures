@@ -1,0 +1,326 @@
+Assessing China's Advancements in Non-Transformer Large Language Model Architectures
+1. Executive Summary
+Evidence strongly indicates that China is making significant progress in the development of non-transformer Large Language Model (LLM) architectures. This advancement is characterized by contributions to several alternative architectural paradigms, most notably the Receptance Weighted Key Value (RWKV) model, which has Chinese origins, and various models based on State Space Models (SSMs) like Mamba. Chinese academic institutions, research laboratories, and, to some extent, commercial entities are actively involved in innovating, developing, and applying these alternative LLMs.
+Key contributions are evident in the RWKV family, with models such as PCF-RWKV for specialized tasks like carbon footprint estimation, RWKV-X which hybridizes RWKV with sparse attention for enhanced long-context capabilities, and VisualRWKV which extends the architecture to multimodal applications.1 These projects often involve prominent Chinese universities and research labs, including Tsinghua University, Guangdong Laboratory of Artificial Intelligence and Digital Economy (SZ), and the Chinese Academy of Sciences. Similarly, Chinese researchers are contributing to the exploration of Mamba-based architectures, particularly in the multimodal domain with models like VL-Mamba and Cobra VLM, which demonstrate competitive performance and efficiency gains.4
+The significance of this progress lies in the potential for these non-transformer architectures to overcome some limitations of the dominant Transformer models, such as quadratic scaling complexity and high computational costs. Chinese efforts are yielding models with improved efficiency, enhanced long-context processing, and applicability in specialized domains. Furthermore, a notable aspect of this progress is the strong emphasis on open-source contributions, as seen with the RWKV project's affiliation with the Linux Foundation and the open release of various models and research.6 This pattern of openness suggests a strategy aimed at fostering broader adoption, building a research community, and potentially establishing Chinese influence in these emerging architectural niches. This approach contrasts with some Western commercial LLM development, which is often more closed-source, and may indicate a deliberate effort to accelerate development and establish a global footprint for these alternative architectures.
+2. Introduction: The Evolving Landscape of LLM Architectures Beyond Transformers
+The field of Large Language Models (LLMs) has been largely dominated by the Transformer architecture since its introduction.7 Transformers, with their self-attention mechanism, have demonstrated remarkable capabilities in understanding and generating human language, leading to breakthroughs in various natural language processing (NLP) tasks.9 However, the very mechanism that grants Transformers their power, self-attention, also introduces a significant challenge: quadratic computational and memory complexity with respect to the input sequence length.11 This quadratic scaling (O(N2)) makes processing very long sequences prohibitively expensive, limiting their application in tasks requiring extensive context, such as summarizing entire books, analyzing lengthy legal documents, or engaging in very long dialogues.1
+These limitations have spurred a wave of research into alternative, non-transformer architectures. The primary motivations for exploring these alternatives are multifaceted:
+Efficiency: A core driver is the pursuit of models with lower computational requirements for both training and inference. Architectures that can achieve comparable performance with fewer computational resources (VRAM, CPU, GPU power) are highly sought after.6 This is particularly crucial for deploying models on devices with limited hardware capabilities.
+Scalability for Long Sequences: Many non-transformer architectures aim for linear (O(N)) or near-linear scaling with sequence length.6 This would theoretically allow models to handle virtually "infinite" context lengths, unlocking new possibilities for tasks that depend on understanding very long-range dependencies.
+Novel Capabilities: Alternative architectures may possess different inductive biases, potentially leading to unique strengths in specific tasks, such as improved long-context recall, different reasoning patterns, or better handling of certain data modalities.11
+Hardware Constraints and Accessibility: The immense computational power required to train and deploy the largest Transformer models restricts their development and use to a few well-resourced organizations. Efficient non-transformer models could democratize access to powerful LLMs, making them deployable on a wider range of hardware, including edge devices.1
+China, with its ambitious AI strategy, has shown a keen interest in this area. The nation's broader AI development plan includes exploring diverse technological pathways, not solely relying on scaling up existing LLM paradigms.22 This strategic diversification could offer an edge if dominant architectures face fundamental roadblocks or if alternative models prove more suitable for specific national priorities. The pursuit of non-transformer architectures in China appears to be partly driven by a desire to innovate in areas less saturated by established Western technology giants. Furthermore, developing models that are inherently more efficient and deployable on a wider array of hardware platforms could be a strategic response to constraints on accessing the most advanced semiconductor chips.21 Models like RWKV, designed for lower resource usage 6, and its derivatives like PCF-RWKV, which target consumer-grade GPUs 1, exemplify this trend. Such advancements represent a form of "algorithmic offset," where software and architectural innovation aim to mitigate hardware limitations, ensuring continued progress in AI capabilities.
+3. Evidence of Chinese Progress in Specific Non-Transformer LLM Architectures
+Chinese research institutions and companies are actively contributing to the development and application of several non-transformer LLM architectures. The evidence points to significant advancements, particularly within the RWKV and Mamba/SSM families, with a growing interest in hybrid approaches.
+3.1. RWKV (Receptance Weighted Key Value)
+The RWKV architecture stands out as a prominent non-transformer model with strong Chinese roots. It is designed as a Recurrent Neural Network (RNN) that achieves performance comparable to GPT-level Transformers while offering the parallelizability of Transformers during training.6 A key characteristic of RWKV is its complete absence of self-attention mechanisms.
+The initial proposal for RWKV came from Bo Peng (Blink_DL), a Chinese researcher, underscoring the early Chinese influence in this architectural line.6 Since its inception, the RWKV project has evolved into a global open-source community and is now officially part of the Linux Foundation, signifying its maturity and collaborative nature.6
+RWKV offers several advantages over traditional Transformers, including substantially lower resource consumption during training and runtime, linear scaling of computational requirements with context length (as opposed to quadratic scaling in Transformers), and strong multilingual capabilities stemming from its training on diverse datasets that include Chinese, Japanese, and other languages.1 However, it also presents challenges, such as high sensitivity to prompt formatting and comparative weakness in tasks requiring extensive retrospection within the input sequence.6
+Chinese researchers and institutions have been pivotal not only in the foundational development of RWKV but also in its subsequent evolution and application to specialized domains:
+PCF-RWKV: Developed by researchers at Tsinghua University (Tsinghua Shenzhen International Graduate School and the Department of Mechanical Engineering), PCF-RWKV is a novel model based on the RWKV architecture specifically designed for Product Carbon Footprint (PCF) estimation.1 This model incorporates task-specialized Low-Rank Adaptations (LoRAs) and is optimized for efficient local deployment on consumer-grade GPUs, highlighting a focus on practical, resource-conscious applications.1 The model was trained on a 7-billion-parameter specialized dataset focused on carbon footprint assessment knowledge.1 This development showcases the adaptation of RWKV for niche, high-impact industrial and environmental applications.
+RWKV-X: This is a novel hybrid architecture that synergizes the RWKV-7 model for short-range dependency modeling with a "Top-k Chunk Sparse Attention" mechanism tailored for capturing long-range context.2 The development team includes researchers from the Guangdong Laboratory of Artificial Intelligence and Digital Economy (SZ), Hohai University, Shenzhen University, and Qinghai University, with Haowen Hou as a prominent author.2 RWKV-X maintains linear-time complexity during training and constant-time complexity for inference decoding.2 Performance evaluations indicate near-perfect accuracy on the 64K passkey retrieval benchmark after continual pretraining on 64K-token sequences using datasets like ProLong-64K, and it consistently outperforms earlier RWKV-7 models on various long-context benchmarks, demonstrating capability in decoding sequences up to 1 million tokens.2 The Top-k Chunk Sparse Attention mechanism divides the input sequence into chunks, computes relevance scores for each chunk relative to a query token, and applies attention only to the top-k selected chunks, coupled with KV cache management inspired by SnapKV for constant-time inference.28 This project, also open-sourced on GitHub 2, signifies a critical step in addressing potential long-context limitations of pure RWKV models by effectively hybridizing its architecture.
+VisualRWKV: Marking one of the first applications of a linear RNN architecture to multimodal learning, VisualRWKV is another significant contribution from researchers affiliated with the Guangdong Laboratory of Artificial Intelligence and Digital Economy (SZ) and Shenzhen University, including Haowen Hou, in collaboration with international partners.3 Key architectural innovations include data-dependent recurrence mechanisms, a "sandwich prompt" strategy where image tokens are placed between instruction tokens for better contextualization, and 2D image scanning mechanisms.3 Advanced versions like VisualRWKV-HD and VisualRWKV-UHD employ ensembles of vision encoders (such as SigLip, DINOv2, and SAM) and image segmentation techniques to support high-resolution visual inputs (up to 4096x4096 pixels).31 The models, built upon RWKV bases of 1.6B to 7B parameters, were pre-trained on 558K image-text pairs (likely including datasets like COCO and Visual Genome, following LLaVA-1.5's setup) and instruction-tuned on 665K samples, including multilingual data from ShareGPT4.3 VisualRWKV demonstrates competitive performance against Transformer-based VLMs like LLaVA-1.5 on benchmarks such as VQA_v2, GQA, and ScienceQA, while offering substantial advantages in inference speed (reportedly 3.98 times faster) and GPU memory savings (54% less at a 24K token inference length compared to LLaVA-1.5).3
+RWKV-Lite / RWKV-edge: Research originating from Tsinghua University focuses on the deep compression of RWKV models to make them suitable for deployment on resource-constrained edge devices.35 The compression techniques employed include architectural optimizations like low-rank approximation for projection matrices and exploiting sparsity in feed-forward networks, alongside continual learning to recover any performance degradation and post-training methods for dynamic parameter loading.35 These efforts have reportedly achieved a 3.4x to 5x reduction in memory footprint with negligible loss in accuracy, and up to a 10x reduction when combined with quantization techniques.35 This line of work directly addresses a key advantage of efficient architectures: deployability in diverse hardware environments.
+RWKV-7 "Goose": The development of RWKV-7, the latest iteration of the core architecture featuring Dynamic State Evolution, vector-valued gating, and in-context learning rates, also involves significant contributions from Chinese researchers and institutions such as SenseTime Research, Guangdong Laboratory of AI and Digital Economy (SZ), Shenzhen University, and Beijing Normal University, alongside international collaborators.6 RWKV-7 models have demonstrated state-of-the-art performance on multilingual tasks at the 3-billion-parameter scale and match the performance of English language models despite being trained on considerably fewer English tokens, using a 3.1 trillion token multilingual corpus.38 Further research on state tuning for RWKV-7 "Goose" by academics from Tsinghua University, Peking University, and Shanghai Jiao Tong University has shown improvements on benchmarks like MMLU and GSM8K.39
+The progress in RWKV, driven significantly by Chinese researchers, is marked by sustained innovation across multiple model versions and its extension into specialized applications and domains. The work demonstrates not only architectural refinement but also a strong focus on practical deployment, efficiency, and open-source collaboration. The diverse applications being explored—from industrial carbon footprinting and visual understanding to edge computing—indicate a mature understanding of RWKV's strengths and a strategic push to leverage its efficiency for a broad spectrum of real-world AI tasks, moving beyond the paradigm of general-purpose chatbots. This diversification suggests a sophisticated approach to capitalizing on the unique advantages offered by the RWKV architecture.
+3.2. Mamba and State Space Models (SSMs)
+Mamba, a relatively recent LLM architecture introduced in late 2023, is built upon the foundation of Structured State Space (S4) models. It is designed to address some of the inherent limitations of Transformer models, particularly their inefficiency when processing long input sequences.9 Key features of Mamba include Selective State Spaces (SSM), a simplified architectural design compared to Transformers, hardware-aware parallelism for optimized GPU performance, and linear time complexity for both inference and training.9 These characteristics make Mamba and other SSM-based approaches attractive alternatives for tasks requiring efficient long-context handling.
+Chinese research institutions have been quick to engage with and innovate upon Mamba and SSM principles, especially in complex and computationally demanding areas like multimodal learning:
+VL-Mamba: This project represents one of the pioneering efforts to apply Mamba-based SSMs to multimodal learning tasks. It is a collaborative effort involving researchers from the Australian Institute for Machine Learning (University of Adelaide), the Institute of Automation, Chinese Academy of Sciences (CASIA), and the School of Artificial Intelligence, University of Chinese Academy of Sciences.4 The architecture of VL-Mamba replaces the conventional Transformer backbone with a pre-trained Mamba LLM (specifically, Mamba LLM-2.8B, pre-trained on the 627 billion token SlimPajama dataset, was used in evaluations).4 A significant innovation in VL-Mamba is the introduction of a Vision Selective Scan (VSS) module within its Multimodal Connector (MMC) to effectively bridge 2D non-causal visual information with the inherently 1D causal modeling of SSMs.4 VL-Mamba underwent a two-stage training process: pre-training on 558K image-text pairs (likely from datasets such as CC3M, LAION, COCO, following LLaVA-1.5's methodology) and instruction tuning on 665K samples (potentially including LLaVA-Instruct and ShareGPT data).4 Performance evaluations show VL-Mamba achieving competitive results on a range of multimodal benchmarks including VQAv2, GQA, and MME when compared to other MLLMs like LLaVA-1.5.4
+Cobra VLM: Another Mamba-based multimodal LLM, Cobra VLM, was developed by researchers from Zhejiang University, Westlake University, and DAMO Academy, Alibaba Group.5 Similar to VL-Mamba, Cobra VLM substitutes the Transformer backbone with pre-trained Mamba language models. Its vision encoder combines features from DINOv2 and SigLIP.5 The training data for Cobra VLM includes a mix of datasets such as LLaVA v1.5 data (655K visual multi-turn conversations), LVIS-Instruct-4V (220K samples), and LRV-Instruct (400K samples).5 Performance claims for Cobra VLM include inference speeds 3 to 4 times faster than efficient MLLMs like LLaVA-Phi and MobileVLM v2. The Cobra-8B model is reported to surpass LLaVA v1.5 of a similar size on tested benchmarks, with an average accuracy improvement of approximately 6%.5
+Meteor: While the primary affiliations for the Meteor model (Mamba-based traversal of rationales for efficient LLVMs) are not explicitly detailed as Chinese in the provided snippet 45, its use of Mamba for embedding lengthy rationales is relevant to the broader trend of exploring SSMs for advanced AI tasks. The model aims to enhance understanding and answering capabilities by efficiently processing long sequential rationales using Mamba's linear time complexity.45
+SSM Benchmarking for Text Reranking: A study 46 benchmarked Mamba-1 and Mamba-2 against Transformer models in text reranking tasks. Although the affiliations are not specified as Chinese, the findings—that Mamba architectures achieve competitive performance but can be less efficient in training and inference compared to Transformers optimized with techniques like FlashAttention for this particular task—contribute to a nuanced understanding of Mamba's applicability.
+The engagement of Chinese research entities with Mamba/SSM architectures demonstrates a focus on leveraging their efficiency for computationally intensive tasks, particularly in the multimodal domain. The swiftness with which these groups have adopted and adapted the relatively new Mamba architecture for complex problems like visual language understanding points to an agile and responsive research ecosystem in China. This agility enables them to quickly explore and potentially establish a strong foothold in emerging non-transformer architectural niches, particularly those that promise significant efficiency gains for frontier AI applications.
+3.3. Convolutional Architectures (e.g., Hyena)
+Convolutional Neural Networks (CNNs) have a long history in sequence modeling, and recent advancements have led to their re-emergence as potential alternatives or components within LLM architectures. The Hyena architecture, for instance, is proposed as a subquadratic replacement for attention, employing implicitly parameterized long convolutions and data-controlled gating mechanisms.14 The goal is to achieve the quality of attention-based models but with significantly lower time complexity, making it suitable for very long sequences. Hyena Edge AI, developed by the US-based company Liquid AI, exemplifies this by replacing a substantial portion of Transformer attention mechanisms with Hyena-Y gated convolutions, specifically targeting optimization for edge devices.20
+Regarding Chinese-led or involved research in Hyena and similar convolutional LLM architectures, the provided evidence is more limited compared to RWKV and Mamba:
+FE-WDNA (Feature Engineering for Whole-genome DNA): A study 48 introduces FE-WDNA, a method for whole-genome DNA sequence feature engineering in soybeans. This method utilizes HyenaDNA (a Hyena model fine-tuned on human genome data) and further fine-tunes it on soybean genomic data. While the specific affiliations of the authors are not detailed in the snippet, this work indicates the application and adaptation of a Hyena-based model in a specialized scientific domain (plant genomics). It demonstrates how Hyena's capabilities for handling long sequences (like genomes) are being leveraged in research contexts that could involve Chinese scientists, given China's significant agricultural research programs. However, this is an application of an existing Hyena-derived model rather than foundational development of a new Hyena-like LLM architecture.
+Scavenging Hyena (Knowledge Distillation): This research, conducted by academics at McGill University in Canada, explores the use of knowledge distillation to transfer capabilities from Transformer models to Hyena-based models.49 While not a Chinese-led initiative, it is relevant to the broader development and optimization of Hyena models.
+Based on the available information, there is less direct evidence of Chinese institutions spearheading the foundational architectural development of Hyena-based LLMs in the same way they have with RWKV or are exploring with Mamba. The primary example found points towards the adoption and specialized fine-tuning of existing Hyena-family models for specific scientific applications. This suggests that, at present, Chinese researchers may be more in the role of users and adapters of Hyena technology for domain-specific problems, rather than primary developers of the core Hyena LLM architecture itself. This observation could evolve as research progresses, but the current material does not highlight "significant progress" in the development of this particular non-transformer architecture by Chinese entities to the same extent as other alternatives.
+3.4. Other Recurrent, Hybrid, or Novel Non-Transformer Architectures
+Beyond the distinct families of RWKV, Mamba/SSM, and convolutional models like Hyena, Chinese researchers are also investigating other novel non-transformer approaches, including hybrid models and significant modifications to existing Transformer frameworks that incorporate non-transformer principles.
+Retentive Network (RetNet): RetNet has been proposed as a potential successor to the Transformer, aiming to achieve training parallelism, low-cost inference, and strong performance by replacing multi-head attention with a multi-scale retention mechanism.16 This mechanism supports parallel, recurrent, and chunkwise recurrent computation modes.16 While Microsoft is often associated with RetNet's development 52, and Frenos.io also presents work on it 50, there is evidence of engagement from Chinese researchers. For instance, various Chinese authors are listed on papers that apply or cite RetNet concepts, often in specific application areas like Named Entity Recognition (NER) or for specialized tasks.53 This indicates awareness and exploration of RetNet's principles within the Chinese research community, though the provided material does not point to primary foundational development of RetNet by Chinese institutions on the same scale as RWKV.
+Monarch Mixer (M2): The M2 architecture utilizes Monarch matrices to achieve sub-quadratic scaling in both sequence length and model dimension, offering an alternative to the attention and MLP blocks in Transformers.18 The primary development of M2, as presented in OpenReview, does not explicitly identify Chinese origins.18 While general surveys on LLMs mention M2 54, and some Chinese academic works might reference such architectures 55, the current snippets provide limited evidence of significant Chinese-led progress in the foundational development of Monarch Mixer.
+Liquid Foundation Models (LFM) by Liquid AI: LFMs represent a novel non-transformer architecture developed by the US-based company Liquid AI.17 While these models are benchmarked against offerings from Chinese companies like Alibaba (e.g., Qwen models) 57, LFMs themselves are not a product of Chinese non-transformer LLM development efforts. They are, however, part of the competitive landscape in which Chinese models operate.
+Liger (Linearized Gated Recurrent Models): This is a significant development with strong Chinese involvement. Liger is a novel framework for converting pre-trained Transformer LLMs into gated linear recurrent models without adding extra parameters. Researchers affiliated with Fudan University, the University of Illinois Urbana-Champaign, SVOLT.AI, Princeton University, and the Shanghai Artificial Intelligence Laboratory are involved.59 Liger introduces "Liger Attention," an intra-layer hybrid attention mechanism combining sliding window softmax attention with linear recurrent modeling. This approach reportedly recovers 93% of the original Transformer LLM's performance using only 0.02% of pre-training tokens during the linearization process and has been validated on models ranging from 1B to 8B parameters, outperforming other linearization methods like SUPRA and MambaInLlama.59 This work is crucial as it offers a pragmatic path to leverage existing investments in powerful Transformer models while transforming them into more efficient recurrent structures, gaining benefits commonly associated with non-transformer architectures.
+Steel-LLM: This is a Chinese-centric 1-billion-parameter LLM, adapted from the Transformer-based Qwen architecture. Its innovation lies in the Feed-Forward Network (FFN) layer, which incorporates Soft Mixture of Experts (Soft MOE) and an enhanced MLP using SwiGLU activation in its second layer.60 Developed with a focus on transparency and resource efficiency, Steel-LLM demonstrates an effort to enhance Transformer models with dynamic or efficient components often explored in non-transformer or hybrid designs. While its backbone is Transformer-based (utilizing Flash Attention), the FFN modifications lean towards principles seen in newer, more adaptive architectures. This represents an optimization and hybridization strategy rather than a purely non-transformer development from scratch.
+SUBLLM (Subsampling-Upsampling-Bypass Large Language Model): Proposed by researchers likely affiliated with Xiaomi, SUBLLM is an innovative architecture that extends the standard decoder-only Transformer framework by integrating subsampling, upsampling, and bypass modules.61 These modules are designed to shorten the sequence during processing and then restore its length, with bypass connections to aid convergence. SUBLLM has shown significant improvements in training and inference speeds (26-34% faster training, 37-52% faster inference) and memory usage compared to LLaMA, while maintaining competitive few-shot performance.61 Like Steel-LLM, SUBLLM is an architectural modification of the Transformer framework, but it incorporates novel modules to enhance efficiency, reflecting a key motivation behind the exploration of non-transformer models.
+The diverse activities in these "other" categories—ranging from exploring RetNet applications to developing sophisticated Transformer-to-recurrent conversion methods like Liger, and architecturally modifying Transformers with principles like MoE (Steel-LLM) or novel processing blocks (SUBLLM)—indicate a multi-pronged and pragmatic approach within China. There isn't a sole focus on building entirely new non-transformer families from the ground up; considerable effort is also directed towards hybridizing existing successful architectures or evolving them with non-transformer concepts to achieve immediate gains in efficiency and capability. This pragmatic blending of approaches suggests a sophisticated R&D strategy that aims to leverage past successes while actively pursuing future innovations.
+Table 1: Prominent Chinese-Involved Non-Transformer and Hybrid LLM Projects
+
+Architecture Family
+Specific Model/Project
+Key Chinese Institutions/Companies
+Notable Features/Innovations
+Key Publications/Sources (Snippet IDs)
+RWKV
+PCF-RWKV
+Tsinghua University
+RWKV-based, LoRA, carbon footprint estimation
+1
+RWKV
+RWKV-X
+Guangdong Lab of AI & Digital Economy, Hohai Uni, Shenzhen Uni, Qinghai Uni
+Hybrid RWKV + Sparse Attention, linear complexity, 1M context
+2
+RWKV
+VisualRWKV
+Guangdong Lab of AI & Digital Economy, Shenzhen Uni
+Multimodal RWKV, data-dependent recurrence, sandwich prompt
+3
+RWKV
+RWKV-Lite/edge
+Tsinghua University
+Compression for RWKV (low-rank approx, sparsity)
+35
+Mamba/SSM
+VL-Mamba
+Inst. of Automation (CAS), Uni. of Chinese Acad. of Sciences, Uni. of Adelaide
+Multimodal Mamba, Vision Selective Scan
+4
+Mamba/SSM
+Cobra VLM
+Zhejiang Uni, Westlake Uni, DAMO Academy (Alibaba)
+Multimodal Mamba, DINOv2+SigLIP vision
+5
+Recurrent/Hybrid
+Liger
+Fudan Uni, Shanghai AI Lab, et al.
+Transformer to Gated Linear Recurrent Model conversion
+59
+Transformer Hybrid
+Steel-LLM
+(Project launched March 2024, specific affiliations TBD from snippets)
+Qwen-adapted, Soft MOE and enhanced FFN
+60
+Transformer Hybrid
+SUBLLM
+Xiaomi (likely)
+Subsampling, upsampling, bypass modules for Transformers
+61
+
+This table consolidates key projects and provides a snapshot of the active Chinese involvement in developing and applying non-transformer and hybrid LLM architectures. It underscores the breadth of these efforts, spanning foundational research, specialized applications, and efficiency-driven architectural modifications.
+4. Key Chinese Players and Strategic Directions in Non-Transformer LLM Research
+The advancement of non-transformer LLM architectures in China is not a monolithic effort but rather a dynamic interplay between leading academic institutions, research laboratories, and increasingly, commercial entities. Their collective work reveals distinct research trends and aligns with China's broader strategic ambitions in artificial intelligence.
+Leading Academic Institutions and Research Labs
+Several academic and research institutions are at the forefront of non-transformer LLM research in China:
+Tsinghua University: This institution has demonstrated significant contributions to the RWKV ecosystem, including the development of PCF-RWKV for carbon footprinting 1, research into RWKV-Lite for edge deployment 35, and work on state tuning for RWKV-7 models.39 Beyond RWKV, Tsinghua has been involved in broader AI research such as the Absolute Zero RLVR paradigm and Test-Time Reinforcement Learning.62 It is also a partner in the Pazhou Laboratory.64
+Peking University: Known for its research into LLM periodicity with the Transformer-variant FANformer 65, development of the CodeShell LLM 67, and contributions to LLM evaluation methodologies and training optimizations like Blockwise Learning Rate.66 Peking University researchers have also participated in state tuning work on RWKV-7 39 and are a partner in the Pazhou Laboratory.64
+Institute of Automation, Chinese Academy of Sciences (CASIA): CASIA has been a key player in exploring Mamba-based architectures, notably through its contribution to VL-Mamba.4 Their research also extends to related areas such as embodied AI with PhysVLM, which references RoboMamba.69 CAS, as a whole, is advancing AI research platforms like ScienceOne 70 and investigating LLM pruning techniques like ShortGPT.71 CASIA is also a partner institution of the Pazhou Laboratory.64
+Guangdong Laboratory of Artificial Intelligence and Digital Economy (SZ) (also known as Pazhou Lab, Guangzhou): This provincial laboratory has emerged as a significant hub for RWKV development. It has been involved in creating RWKV-X 2, VisualRWKV 3, and contributing to the core RWKV-7 architecture.38 The lab has broad research divisions covering fundamental AI theories, platforms, and applications.64
+Shenzhen University: Collaborates closely with the Guangdong Laboratory of AI and Digital Economy on projects like RWKV-X 2 and VisualRWKV 3, and was involved in the RWKV-7 "Goose" development.38 The university also conducts general LLM research.73
+Hohai University: A contributor to the RWKV-X project.2
+Zhejiang University: Involved in the development of the Mamba-based Cobra VLM 5 and research into LLM reasoning compression with LightThinker.75
+Fudan University: Has made contributions to hybrid approaches with the Liger framework for converting Transformers to recurrent models.59
+Shanghai Jiao Tong University: Participated in research on state tuning for RWKV-7.39
+Shanghai AI Laboratory: Collaborated on the Liger framework 59 and Test-Time Reinforcement Learning.63
+Key Commercial Entities
+While academic institutions are driving much of the foundational research, commercial entities are also playing a role, particularly in applying and scaling these technologies:
+Alibaba (DAMO Academy / Alibaba Cloud): Involved in the Mamba-based Cobra VLM project.5 Alibaba is also known for its Qwen family of Transformer-based models, which often incorporate architectural innovations like Mixture of Experts (MoE) and demonstrate strong performance.60 The company is making substantial investments in AI and cloud infrastructure, positioning itself as a major player in China's AI ecosystem.78
+Huawei: While the provided snippets focus more on Huawei's general LLM research, including Transformer-based approaches, RAG, and fine-tuning 8, its role as a major technology provider and hyperscaler is crucial for supporting China's overall AI momentum.79 Direct contributions to non-transformer LLM architecture development are less explicit in these materials but their broad AI capabilities make them a significant entity.
+Xiaomi: Likely involved in the development of SUBLLM, a Transformer-hybrid architecture focused on efficiency, as indicated by the project's GitHub repository.61
+DeepSeek AI: Primarily known for its highly performant open-source Transformer-based models, often featuring MoE architectures (e.g., DeepSeek-V3, R1 reasoning model).76 While not focused on purely non-transformer backbones in the provided information, DeepSeek's emphasis on efficiency, open-sourcing technical details, and rapid innovation in training paradigms (like R1-Zero using RL without external data 82) contributes to the competitive and dynamic AI landscape in China that encourages exploration of diverse architectures.
+01.AI: Noted for developing competitive models cost-effectively using smaller, high-quality datasets, showcasing an alternative path to scaling.21 Their Yi models are part of this trend.
+Observed Trends in Research Focus
+Several key trends characterize Chinese efforts in non-transformer LLMs:
+Efficiency and Scalability: A persistent theme is the pursuit of architectures that offer linear or near-linear scaling with sequence length and reduced computational demands for training and inference. This is evident in RWKV and Mamba projects.6
+Long Context Capabilities: There is a strong drive to enhance the ability of models to process and understand extremely long sequences, as seen with RWKV-X aiming for 1M token contexts 2 and VisualRWKV handling up to 24K tokens in inference.3
+Multimodality: A significant research thrust involves extending non-transformer architectures to handle visual and language data, with projects like VisualRWKV, VL-Mamba, and Cobra VLM.3
+Specialized Applications: Beyond general-purpose models, there is a focus on tailoring non-transformer LLMs for specific domains and tasks, such as PCF-RWKV for carbon footprinting 1 and the adaptation of Hyena-based models for genomics.48
+Openness and Community Building: Many key projects, particularly around RWKV and models from companies like DeepSeek, are open-sourced, fostering a collaborative research environment and wider adoption.6
+Hybridization and Conversion: A pragmatic approach involves creating hybrid models (e.g., RWKV-X) or developing methods to convert existing Transformer models into more efficient recurrent structures (e.g., Liger).2
+Alignment with China's Broader AI Strategy
+These developments in non-transformer LLMs align well with China's overarching AI ambitions:
+Technological Diversification: China's national AI strategy emphasizes the exploration of multiple pathways towards Artificial General Intelligence (AGI), not solely relying on scaling up current LLM paradigms. Non-transformer models, with their different architectural properties and potential to overcome some limitations of Transformers, fit squarely into this diversification agenda.22
+Innovation Under Constraints (Algorithmic Offset): In the face of restrictions on access to the most advanced semiconductor chips, there is a heightened emphasis in China on algorithmic innovation and efficiency to sustain AI progress.21 Non-transformer architectures, often designed with computational efficiency as a primary goal, are well-suited to this objective, allowing for continued capability development even with existing or more accessible hardware.
+State-Led Initiatives and National Goals: The strong involvement of government-backed research labs (like Pazhou Lab) and top public universities, coupled with supportive national policies and investment, indicates that these research efforts are part of a coordinated national strategy.22 The focus on practical applications and the promotion of open-source models can accelerate the diffusion of AI technologies across the economy, aligning with broader economic development and strategic autonomy goals.22
+The collaboration patterns observed—such as the Guangdong Laboratory of AI and Digital Economy partnering with multiple universities for RWKV-X 2, CASIA collaborating with the University of Adelaide for VL-Mamba 4, and the involvement of both academic (Zhejiang University) and commercial (Alibaba) entities in the Cobra VLM project 5—point towards the maturation of a robust and interconnected R&D ecosystem in China for non-transformer LLMs. The Pazhou Laboratory itself is a consortium of leading universities and research institutes.64 This ecosystem structure facilitates the rapid exchange of knowledge, pooling of resources, and acceleration of development cycles, enabling China to quickly capitalize on promising new architectural directions.
+Table 2: Key Chinese Research Institutions & Companies Active in Non-Transformer/Hybrid LLM Development
+
+Entity Name
+Type
+Key Non-Transformer/Hybrid Projects/Focus
+Notable Snippets
+Tsinghua University
+Academic
+RWKV (PCF-RWKV, RWKV-Lite, RWKV-7 state tuning), General AI/LLM Research
+1
+Guangdong Lab of AI & Digital Economy (SZ)
+Research Lab
+RWKV (RWKV-X, VisualRWKV, RWKV-7 core dev)
+2
+Institute of Automation, CAS (CASIA)
+Research Lab
+Mamba (VL-Mamba), PhysVLM (RoboMamba ref.), LLM Pruning (ShortGPT)
+4
+Peking University
+Academic
+LLM Periodicity (FANformer), Code LLMs, RWKV-7 state tuning
+39
+Shenzhen University
+Academic
+RWKV (RWKV-X, VisualRWKV, RWKV-7 core dev)
+2
+Fudan University
+Academic
+Recurrent/Hybrid (Liger)
+59
+Zhejiang University
+Academic
+Mamba (Cobra VLM), LLM Reasoning Compression (LightThinker)
+5
+Shanghai AI Laboratory
+Research Lab
+Recurrent/Hybrid (Liger), Test-Time RL
+59
+Alibaba (DAMO Academy / Cloud)
+Commercial
+Mamba (Cobra VLM), Qwen (Transformer-MoE), AI Infrastructure
+5
+Xiaomi
+Commercial
+Transformer Hybrid (SUBLLM)
+61
+DeepSeek AI
+Commercial
+Transformer-MoE (DeepSeek-V3, R1), Open-source models, Efficient training
+76
+
+This table highlights the key actors and their areas of focus within China's non-transformer and hybrid LLM landscape, illustrating the distributed yet interconnected nature of these research efforts.
+5. Analysis: Significance and Impact of China's Non-Transformer LLM Advancements
+China's concerted efforts in non-transformer LLM architectures are yielding results that carry significant implications for both its domestic AI capabilities and the global AI research and industry landscape. These advancements are not occurring in a vacuum but are part of a worldwide trend to find more efficient and scalable alternatives to the dominant Transformer paradigm.
+Comparison with Global Non-Transformer LLM Development
+Globally, the exploration of non-transformer architectures is vibrant, with foundational work on models like Mamba, RetNet, and Hyena largely originating from research groups and companies outside of China.9 However, Chinese researchers and institutions have demonstrated particular strengths and rapid progress in specific areas:
+RWKV Ecosystem Leadership: China has been central to the RWKV architecture from its inception by a Chinese researcher to its ongoing, multi-faceted development.6 The depth of research, encompassing core architectural evolution (RWKV-7 38), hybridization (RWKV-X 2), multimodal extensions (VisualRWKV 3), specialized applications (PCF-RWKV 1), and compression for edge devices (RWKV-Lite 35), indicates a leading role in this specific non-transformer family.
+Rapid Adoption and Innovation with Mamba: While Mamba's foundational papers originated from US universities 9, Chinese research groups have been exceptionally quick to adopt this new architecture and apply it to complex, resource-intensive domains like multimodal learning (VL-Mamba 4, Cobra VLM 5). This agility in leveraging emerging efficient architectures is a notable characteristic.
+Closing the Quality Gap with Efficiency: Chinese models, including both non-transformer variants and highly optimized Transformer-MoE models from companies like DeepSeek and Alibaba, are increasingly closing the performance gap with leading Western models, often with a strong emphasis on computational efficiency and open-source availability.21
+Potential Implications for the Global AI Research and Industry Landscape
+The progress made by China in non-transformer LLMs has several potential global ramifications:
+Increased Architectural Diversity: Chinese contributions are significantly enriching the portfolio of viable LLM architectures beyond Transformers. This can lead to a more robust and adaptable global AI ecosystem, less reliant on a single architectural paradigm.
+Acceleration via Open Source: The strong trend of open-sourcing models (e.g., RWKV and its variants, DeepSeek's models) and research from China can act as a catalyst for global AI research.6 These open assets provide valuable resources for researchers worldwide and offer alternatives to proprietary systems, potentially democratizing access to advanced AI.
+Heightened Competitive Dynamics: Advances in efficient and performant non-transformer LLMs from China will undoubtedly intensify competitive pressures on Western AI labs and companies. This can stimulate further innovation globally as different entities strive for leadership in various architectural niches.
+Emergence of New Application Niches: The focus on specialized applications, such as PCF-RWKV for environmental accounting 1 or efficient multimodal systems, may unlock new markets and use cases where traditional Transformers were too cumbersome or costly.
+Strengths of Current Chinese Efforts
+Several factors underpin the current strength of China's non-transformer LLM development:
+Strong Academic and Research Foundation: The deep involvement of top-tier universities and national research institutes provides a solid talent pipeline and a fertile ground for foundational research.1
+Emphasis on Efficiency and Practicality: A clear focus on overcoming the computational bottlenecks of Transformers addresses a critical real-world challenge in AI deployment.
+Agile Adaptation and Innovation: Chinese researchers have shown a remarkable ability to quickly adopt promising new architectural ideas (like Mamba) and to innovate by creating novel variants and hybrid models (like RWKV-X, Liger).
+Growing Open-Source Ecosystem: The commitment to open-source practices is fostering collaboration, attracting global talent, and accelerating the development and dissemination of these alternative architectures.
+Strategic Government Support: Alignment with national AI strategies likely ensures sustained funding, resource allocation, and a supportive policy environment for these research directions.22
+Potential Limitations and Challenges
+Despite the significant progress, Chinese efforts in non-transformer LLMs also face potential limitations:
+Access to Cutting-Edge Hardware: While algorithmic efficiency is a key focus, the training of very large-scale models, even non-transformer ones, still benefits from access to the most advanced GPUs. US export controls on high-performance chips could pose a challenge, although the impact might be mitigated by algorithmic gains and focus on efficiency.21 Research suggests that algorithmic progress can indeed continue even in compute-constrained environments.24
+Training Data Quality and Diversity: The performance of any LLM is heavily dependent on the quality and breadth of its training data. While projects like RWKV utilize multilingual datasets 6, ensuring access to sufficiently large, diverse, and high-quality data for all emerging architectures and specialized tasks remains an ongoing challenge.
+Concentrated Foundational Development: While China shows leadership in the RWKV space and strong activity around Mamba, the foundational development of some other non-transformer architectures (e.g., Hyena, Monarch Mixer) appears less concentrated within Chinese institutions based on the provided material.
+Geopolitical Influences on Collaboration: International collaboration is evident in some successful projects. However, the broader geopolitical climate could impact future research partnerships and the global flow of ideas and talent.
+The advancements in non-transformer LLMs in China, especially those that are open-sourced and highly efficient, could play a significant role in shaping a more multipolar global LLM ecosystem. As nations and organizations worldwide seek AI solutions that are not only powerful but also cost-effective and potentially less dependent on a few dominant technology providers, Chinese non-transformer models could become increasingly attractive alternatives. This is particularly relevant in regions prioritizing technological sovereignty or where the economic and computational overhead of massive Transformer models is a barrier to adoption. The combination of technical merit, efficiency, and openness, if sustained, could allow these architectures to gain considerable traction globally, challenging the current status quo.
+Table 3: Comparative Strengths of Chinese Non-Transformer LLM Efforts
+Architectural Family
+Key Strengths Demonstrated by Chinese Research
+Supporting Evidence (Key Models/Projects, Snippet IDs)
+RWKV
+High Efficiency, Strong Long Context, Multimodal Capability, Open Source, Specialized Applications (Carbon, Edge, Vision), Foundational Development & Hybridization
+RWKV (core dev), PCF-RWKV, RWKV-X, VisualRWKV, RWKV-Lite, RWKV-7 state tuning
+Mamba-based (SSM)
+High Efficiency for Multimodal Tasks, Rapid Adaptation of New Architectures, Competitive Performance
+VL-Mamba, Cobra VLM
+Recurrent/Hybrid
+Efficient Conversion of Transformers, Leveraging Existing Pre-trained Models, Hybrid Attention
+Liger
+Transformer Hybrid
+Efficiency Gains on Transformer Backbones, MoE Integration, Novel Efficiency Modules
+Steel-LLM (FFN/MoE innovation), SUBLLM (subsampling/upsampling modules)
+
+This table summarizes the distinct areas where Chinese research is making impactful contributions to the non-transformer LLM landscape, highlighting a strategy that balances foundational innovation with pragmatic adaptation and specialization.
+6. Conclusion and Future Outlook
+The evidence compiled and analyzed in this report strongly supports the conclusion that China is making significant and multifaceted progress in the domain of non-transformer Large Language Model architectures. This progress is not isolated to a single approach but spans several promising alternatives, with particularly notable advancements in the RWKV ecosystem and the rapid exploration of Mamba-based State Space Models. Chinese academic institutions, national research laboratories, and increasingly, commercial entities are key drivers of this innovation. Their contributions range from foundational architectural developments and novel hybrid designs to specialized applications and tools that enhance the efficiency and deployability of these models.
+Key achievements include the development of RWKV variants like RWKV-X, which pushes long-context capabilities to potentially million-token scales while maintaining linear complexity 2; VisualRWKV, which successfully extends the efficient RWKV architecture to the demanding field of multimodal learning 3; and PCF-RWKV, which tailors the model for specific industrial applications like carbon footprint estimation.1 In the Mamba/SSM space, models like VL-Mamba and Cobra VLM demonstrate China's agility in adopting and innovating with new efficient architectures for complex tasks.4 Furthermore, approaches like Liger showcase innovation in efficiently converting existing Transformer models to more efficient recurrent structures.59 A consistent theme across these efforts is the pursuit of computational efficiency, scalability for long sequences, and practical applicability, often coupled with a commitment to open-source principles that foster broader collaboration and adoption.6
+The trajectory of development suggests continued momentum. Future efforts will likely focus on further enhancing the performance of these non-transformer models, pushing the boundaries of context length and efficiency, and expanding their capabilities in multimodal and specialized domains. The trend towards hybrid models, combining the strengths of different architectural principles, is also likely to continue. Given the strategic emphasis on AI by the Chinese government and the robust R&D ecosystem, the focus on real-world deployment and industry-specific solutions will probably intensify. The open-source nature of many of these projects will remain a critical factor in their evolution and global impact.
+These advancements have broader implications for the global AI landscape. China's progress contributes to a richer diversity of LLM architectures, providing alternatives to the currently dominant Transformer models. This can accelerate innovation globally by offering new tools and paradigms for researchers and developers. The emphasis on efficiency also directly addresses critical concerns about the sustainability and accessibility of large-scale AI. Strategically, by cultivating expertise in these alternative pathways, China may be well-positioned if the current Transformer-centric approach encounters fundamental limitations or if specific applications demand the unique strengths of non-transformer models.
+In final assessment, China's non-transformer LLM efforts are substantial, innovative, and strategically aligned with its national AI ambitions. While challenges such as access to the most advanced hardware for at-scale training persist, the focus on algorithmic efficiency and the demonstrated progress suggest a capacity to mitigate some of these constraints. A pivotal question moving forward will be the extent to which these non-transformer architectures, significantly developed or advanced in China, achieve widespread adoption and influence in the global research community and commercial markets. Their technical merit, coupled with their efficiency and openness, positions them as potentially significant players, but their ultimate global impact will also be shaped by broader geopolitical and competitive dynamics.
+Works cited
+PCF-RWKV: Large Language Model for Product Carbon Footprint Estimation - MDPI, accessed May 19, 2025, https://www.mdpi.com/2071-1050/17/3/1321
+RWKV-X: A Linear Complexity Hybrid Language Model - arXiv, accessed May 19, 2025, https://arxiv.org/html/2504.21463v2
+VisualRWKV: Exploring Recurrent Neural Networks for Visual Language Models - ACL Anthology, accessed May 19, 2025, https://aclanthology.org/2025.coling-main.694.pdf
+arxiv.org, accessed May 19, 2025, https://arxiv.org/abs/2403.13600
+Cobra: Extending Mamba to Multi-Modal Large Language Model for Efficient Inference, accessed May 19, 2025, https://arxiv.org/html/2403.14520v4
+RWKV Language Model, accessed May 19, 2025, https://wiki.rwkv.com/
+Transformer (deep learning architecture) - Wikipedia, accessed May 19, 2025, https://en.wikipedia.org/wiki/Transformer_(deep_learning_architecture)
+LLM Application in Wireless Communication Knowledge Management - Huawei, accessed May 19, 2025, https://www.huawei.com/en/huaweitech/future-technologies/llm-application-wireless-communication
+An Introduction to the Mamba LLM Architecture: A New Paradigm in Machine Learning, accessed May 19, 2025, https://www.datacamp.com/tutorial/introduction-to-the-mamba-llm-architecture
+A Comparison of Transformer and Autoregressive LLM Designs - ijrpr, accessed May 19, 2025, https://ijrpr.com/uploads/V4ISSUE11/IJRPR19003.pdf
+A Survey of RWKV - arXiv, accessed May 19, 2025, https://arxiv.org/html/2412.14847v1
+www.mit.edu, accessed May 19, 2025, https://www.mit.edu/~ishank/assets/files/retformer-paper.pdf
+Towards Making Linear Attention Usable | OpenReview, accessed May 19, 2025, https://openreview.net/forum?id=y59zhBNKGZ
+Hyena Hierarchy: Towards Larger Convolutional Language Models, accessed May 19, 2025, https://ermongroup.github.io/blog/hyena/
+[2302.10866] Hyena Hierarchy: Towards Larger Convolutional Language Models - arXiv, accessed May 19, 2025, https://arxiv.org/abs/2302.10866
+Exploring RetNet: The Evolution of Transformers - Marvik - Blog, accessed May 19, 2025, https://blog.marvik.ai/2024/07/16/exploring-retnet-the-evolution-of-transformers/
+Liquid Foundation Models: Our First Series of Generative AI Models ..., accessed May 19, 2025, https://www.liquid.ai/blog/liquid-foundation-models-our-first-series-of-generative-ai-models
+Monarch Mixer: A Simple Sub-Quadratic GEMM-Based Architecture | OpenReview, accessed May 19, 2025, https://openreview.net/forum?id=cB0BImqSS9¬eId=98BZANkxc8
+Mamba Explained - The Gradient, accessed May 19, 2025, https://thegradient.pub/mamba-explained/
+Hyena Edge AI: Revolutionizing Efficient Language Models for Edge ..., accessed May 19, 2025, https://flowgrammer.ca/hyena-edge-ai-efficient-llms-edge
+Can China Build Advanced AI Without Advanced Chips? | TechPolicy.Press, accessed May 19, 2025, https://www.techpolicy.press/can-china-build-advanced-ai-without-advanced-chips/
+China Challenges Large Language Models as the Sole Path to General AI, accessed May 19, 2025, https://babl.ai/china-challenges-large-language-models-as-the-sole-path-to-general-ai/
+US-China AI Gap: 2025 Analysis of Model Performance, Investment, and Innovation - Recorded Future, accessed May 19, 2025, https://www.recordedfuture.com/research/measuring-the-us-china-ai-gap
+LLM-e Guess: Can LLMs Capabilities Advance Without Hardware Progress? - arXiv, accessed May 19, 2025, https://arxiv.org/pdf/2505.04075
+HahahaFace/PCF-RWKV - Hugging Face, accessed May 19, 2025, https://huggingface.co/HahahaFace/PCF-RWKV
+PCF-RWKV: Product Carbon Footprint Estimation System Based on Large Language Model - Preprints.org, accessed May 19, 2025, https://www.preprints.org/manuscript/202412.1705/download/final_file
+RWKV-X: A Linear Complexity Hybrid Language Model - arXiv, accessed May 19, 2025, https://arxiv.org/html/2504.21463v1
+[Literature Review] RWKV-X: A Linear Complexity Hybrid Language Model - Moonlight, accessed May 19, 2025, https://www.themoonlight.io/en/review/rwkv-x-a-linear-complexity-hybrid-language-model
+howard-hou/RWKV-X: RWKV-X is a Linear Complexity ... - GitHub, accessed May 19, 2025, https://github.com/howard-hou/RWKV-X
+VisualRWKV: Exploring Recurrent Neural Networks for Visual Language Models - arXiv, accessed May 19, 2025, https://arxiv.org/html/2406.13362v3
+VisualRWKV-HD and UHD: Advancing High-Resolution Processing for Visual Language Models - arXiv, accessed May 19, 2025, https://arxiv.org/html/2410.11665v1
+Visual Genome - Stanford Computer Vision Lab, accessed May 19, 2025, http://vision.stanford.edu/pdf/visualgenome.pdf
+COCO dataset, accessed May 19, 2025, https://cocodataset.org/
+VisualRWKV: Exploring Recurrent Neural Networks for Visual Language Models, accessed May 19, 2025, https://aclanthology.org/2025.coling-main.694/
+RWKV-Lite: Deeply Compressed RWKV for Resource-Constrained Devices - arXiv, accessed May 19, 2025, https://arxiv.org/html/2412.10856v3
+Deeply Compressed RWKV for Resource-Constrained Devices - arXiv, accessed May 19, 2025, https://arxiv.org/pdf/2412.10856
+(PDF) RWKV-edge: Deeply Compressed RWKV for Resource-Constrained Devices, accessed May 19, 2025, https://www.researchgate.net/publication/387104769_RWKV-edge_Deeply_Compressed_RWKV_for_Resource-Constrained_Devices
+(PDF) RWKV-7 "Goose" with Expressive Dynamic State Evolution - ResearchGate, accessed May 19, 2025, https://www.researchgate.net/publication/389947068_RWKV-7_Goose_with_Expressive_Dynamic_State_Evolution
+State Tuning: State-based Test-Time Scaling on RWKV-7 - arXiv, accessed May 19, 2025, https://arxiv.org/html/2504.05097v1
+Mamba (deep learning architecture) - Wikipedia, accessed May 19, 2025, https://en.wikipedia.org/wiki/Mamba_(deep_learning_architecture)
+VL-Mamba: Exploring State Space Models for Multimodal Learning - Yanyuan Qiao, accessed May 19, 2025, https://yanyuanqiao.github.io/vl-mamba/
+Daily Papers - Hugging Face, accessed May 19, 2025, https://huggingface.co/papers?q=native%20large%20multimodal%20reasoning%20models%20(N-LMRMs)
+Cobra: Extending Mamba to Multi-Modal Large Language Model for Efficient Inference, accessed May 19, 2025, https://ojs.aaai.org/index.php/AAAI/article/view/33131/35286
+Cobra: Extending Mamba to Multi-Modal Large Language Model for Efficient Inference | Proceedings of the AAAI Conference on Artificial Intelligence, accessed May 19, 2025, https://ojs.aaai.org/index.php/AAAI/article/view/33131
+Meteor: Mamba-based Traversal of Rationale for Large Language and Vision Models - NIPS papers, accessed May 19, 2025, https://proceedings.neurips.cc/paper_files/paper/2024/file/473a9a75edc46eff5ff224d53d5f7294-Paper-Conference.pdf
+State Space Models are Strong Text Rerankers - arXiv, accessed May 19, 2025, https://arxiv.org/html/2412.14354v1
+Liquid AI - 2025 Company Profile, Funding & Competitors - Tracxn, accessed May 19, 2025, https://tracxn.com/d/companies/liquid-ai/__WcgGMTavFS-PIXLKpe46XDv3j7Q4kwlkc7Hd-zvaYko
+A Feature Engineering Method for Whole-Genome DNA Sequence with Nucleotide Resolution - MDPI, accessed May 19, 2025, https://www.mdpi.com/1422-0067/26/5/2281
+arxiv.org, accessed May 19, 2025, https://arxiv.org/abs/2401.17574
+Breaking Down Retentive Networks (RetNet) - Frenos, accessed May 19, 2025, https://frenos.io/blog/breaking-down-retentive-networks
+(PDF) Retentive neural quantum states: efficient ansätze for ab initio quantum chemistry, accessed May 19, 2025, https://www.researchgate.net/publication/390670072_Retentive_neural_quantum_states_efficient_ansatze_for_ab_initio_quantum_chemistry
+Who Will Replace the Transformer - d.run 让算力更自由, accessed May 19, 2025, https://docs.d.run/en/blogs/2024/0327-transformer.html
+Retentive Network: A Successor to Transformer for Large Language Models - ResearchGate, accessed May 19, 2025, https://www.researchgate.net/publication/372415793_Retentive_Network_A_Successor_to_Transformer_for_Large_Language_Models?_tp=eyJjb250ZXh0Ijp7InBhZ2UiOiJzY2llbnRpZmljQ29udHJpYnV0aW9ucyIsInByZXZpb3VzUGFnZSI6bnVsbH19
+Large Language Models: A Survey - arXiv, accessed May 19, 2025, https://arxiv.org/html/2402.06196v3
+Toward Knowledge-Centric Natural Language ... - Zhen Wang, accessed May 19, 2025, https://zhenwang9102.github.io/files/Zhen_Dissertation_2022.pdf
+Decentralised-AI/LFM-Liquid-AI-Liquid-Foundation-Models: An open source implementation of LFMs from Liquid AI - GitHub, accessed May 19, 2025, https://github.com/Decentralised-AI/LFM-Liquid-AI-Liquid-Foundation-Models
+Introducing LFM-7B: Setting New Standards for Efficient Language Models - Liquid AI, accessed May 19, 2025, https://www.liquid.ai/lfm-7b
+Introducing LFM-7B: Setting New Standards for Efficient Language Models | Liquid AI, accessed May 19, 2025, https://www.liquid.ai/blog/introducing-lfm-7b-setting-new-standards-for-efficient-language-models
+Liger: Linearizing Large Language Models to Gated Recurrent Structures - arXiv, accessed May 19, 2025, https://arxiv.org/html/2503.01496v1
+Steel-LLM: From Scratch to Open Source – A Personal Journey in Building a Chinese-Centric LLM - arXiv, accessed May 19, 2025, https://arxiv.org/html/2502.06635v1
+SUBLLM: A Novel Efficient Architecture with Token Sequence Subsampling for LLM - arXiv, accessed May 19, 2025, https://arxiv.org/pdf/2406.06571?
+AI That Teaches Itself: Tsinghua University's 'Absolute Zero' Trains LLMs With Zero External Data - MarkTechPost, accessed May 19, 2025, https://www.marktechpost.com/2025/05/09/ai-that-teaches-itself-tsinghua-universitys-absolute-zero-trains-llms-with-zero-external-data/
+LLMs Can Now Learn without Labels: Researchers from Tsinghua University and Shanghai AI Lab Introduce Test-Time Reinforcement Learning (TTRL) to Enable Self-Evolving Language Models Using Unlabeled Data - Reddit, accessed May 19, 2025, https://www.reddit.com/r/machinelearningnews/comments/1k5ruv8/llms_can_now_learn_without_labels_researchers/
+Introduction - Guangdong Artificial Intelligence and Digital Economy Laboratory (Guangzhou), accessed May 19, 2025, https://en.pazhoulab.com/jggk/jgjj/
+FANformer: Improving Large Language Models Through Effective Periodicity Modeling, accessed May 19, 2025, https://arxiv.org/html/2502.21309
+Xue Jiang's research works | Peking University and other places - ResearchGate, accessed May 19, 2025, https://www.researchgate.net/scientific-contributions/Xue-Jiang-2241798932
+The Knowledge Computing Lab 知识计算实验室, accessed May 19, 2025, https://se.pku.edu.cn/kcl/
+The Sharpness Disparity Principle in Transformers for Accelerating Language Model Pre-Training - arXiv, accessed May 19, 2025, https://arxiv.org/html/2502.19002v1
+PhysVLM: Enabling Visual Language Models to Understand Robotic Physical Reachability, accessed May 19, 2025, https://www.researchgate.net/publication/389748484_PhysVLM_Enabling_Visual_Language_Models_to_Understand_Robotic_Physical_Reachability
+Chinese Institute Launches AI-powered Research Platform "ScienceOne", accessed May 19, 2025, https://english.cas.cn/newsroom/cas_media/202505/t20250507_1042601.shtml
+ShortGPT: Layers in Large Language Models are More Redundant Than You Expect - arXiv, accessed May 19, 2025, https://arxiv.org/html/2403.03853v1
+Guangdong Artificial Intelligence and Digital Economy Laboratory (Guangzhou) - 琶洲实验室, accessed May 19, 2025, https://en.pazhoulab.com/
+Adoption of Large Language Model AI Tools in Everyday Tasks: Multisite Cross-Sectional Qualitative Study of Chinese Hospital Administrators, accessed May 19, 2025, https://www.jmir.org/2025/1/e70789
+Xudong Sun's research works | Shenzhen University and other places - ResearchGate, accessed May 19, 2025, https://www.researchgate.net/scientific-contributions/Xudong-Sun-2260725785
+LightThinker: Thinking Step-by-Step Compression - arXiv, accessed May 19, 2025, https://arxiv.org/html/2502.15589v1
+DeepSeek's release of an open-weight frontier AI model, accessed May 19, 2025, https://www.iiss.org/publications/strategic-comments/2025/04/deepseeks-release-of-an-open-weight-frontier-ai-model/
+Top 6 Chinese AI Models Like DeepSeek (LLMs) You Should Know - Index.dev, accessed May 19, 2025, https://www.index.dev/blog/chinese-ai-models-deepseek
+Alibaba to invest $53 billion in AI and cloud infra - RCR Wireless News, accessed May 19, 2025, https://www.rcrwireless.com/20250228/featured/alibaba-ai-and-cloud-infra
+ABI Research: AI data center demand to grow at fast pace - RCR Wireless News, accessed May 19, 2025, https://www.rcrwireless.com/20250512/uncategorized/ai-data-abi-research
+Robots Empowered by AI Foundation Models and the Opportunities for 6G - Huawei, accessed May 19, 2025, https://www.huawei.com/en/huaweitech/future-technologies/robots-empowered-ai-foundation-models-6g
+Token Talk 10: What Startups Gain from China's AI Push - Ascend.vc, accessed May 19, 2025, https://www.ascend.vc/token-talk/token-talk-what-startups-gain-from-chinas-ai-push
+China's AI Evolution: DeepSeek and National Security, accessed May 19, 2025, https://cetas.turing.ac.uk/publications/chinas-ai-evolution-deepseek-and-national-security
+LLM-e Guess: Can LLMs Capabilities Advance Without Hardware Progress?, accessed May 19, 2025, https://www.researchgate.net/publication/391530977_LLM-e_Guess_Can_LLMs_Capabilities_Advance_Without_Hardware_Progress
+Artificial Intelligence Index Report 2025 - AWS, accessed May 19, 2025, https://hai-production.s3.amazonaws.com/files/hai_ai_index_report_2025.pdf
