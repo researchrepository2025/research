@@ -1,0 +1,656 @@
+China's Open Source AI Offensive: Leading Contributors and Strategic Focus in 2024-2025
+I. Executive Summary
+The period between early 2024 and mid-2025 has marked a transformative phase in China's artificial intelligence landscape, characterized by an accelerated push towards open-source contributions from both established technology giants and a vibrant cohort of agile startups. This report details the leading Chinese entities at the forefront of this movement, with a specific focus on DeepSeek, Alibaba, Baidu, ByteDance, and other significant players including prominent "AI Tigers" and research institutions. It analyzes their key open-source models, strategic focus areas, technological innovations, and the broader implications of their contributions within the global AI ecosystem. The analysis reveals a dynamic environment where intense domestic competition, strategic government backing, and a drive for global influence are fueling rapid advancements and a notable shift towards open innovation, particularly in large language models (LLMs), multimodal AI, and AI for science.
+II. Established Giants: Doubling Down on Open Source
+China's major technology companies have significantly intensified their open-source AI activities in 2024 and 2025, releasing powerful models and platforms while strategically aligning these efforts with their broader business objectives, ranging from cloud service expansion to ecosystem development.
+A. DeepSeek: Setting the Pace with High-Performance, Low-Cost Open Models
+DeepSeek AI, a relatively new entrant, has rapidly emerged as a pivotal force in the open-source AI domain, challenging established players and influencing market dynamics with its high-performance, cost-efficient models.
+Models & Release Dates (2024-2025):
+DeepSeek-V3: A general-purpose LLM with 671 billion total parameters (37 billion activated per token) released on December 24, 2024.1 It features a Mixture-of-Experts (MoE) architecture, Multi-head Latent Attention (MLA), and a multi-token prediction training objective.1
+DeepSeek-R1: An open-source reasoning LLM released on January 20, 2025, designed for complex logical tasks and competing with models like OpenAI's o1.2 It builds upon the V3 base model, incorporating reinforcement learning and a novel long Chain-of-Thought method for post-training.1
+DeepSeek-VL2: A Mixture-of-Experts Vision-Language Model.7
+DeepSeek-Prover-V2: A model focused on proving tasks.7
+DreamCraft3D: A model for hierarchical 3D generation.7
+Focus Areas:
+Reasoning and Coding: DeepSeek-R1 and V3 excel in mathematical reasoning and code generation, achieving competitive scores on benchmarks like MATH-500 and Codeforces.1
+Efficiency and Cost-Effectiveness: A primary focus is on achieving high performance at a fraction of the training cost of comparable Western models.1 Training DeepSeek-V3 cost approximately $5.6 million.1
+Long Context: DeepSeek-V3 supports a context length of up to 128,000 tokens.1
+Open-World Generalization & Multimodality: Indicated by models like DeepSeek-VL2 and research into vision-language-action models.7
+Open Source Contributions & Strategy:
+Both DeepSeek-V3 and R1 were released with open-source weights and training methods.2 The models are available on Hugging Face 3 and GitHub 7 under licenses like MIT.
+DeepSeek's open-source code provided insights into training recipes, including techniques like FP8 mixed precision training and cross-node MoE optimization.2
+The company actively contributes to the open infrastructure ecosystem with projects like DeepGEMM (efficient FP8 kernels), DeepEP (expert-parallel communication library), FlashMLA (efficient MLA decoding), and 3FS (distributed file system for AI).7
+Their stated goal is to make advanced AI more accessible and to foster innovation through open collaboration.2 The 2024 roadmap included visual search integration and multilingual context analysis, with automated report generation planned for Q1 2025.10
+Impact & Context:
+DeepSeek's releases, particularly R1 in January 2025, created a significant stir in the global AI community, viewed as a milestone for Chinese AI.4 This event has been termed the "DeepSeek Shock" by some analysts due to its high performance at low cost, challenging the prevailing model pricing and development strategies.12
+The company is a key example of Chinese AI firms realizing performance gains by innovating and embracing open source, while also adeptly adopting techniques from peers.4
+DeepSeek is backed by the Chinese hedge fund High-Flyer, which provided crucial funding and access to Nvidia GPUs acquired before U.S. trade restrictions.13
+Despite its open approach, DeepSeek's models have faced scrutiny regarding data privacy and censorship alignment with CCP propaganda, as well as allegations of model distillation from U.S. models.1
+The rapid ascent of DeepSeek underscores a pivotal shift in the AI landscape. Its strategy of releasing high-caliber models like R1 and V3 under open-source licenses, coupled with a relentless focus on computational efficiency and cost reduction, has not only democratized access to powerful AI capabilities but also intensified competitive pressures globally.1 This approach forces both domestic and international players to reconsider their own development and pricing strategies. The "DeepSeek Shock" 12 is a testament to this disruption; by demonstrating that frontier-level performance can be achieved and openly shared at a significantly lower cost, DeepSeek has effectively lowered the barrier to entry for advanced AI development and application, potentially accelerating the pace of innovation across the entire field.
+Furthermore, DeepSeek's emphasis on open-sourcing its underlying architectural innovations, such as its MoE optimizations and training methodologies 2, provides the broader research community with valuable insights. This transparency, while also inviting scrutiny 14, contributes to a collective understanding and advancement of AI technology. The company's ability to navigate hardware constraints, partly due to strategic foresight in GPU acquisition by its parent High-Flyer 13, and its focus on efficient algorithms, highlights a pragmatic approach to overcoming geopolitical and resource limitations. This positions DeepSeek not just as a model provider but as a significant contributor to the foundational elements of AI development.
+B. Alibaba Group: Powering Global AI with Qwen and Cloud Infrastructure
+Alibaba Group, through its cloud computing arm Alibaba Cloud, has made substantial investments and open-source contributions, positioning itself as a global AI powerhouse with a focus on its Qwen model family and a comprehensive AI ecosystem.
+Models & Release Dates (2024-2025):
+Qwen Series (Tongyi Qianwen):
+Qwen2 series (June 2024): Including Qwen2-72B (outperformed other open-source models on 15 benchmarks).15
+100 new open-source Qwen2.5 models (Sept 2024): Ranging from 0.5B to 72B parameters, enhanced math/coding, >29 languages.15
+QwQ-32B-Preview (Qwen with Questions) (Nov 2024): Open-source 32B parameter reasoning AI model, claimed as a world-first open-source reasoning model.15
+QVQ-72B-Preview (Dec 2024): Open-sourced experimental visual reasoning model.15
+Qwen2.5-VL (Jan 2025): Visual-language open model, acts as a visual agent.15
+Qwen2.5-1M (Late Jan 2025): Open-source LLM capable of processing 1 million tokens context.15
+Qwen2.5 AI model upgraded version (Feb 2025): Claimed to outperform DeepSeek V3.18
+Wan Series (Tongyi Wanxiang - Video Generation):
+Four Wan2.1 models open-sourced (Feb 2025).15
+Wan2.1-VACE (Video All-in-one Creation and Editing) (May 15, 2025): Open-source model (14B and 1.3B params) unifying various video generation and editing tasks (text/image/video inputs, repainting, spatio-temporal extension).20
+ModelScope Community: China's largest open-source AI model community, hosting Qwen, Wan, and nearly 300 other open-source models.15
+Focus Areas:
+Democratization of AI: Making advanced AI accessible to startups, SMEs, researchers.15
+Multimodal AI: Qwen-VL, QVQ, Qwen-Audio, Wan series for image, audio, video understanding and generation.15
+Reasoning: QwQ models.15
+Long Context: Qwen2.5-1M (1 million tokens).15
+AI Infrastructure & Cloud Services: Massive $53 billion (RMB 380 billion) investment in AI infrastructure and data centers over three years (announced Feb 2025).17 PAI-Model Gallery on Alibaba Cloud offers no-code deployment of open-source models.21
+Open Source Contributions & Strategy:
+Extensive open-sourcing of Qwen and Wan model families via ModelScope, Hugging Face, and GitHub under licenses like Apache 2.0 and Tongyi Qianwen research license.15 Over 100,000 Qwen-based derivative models on Hugging Face as of Feb 2025.15
+Alibaba Cloud GenAI Empowerment Program: Supports global developers and startups using Qwen models.18
+Stated commitment to open source to level the playing field for smaller businesses, advance research, build trust, and foster innovation.15
+Official GitHub: aliyun 23, modelscope (though not explicitly listed as an org, it's their platform). Hugging Face: Alibaba-Cloud.19
+Impact & Context:
+Alibaba is the fourth largest global cloud provider.18 AI-related cloud revenue saw triple-digit growth for six consecutive quarters (as of Q4 2024).18
+Investments in AI startups like Zhipu AI and Moonshot AI.18
+The $53B investment aims to make Alibaba a global AI powerhouse.18
+Alibaba's substantial $53 billion investment in AI infrastructure, announced in February 2025 18, signals a clear intent to dominate not just the model landscape but also the underlying cloud services that power AI. This financial commitment, exceeding their AI and cloud spending over the past decade 18, is crucial for supporting the development and deployment of their increasingly sophisticated Qwen and Wan model families. By open-sourcing a wide array of these models, from the versatile Qwen2.5 series with its million-token context window 15 to the innovative Wan2.1-VACE for all-in-one video editing 20, Alibaba is strategically fostering a global developer ecosystem. This dual approach—investing heavily in proprietary infrastructure while simultaneously promoting open access to advanced models—aims to attract users to their cloud platform (PAI-Model Gallery 21) and build a loyal developer base through initiatives like the GenAI Empowerment Program.18
+The sheer volume and diversity of Alibaba's open-source releases, hosted on platforms like ModelScope and Hugging Face 15, serve to democratize access to cutting-edge AI. This strategy not only accelerates innovation by allowing smaller entities to build upon their work but also positions Alibaba as a central hub in the open-source AI community. The rapid proliferation of over 100,000 derivative models based on Qwen by early 2025 15 is a strong indicator of this strategy's success in gaining widespread adoption and establishing Qwen as a foundational architecture for many developers worldwide. This approach allows Alibaba to gather feedback, drive improvement in their models, and ultimately enhance their commercial cloud offerings.
+C. Baidu: ERNIE and PaddlePaddle Driving Enterprise AI and Cloud Growth
+Baidu, a long-standing leader in Chinese AI, continues to leverage its ERNIE series of models and the PaddlePaddle deep learning platform to drive innovation, particularly in its AI cloud business and enterprise solutions.
+Models & Release Dates (2024-2025):
+ERNIE Series (Enhanced Representation through kNowledge IntEgration):
+ERNIE 4.5 Turbo & Ernie X1 Turbo (Reasoning model) launched April 25, 2025.24 Ernie X1 claims to match DeepSeek R1 performance at half the price.25
+ERNIE 4.5 series to be officially open-sourced on June 30 (likely 2025).25
+ERNIE Bot made free for all users (ahead of planned April 1, 2025 release).26
+ERNIE model processed 1.65 billion API calls daily (Dec 2024).24
+PaddlePaddle: Open-source deep learning platform, actively maintained on GitHub.28 Includes PaddleNLP (LLM/SLM library), PaddleOCR, PaddleScience, PaddleMIX (multimodal).
+Focus Areas:
+AI Cloud Business: Significant growth (26% YoY in Q4 2024).26 Provides AI services to over 60% of state-owned enterprises and private firms.26
+Enterprise Solutions: Key partnerships with Xiaomi, Zeekr.26 Focus on enhancing productivity and efficiency for businesses.26
+Multimodal Processing: ERNIE 4.5 can process text, images, audio, video, and understand memes/sarcasm.27
+Reasoning: Ernie X1 Turbo designed for advanced reasoning, mathematical/logical deduction, and contextual conversation.24
+Search Integration: Deep search capabilities of ERNIE integrated into Baidu Search.26
+Developer Ecosystem: "AI Open Plan" (sai.baidu.com) launched at Baidu Create 2025 to support developers with traffic and revenue potential for AI applications (intelligent agents, H5, mini-programs).29 Plans to cultivate 10 million AI talents over five years.29
+Open Source Contributions & Strategy:
+Strategic shift towards an open-source model with ERNIE, inspired by DeepSeek's success.26
+PaddlePaddle platform is a cornerstone of their open-source efforts, with numerous tools and model libraries available under Apache 2.0 license.28
+ERNIE 4.5 series planned for open-source release.26
+ERNIE models available on Hugging Face (e.g., baidu/ernie-code-560m).30
+Baidu Search Open Platform's "AI Open Plan" to foster diverse AI application development.29
+Impact & Context:
+Baidu's AI development aligns with China's national strategy to be a global AI leader.24 Designated leader of National Engineering Lab of Deep Learning Technology.24
+Intensifying competition in China's LLM market, with Baidu, Alibaba, and Tencent in an aggressive race.24
+Launched the first domestically developed 30,000-card AI cluster (April 2025).29
+Baidu's decision to make its ERNIE Bot free and to announce the open-sourcing of the ERNIE 4.5 model series by mid-2025 25 represents a significant strategic pivot, reportedly influenced by the disruptive success of open models like DeepSeek.26 This move is designed to accelerate the adoption of Baidu's AI technologies and expand its developer ecosystem, which is critical for its AI Cloud business. By providing powerful models like ERNIE 4.5 Turbo and the reasoning-focused Ernie X1 Turbo 24 with a clear path to open access, Baidu aims to lower the entry barrier for AI application development, particularly for enterprises and the vast number of developers it plans to cultivate.29
+The long-standing open-source PaddlePaddle platform 28 provides a robust foundation for this strategy. PaddlePaddle's comprehensive suite of tools for various AI tasks, from natural language processing (PaddleNLP) to optical character recognition (PaddleOCR) and scientific computing (PaddleScience), already supports a large community. Integrating the advanced capabilities of the ERNIE models more deeply into this open ecosystem is likely to spur further innovation and solidify Baidu's position in the enterprise AI market. The substantial growth of its AI Cloud business, already serving a majority of state-owned enterprises 26, is set to benefit from this increased openness, as more developers and companies are empowered to build solutions on Baidu's technology stack. This strategy also directly supports China's national AI ambitions by fostering a domestic talent pool and promoting widespread AI integration.24
+D. ByteDance: Strategic AI Restructuring and Multimodal Open Source Push via Seed Team
+ByteDance, the parent company of TikTok and Douyin, is undergoing a significant internal restructuring of its AI efforts, consolidating its AI Lab into the Seed AI team and making notable open-source contributions in multimodal AI and developer tools.
+Models & Release Dates (2024-2025):
+Seed1.5-VL (May 14, 2025): Multimodal large model (20B params), SOTA in 38 tasks, pre-trained on >3T multimodal tokens. Focus on general multimodal understanding, reasoning, and paving the way for intelligent agents.32
+Seed-Coder (May 12, 2025): 8B parameter open-source code model family (base, instruct, reasoning).32
+DeerFlow (May 9, 2025): Open-source community-driven deep research framework (integrates LLMs with tools like web search, crawlers, Python execution), built on LangChain/LangGraph.32
+QuaDMix (April 28, 2025): Unified framework for LLM pre-training data quality and diversity.32
+DreamO (May 13, 2025): Unified image customization framework (clothing change, face swap, style transfer).32
+VideoWorld (CVPR 2025): Generative model learning from unlabeled videos.33
+UI-TARS-1.5-7B: Open-source multimodal agent, reported to surpass OpenAI Operator on some benchmarks.34
+Focus Areas:
+Foundational Model R&D: Seed team dedicated to large model R&D.32
+Multimodal AI: Seed1.5-VL, DreamO, VideoWorld, UI-TARS-1.5 focus on integrating and understanding various data types (text, image, video).32
+AI for Programming: Seed-Coder for code generation.32
+AI Infrastructure & Frameworks: DeerFlow (research framework), QuaDMix (data framework), Triton-distributed (parallel systems), VeOmni (scaling model training).32
+Intelligent Agents: Seed1.5-VL and UI-TARS-1.5 aim to advance agent technology.32
+Open Source Contributions & Strategy:
+Active open-sourcing of models (Seed1.5-VL, Seed-Coder) and frameworks (DeerFlow, QuaDMix, Triton-distributed) via GitHub (ByteDance-Seed org) and Hugging Face (ByteDance-Seed org).32 Licenses include Apache 2.0 and MIT.
+Restructuring AI Lab into Seed team (est. 2023) to consolidate AI R&D and gain competitive edge in LLMs.32
+"Top Seed" talent program to recruit PhDs for AI research.32
+Seed team has labs in China, Singapore, and the U.S., powering over 50 real-world applications like Doubao and Coze.33
+Impact & Context:
+ByteDance is known for its powerful recommendation algorithms (developed by the original AI Lab).32
+The company is gaining attention for its generative AI work, supporting its high valuation.38
+Strategic shift to focus on foundational model research and development.32
+ByteDance's consolidation of its AI Lab into the more specialized Seed AI team in 2024-2025 32 signifies a strategic intensification of its efforts in foundational AI research, particularly in large language and multimodal models. This internal reorganization, coupled with aggressive talent acquisition through programs like "Top Seed" 32, is geared towards establishing ByteDance as a leading force in next-generation AI. The company's strength in recommendation algorithms, which powered the success of Douyin and TikTok 32, provides a strong data and engineering foundation for these new ambitions.
+The open-source releases from the Seed team, such as the multimodal Seed1.5-VL 32, the Seed-Coder series for programming 32, and frameworks like DeerFlow for automated research 32, demonstrate a commitment to contributing to and leveraging the open-source community. This strategy allows ByteDance to rapidly iterate on new ideas, attract global talent, and build a developer ecosystem around its emerging foundational models. The focus on multimodal understanding (Seed1.5-VL, DreamO 32) and intelligent agents (UI-TARS-1.5 34) aligns with key industry trends and ByteDance's expertise in content generation and user interaction, suggesting a future where these advanced AI capabilities are deeply integrated into its vast product portfolio.
+E. Tencent: Hunyuan Models and a Hybrid Open Source Strategy
+Tencent is pursuing a multifaceted AI strategy, developing its proprietary Hunyuan series of models while actively engaging with the open-source community and emphasizing responsible AI development.
+Models & Release Dates (2024-2025):
+Hunyuan (HY) Series:
+HY image generation models (ranked #1 by FlagEval Dec 2024, open-sourced).39
+HY Video Generation model (ranked #1 on Hugging Face Dec 2024, open-sourced).39
+HY 3D Generation (industry's first open-source model supporting text- and image-conditioned 3D asset generation, open-sourced).39
+Hunyuan-TurboS (ultra-large hybrid Transformer-MambaMoE model, March 2025).41
+Yuanbao AI-native application (allows selection among multiple models including CoT reasoning models).39
+Focus Areas:
+Generative AI: Image, video, and 3D asset generation.39
+Multimodal AI: Integrating various data types.39
+AI for Good & Responsible AI: Commitment to safe, ethical, and responsibly governed AI; signed AI Safety Commitment.42 Using AI for accessibility (190 accessible films, AI programming for visually impaired).42
+Product Integration: AI deployed in >700 use cases, including Weixin, games, advertising, content recommendation.39
+Open Source Contributions & Strategy:
+Actively open-sourcing multiple HY models.39
+HunyuanVideo available on Hugging Face, aiming to bridge gap between closed and open-source video foundation models.40
+MuQ (Self-Supervised Music Representation Learning) and MuQ-MuLan (music-text joint embedding) open-sourced on GitHub by Tencent AI Lab (code MIT, weights CC-BY-NC 4.0).43
+Emphasis on open source collaboration and cross-industry partnership.42
+Adopting a multi-model strategy: developing own foundation models while also utilizing external open-source models.39
+Impact & Context:
+Restructured AI unit to focus on computing power, algorithms, and data for foundational models.44
+Strategy emphasizes optimizing chip efficiency rather than just GPU acquisition.44
+Tencent's approach to open-source AI in 2024-2025 reflects a hybrid strategy. The company is investing significantly in developing its proprietary Hunyuan foundational models, achieving notable success in areas like image, video, and 3D generation, with some models like HY Video Generation topping Hugging Face leaderboards in December 2024 and subsequently being open-sourced.39 This allows Tencent to showcase its technological prowess and contribute unique capabilities to the community. Simultaneously, Tencent embraces a multi-model strategy, indicating a willingness to integrate and leverage external open-source models where beneficial.39 This pragmatic approach enables them to accelerate AI integration across their diverse product ecosystem, which spans over 700 use cases including Weixin and gaming 39, without needing to develop every component in-house.
+A distinguishing aspect of Tencent's public narrative is its strong emphasis on "Tech for Good" and responsible AI.42 Initiatives such as making numerous films accessible through AI and developing AI programming curricula for visually impaired students 42 highlight a commitment to societal benefits. This focus on ethical and responsible AI, including signing AI safety commitments 42, is increasingly important as AI technologies become more powerful and pervasive. It helps build public trust and aligns with evolving regulatory landscapes, potentially offering a competitive differentiator as users and policymakers prioritize safety and ethical considerations. The restructuring of its AI unit to sharpen focus on foundational model R&D, with an emphasis on optimizing chip efficiency rather than solely relying on massive GPU acquisition 44, further suggests a strategic, long-term vision for sustainable AI development.
+F. Huawei: Enabling the Ecosystem with MindSpore and AI Infrastructure (Primarily Proprietary Models, Open Tools)
+Huawei's AI strategy centers on its proprietary Pangu models for industry-specific solutions, supported by an open ecosystem built around its MindSpore deep learning framework and Ascend AI hardware.
+Models & Release Dates:
+Pangu series (Proprietary License): Pangu 3.0 (July 2023), Pangu 5.0 (June 21, 2024) – includes PanGu E (1B), P (10B), U (135B/230B), S (trillion-level) series.45 Pangu Ultra MoE is another significant development.46
+Pangu models are primarily focused on industry applications such as government, finance, manufacturing, mining, weather, and healthcare.45
+Focus Areas:
+Industry-Specific AI Solutions: Tailoring Pangu models for various sectors is a core focus.45
+AI Infrastructure: Development of Ascend NPUs, AI Optical Network (AI ON), and AI Data Lake solutions are key.45
+Telecommunications & ICT: Applying AI in network operations, service monetization, and mobile money.47
+Open Source Contributions & Strategy:
+MindSpore: An open-source deep learning framework (Apache 2.0 license) used for Pangu model development. It is actively maintained on GitHub and includes tools like MindInsight (visualization), MindArmour (security), and MindScience.45
+OpenHarmony: The underlying open-source project for HarmonyOS NEXT, which was released alongside Pangu 5.0.45
+CANN (Compute Architecture for Neural Networks) Execution Provider: Developed for ONNX Runtime, this facilitates the acceleration of ONNX models on Huawei's Ascend hardware.50
+Dify Integration: Huawei Cloud leverages Dify, an open-source AI application development platform, for its All-scenario LLM Solution for SMBs.51
+Ecosystem Building: Huawei's "All Intelligence Strategy" emphasizes collaboration with universities, developers (over 12 million by the end of 2024), and partners (through programs like Shining Star, Kunpeng Partner Program, and Ascend Partner Program) to create an open, full-stack ecosystem around its AI cloud services.51
+Impact & Context:
+Huawei's Pangu Ultra MoE demonstrates competitive performance on various benchmarks using its Ascend NPUs.46
+The company makes significant investments in R&D and ecosystem development, having incubated 38 foundation models and over 160 high-performance operators by the end of 2024 through its partner programs.52
+Huawei pursues a distinct, bifurcated AI strategy. While its advanced Pangu models, such as the Pangu 5.0 series released in June 2024 45, are kept proprietary and targeted at enterprise and specific industry verticals like finance and manufacturing 45, the company simultaneously fosters an open ecosystem through tools and frameworks. The open-source MindSpore deep learning framework (Apache 2.0) 49 is central to this, providing the software foundation for development on Huawei's Ascend AI chips. Furthermore, contributions like the CANN Execution Provider for ONNX Runtime 50 enhance compatibility and attract developers to its hardware platform. This approach aims to build a comprehensive hardware-software ecosystem that can compete globally, even if the flagship models themselves are not open.
+This strategy is deeply intertwined with China's national goals of technological self-sufficiency and industrial upgrading.4 By tailoring Pangu models to critical sectors and enabling a broader developer community through open tools like MindSpore and support for platforms like Dify 51, Huawei directly contributes to these objectives. The "All Intelligence Strategy" 52, with its focus on collaboration with universities and a vast network of developers and partners, is designed to create a self-sustaining ecosystem around Huawei's AI technology stack. This encourages innovation and talent development on its platforms, driving demand for its Ascend NPUs and cloud services, thereby creating a virtuous cycle that supports both its commercial interests and national strategic priorities.
+The following table summarizes the open-source contributions of these major Chinese technology companies in 2024-2025:
+Table 1: Leading Chinese Commercial AI Contributors to Open Source (2024-2025)
+Company
+Key Open Source Models/Platforms (2024-2025)
+Primary Focus Areas
+Notable 2024-2025 Features/Innovations
+Primary License(s)
+DeepSeek
+DeepSeek-V3 (671B MoE LLM), DeepSeek-R1 (Reasoning LLM), DeepSeek-VL2 (Vision-Language), DeepGEMM, DeepEP, FlashMLA, 3FS (Infrastructure tools)
+Reasoning, Coding, Efficiency, Cost-Effectiveness, Long Context, Open Infrastructure
+R1: Advanced reasoning, Long CoT. V3: 128k context, MLA, Multi-token prediction. Open-sourced weights & training methods. High performance at low training cost (V3 ~$5.6M). Efficient FP8 GEMM/MLA kernels, distributed FS.
+MIT, other open licenses for tools
+Alibaba
+Qwen2 series (up to 72B), 100 new Qwen2.5 models (0.5-72B), QwQ-32B (Reasoning), QVQ-72B (Visual Reasoning), Qwen2.5-VL, Qwen2.5-1M (1M context), Wan2.1 series (Video), VACE
+Democratization of AI, Multimodal AI, Reasoning, Long Context, AI Cloud Infrastructure, ModelScope community platform
+Qwen2.5-1M: 1M token context. QwQ: Open-source reasoning. Wan2.1-VACE: All-in-one video creation/editing. $53B AI infra investment. Extensive ModelScope offerings. Qwen2.5 claims to outperform DeepSeek V3.
+Apache 2.0, Tongyi Qianwen research
+Baidu
+ERNIE 4.5 Turbo, Ernie X1 Turbo (Reasoning), PaddlePaddle platform (PaddleNLP, PaddleOCR, etc.)
+AI Cloud Business, Enterprise Solutions, Multimodal Processing, Reasoning, Developer Ecosystem (AI Open Plan)
+ERNIE 4.5/X1 Turbo: Advanced reasoning, multimodal input. ERNIE 4.5 open-sourcing plan (June 30). ERNIE Bot free. 30,000-card AI cluster. PaddlePaddle ecosystem growth. Daily ERNIE API calls at 1.65B (Dec 2024).
+Apache 2.0 (for PaddlePaddle, ERNIE)
+ByteDance
+Seed1.5-VL (Multimodal), Seed-Coder (Code LLM), DeerFlow (Research Framework), QuaDMix (Data Framework), DreamO (Image Customization), VideoWorld, UI-TARS-1.5 (Agent)
+Foundational Model R&D, Multimodal AI, AI for Programming, AI Infrastructure, Intelligent Agents
+Seed1.5-VL: 20B params, SOTA on 38 tasks. Seed-Coder: 8B code LLM. DeerFlow: LLM+tools framework. QuaDMix: Data quality framework. Restructured AI Lab into Seed team. "Top Seed" talent program.
+Apache 2.0, MIT
+Tencent
+Hunyuan (HY) Image, Video, 3D models (open-sourced), Hunyuan-TurboS (Hybrid MoE), MuQ/MuQ-MuLan (Music/Audio)
+Generative AI, Multimodal AI, "AI for Good", Responsible AI, Product Integration
+HY Video ranked #1 on Hugging Face (Dec 2024). HY 3D first open-source text/image-to-3D. MuQ for music representation. Yuanbao AI app. Signed AI Safety Commitment. Focus on chip efficiency.
+MIT, CC-BY-NC 4.0 (for MuQ weights)
+Huawei
+MindSpore (DL framework), OpenHarmony (OS for HarmonyOS NEXT), CANN Execution Provider (for ONNX on Ascend)
+Industry-Specific AI (via Pangu), AI Infrastructure (Ascend NPUs, AI ON), Telecoms, Ecosystem Building
+Pangu 5.0 (June 2024, proprietary). MindSpore active development. CANN EP for ONNX. Dify integration for SMB LLM solution. Focus on developer & partner ecosystem (12M+ developers, 38 foundation models incubated via partners by end 2024).
+Apache 2.0 (MindSpore, CANN EP)
+
+III. The New Wave: "AI Tigers" and Rising Stars Championing Open Innovation
+Beyond the established giants, a dynamic group of AI startups, often dubbed "AI Tigers," and other specialized firms are making significant open-source contributions, driving innovation in niche areas and often challenging incumbents with agile development and focused expertise. Many of these "AI Tigers," including Zhipu AI, Baichuan AI, Moonshot AI, and MiniMax, have roots in Tsinghua University, showcasing a strong academia-industry pipeline.5
+A. Zhipu AI (THUDM, Z.ai): Advancing Agentic AI with the GLM Series
+Zhipu AI, often associated with Tsinghua University's Knowledge Engineering Group (THUDM) and now also operating as Z.ai, has been a pioneering force in China's open-source LLM landscape, with a growing focus on agentic capabilities and efficient models.
+Models & Release Dates (2024-2025):
+A significant open-source push occurred on April 15, 2025, with the announcement of the GLM-4 series and GLM-Z1 inference models. This included the foundational GLM-4-32B-0414, the reasoning-focused GLM-Z1-32B-0414, the innovative GLM-Z1-Rumination-32B-0414 (designed for autonomous tasks), and smaller 9B parameter versions of both GLM-4 and GLM-Z1.53
+CogView4, an open-source text-to-image model supporting Chinese character generation, was also announced as part of Zhipu's 2025 "Open Source Year" initiative.53
+These build upon earlier influential releases like ChatGLM-6B (2023), which was one of China's first open-source chat-focused LLMs.54
+The GLM-4 series also includes GLM-4-Voice, an end-to-end Chinese-English voice dialogue model.57
+Focus Areas:
+Agent Capabilities: A primary direction is enhancing AI agents. GLM-4-32B-0414 is optimized for tool usage, web search, and code generation. The GLM-Z1-Rumination model is specifically designed for autonomous AI agents capable of internet search, utilizing tools, and self-verifying information to handle complex, open-ended queries.53
+Efficient Inference: GLM-Z1 models are engineered for high inference speeds (e.g., GLM-Z1-32B-0414 achieving 200 tokens/second) at a significantly lower cost compared to competitors like DeepSeek-R1.53
+Reasoning & Complex Tasks: The models demonstrate strong performance in mathematics, coding, and logical reasoning.53
+Multilingual & Multimodal AI: GLM-4 models are described as open multilingual multimodal chat LMs.57 Zhipu AI's portfolio also includes visual language models like CogVLM and text/image-to-video models like CogVideo.57
+Open Source Contributions & Strategy:
+Zhipu AI declared 2025 as its "Open Source Year".54
+Their strategy involves the comprehensive open-sourcing of their GLM models (base, inference, and rumination versions) under the permissive MIT license, allowing for free commercial use and redistribution.53
+The launch of the Z.ai international domain serves as an interactive platform for users to experience these models.53
+A significant commitment to the broader ecosystem is the Zhipu Z Fund, dedicating RMB 300 million to support global AI open-source communities, irrespective of whether projects are based on Zhipu's models.54
+Alongside open releases, Zhipu offers a Model-as-a-Service (MaaS) platform (bigmodel.cn) providing API access to its base and inference models, with recent price reductions for models like GLM-4-FlashX.53
+Zhipu AI (via THUDM) maintains an active presence on GitHub and Hugging Face, where models like GLM-4-32B-0414 have garnered tens of thousands of downloads.57
+Impact & Context:
+Zhipu AI is recognized as one of China's "Six Tigers" of AI and notably predates the launch of ChatGPT.62
+The company has attracted substantial funding from major investors, including Alibaba, Tencent, and Xiaomi.63
+With a history of open-sourcing over 55 models in approximately six years, accumulating nearly 40 million downloads in the international open-source community, Zhipu AI has a strong track record.54
+Zhipu AI's declaration of 2025 as its "Open Source Year" 54, backed by the launch of the international Z.ai platform 53 and the substantial RMB 300 million Z Fund for global open-source projects 54, signals a particularly aggressive and well-funded strategy to build and lead an open-source AI ecosystem. This approach, which includes releasing powerful GLM models under the permissive MIT license 53, extends beyond merely sharing technology; it aims to cultivate a global community of developers and researchers. By financially supporting external projects, Zhipu AI is positioning itself as a central enabler of open innovation, which can, in turn, drive adoption of its own MaaS platform 53 and attract top-tier talent, creating a robust competitive advantage.
+The company is also strategically carving out a specialization in agentic AI and efficient reasoning. Models like GLM-4-32B-0414, enhanced for tool use, and particularly the GLM-Z1-Rumination model, designed for autonomous task completion 53, point to a forward-looking vision of AI systems that can interact intelligently with their environment and perform complex, multi-step operations. Marrying these advanced agentic capabilities with highly efficient inference 55 addresses a critical bottleneck in the practical deployment of sophisticated AI, making these powerful tools more accessible and economically viable for a wider range of applications. This focus on both cutting-edge functionality and real-world usability is a key element of Zhipu AI's drive for leadership.
+B. Baichuan AI: Multimodal Focus and Vertical Applications Amidst Market Shifts
+Baichuan AI, founded by the former CEO of Sogou, Wang Xiaochuan, quickly established itself as an "AI Tiger" with rapid model releases and significant funding, focusing on multimodal AI and applications in healthcare, education, and finance. However, the competitive landscape, particularly the rise of DeepSeek, has prompted strategic re-evaluations.
+Models & Release Dates (2024-2025):
+Open-source LLMs: Baichuan AI made early waves by releasing Baichuan-7B and Baichuan-13B less than 100 days after its founding in April 2023. These were followed by Baichuan2-7B and Baichuan2-13B.58 These models are available on Hugging Face under Apache 2.0 and a community license for commercial use (requiring application).65
+Proprietary LLMs: The company also developed more powerful proprietary models, including Baichuan3 (released January 2024, reportedly with over a trillion parameters) and Baichuan4 (released May 2024), which is a multimodal model featuring extended context and integrated search capabilities.58 The Baichuan4 series further includes Baichuan4-Air (utilizing a Mixture of Experts architecture for cost optimization and enhanced speed) and Baichuan4-Turbo (designed for high-frequency enterprise use).58
+Baichuan-Audio: In 2024-2025, Baichuan open-sourced Baichuan-Audio, a unified framework for end-to-end speech interaction, available on GitHub under an Apache 2.0 license. This release included details on its architecture and training strategy.66
+Baichuan-M1 series: This series of LLMs is specifically developed for the healthcare domain, with a strong emphasis on data quality assessment and sophisticated sampling strategies during training.67
+Focus Areas:
+Multimodal AI: A key focus, exemplified by the Baichuan4 model.58
+Vertical Applications: Baichuan AI has explicitly targeted healthcare as a core mission, aiming to address issues like the global shortage of skilled doctors with models like Baichuan-M1. Education and finance are other targeted verticals.58
+Speech Interaction: The open-sourcing of Baichuan-Audio underscores their work in this area.66
+Cost Optimization and Speed: The Baichuan4-Air model, with its MoE architecture, is designed to enhance speed and reduce operational costs.58
+Open Source Contributions & Strategy:
+Baichuan AI adopted an early strategy of rapidly open-sourcing its foundational LLMs (Baichuan-7B, Baichuan-13B) to build community and visibility.63
+The open release of Baichuan-Audio with architectural details continued this trend.66
+However, the company's open-source and commercialization strategy reportedly underwent a significant re-evaluation following the success of DeepSeek's high-performance, low-cost open models. There were reports in early 2025 that Baichuan had halted basic model training and was reconsidering its closed-source To B medical business due to the shifting competitive dynamics.12
+Impact & Context:
+Baichuan AI is recognized as one of China's "Six Tigers" of AI.62 It was founded in April 2023.58
+The company secured substantial funding, including a $300 million Series A1 round in October 2023 and a $691 million Series A round in July 2024, with notable investors like Alibaba, Tencent, and Xiaomi, leading to a valuation of $2.7 billion to $2.8 billion.58
+Baichuan AI was one of the first companies in China to receive regulatory approval for its open-source LLM.62
+The trajectory of Baichuan AI illustrates the intense competitive pressures within China's AI sector. Despite its strong start, marked by rapid open-source releases like Baichuan-7B/13B 63 and significant backing from tech giants 58, the emergence of highly efficient and low-cost open models from competitors like DeepSeek created what has been described as the "DeepSeek Shock".12 This development reportedly led Baichuan to pause its foundational model training and reassess its commercial strategy, especially concerning its business-to-business medical offerings.12 This situation underscores the risk of rapid obsolescence and the need for continuous strategic adaptation in the fast-evolving AI model race.
+In response, Baichuan AI appears to be navigating this challenge by attempting to balance broad-based open-source engagement with the development of specialized, potentially proprietary models for high-value vertical markets. The continued development and open-sourcing of models like Baichuan-Audio 66 help maintain community presence and brand visibility. Concurrently, focusing on domain-specific models such as the Baichuan-M1 series for healthcare 67 and the enterprise-focused Baichuan4-Turbo 58 allows the company to target niches where deep, specialized knowledge and tailored data can offer a competitive advantage. This hybrid approach seeks to harness the benefits of open innovation while preserving avenues for direct monetization, though the market continues to prove that this balance is a dynamic and challenging one to maintain.
+C. Moonshot AI (YueZhiAnMian): Pushing Boundaries with Kimi and Long-Context Models
+Moonshot AI (YueZhiAnMian) has rapidly distinguished itself as an "AI Tiger" by focusing on large language models capable of processing exceptionally long contexts and delivering strong multimodal reasoning, with a significant commitment to open-sourcing its research and models.
+Models & Release Dates (2024-2025):
+Kimi Chatbot: The flagship product, with Kimi 1.5 released on January 20, 2025. Kimi 1.5 is a multimodal model claiming performance comparable to OpenAI's o1 in mathematics, coding, and multimodal reasoning.58 A key feature is its ability to handle extremely long inputs, reportedly up to 2 million Chinese characters as of March 2024.68 Kimi is accessible via kimi.ai and moonshot.cn.69
+Open-source Kimi-VL: A vision-language model featuring a Mixture-of-Experts (MoE) architecture with 2.8 billion active parameters. It supports a 128,000-token context window and excels at handling long documents, complex reasoning, and understanding user interfaces. It has shown strong performance on benchmarks like LongVideoBench and MMLongBench-Doc, sometimes outperforming larger models.69 A specialized version, Kimi-VL-Thinking, is trained for longer reasoning steps.69
+Open-source Kimi-Audio: Launched around April 27, 2025, this is a universal audio foundation model designed for tasks like speech recognition (ASR), audio question answering (AQA), audio captioning (AAC), speech emotion recognition (SER), and end-to-end speech conversation. It was pre-trained on over 13 million hours of diverse audio data.41
+Open-source Muon Optimizer: Moonshot AI has open-sourced its Muon optimizer, designed to improve the efficiency of LLM training, along with pretrained model checkpoints.68
+Mooncake Serving Platform: The architecture for this KV-centric disaggregated LLM serving platform, which won a Best Paper award at USENIX FAST 2025, has its code and data open-sourced.68
+Kimina-Prover Preview: This project focuses on large formal reasoning models incorporating reinforcement learning, with technical reports and model weights released openly.72
+MoBA (Mixture of Block Attention): Research and code for this technique for long-context LLMs have been open-sourced.72
+Focus Areas:
+Long Context Length: This is a hallmark of Moonshot AI, demonstrated by Kimi's 2 million character capacity, Kimi-VL's 128k token window, and research like MoBA.68
+Multimodal Reasoning: A core strength, evident in Kimi 1.5, Kimi-VL, and Kimi-Audio, which integrate and reason over text, image, and audio data.58
+Scalable General Architecture & AGI: The founder, Yang Zhilin, has stated the goal of building foundational models to achieve Artificial General Intelligence (AGI).68
+Resource Efficiency and Optimized Serving: Kimi-VL's design with a small active parameter count, the Muon optimizer, and the Mooncake platform all point to a focus on efficiency.68
+Formal Reasoning: The Kimina-Prover Preview project highlights work in this advanced area.72
+Open Source Contributions & Strategy:
+Moonshot AI has a strong commitment to open source, actively releasing models (Kimi-VL, Kimi-Audio, Kimina-Prover), tools (Muon optimizer), serving platforms (Mooncake code/data), and research papers (MoBA, Kimi K1.5 tech report). These are available via their GitHub organization (MoonshotAI) and Hugging Face organization (moonshotai).68 Many projects use the MIT license.
+The Kimi chatbot is offered through a web interface, and the Kimi Open Platform provides API access for developers.41
+Impact & Context:
+Moonshot AI is a prominent member of China's "AI Tigers".62 It was founded in March 2023.68
+The company has attracted significant investment, including a $1 billion Series B round led by Alibaba in February 2024, and a subsequent $300 million round in August 2024 involving Tencent and Gaorong Capital, reaching a valuation of $3.3 billion.58
+Moonshot AI has rapidly carved out a distinctive position in the competitive AI landscape through its profound focus on models capable of handling exceptionally long contexts and its development of efficient, powerful multimodal systems.68 The ability of its Kimi chatbot to process up to 2 million Chinese characters 68 and the Kimi-VL model's 128,000-token context window 69 are significant technical achievements that address a critical need for AI systems to comprehend and reason over extensive information. This leadership in long-context processing is further solidified by their open research and tools like the MoBA attention mechanism.72 By open-sourcing not only these advanced models (Kimi-VL, Kimi-Audio) but also fundamental components like the Muon optimizer for training 68 and the award-winning Mooncake serving platform 68, Moonshot AI is contributing deeply to the open-source community's infrastructure and research capabilities. This strategy fosters a collaborative environment, potentially accelerating their own R&D through community engagement and feedback, and establishes them as key innovators in creating more capable and practical AI.
+Within a remarkably short timeframe since its founding in March 2023 68, Moonshot AI has demonstrated an impressive ability to diversify its open-source offerings beyond general-purpose LLMs. The expansion into specialized domains such as vision-language interaction with Kimi-VL 69, comprehensive audio understanding with Kimi-Audio 72, and even advanced formal reasoning with Kimina-Prover 72 showcases a strategic push to build a comprehensive suite of cutting-edge AI tools. This rapid specialization, all within the 2024-2025 period, allows Moonshot AI to address a wider array of complex use cases and attract a diverse set of developers and researchers. Such broad technological demonstration is crucial for a company with stated AGI ambitions 68 and substantial venture backing 58, enabling it to build a strong foundation for future growth and impact.
+D. 01.AI (YiLingWanWu): Bilingual Prowess with the Yi Model Family
+01.AI, founded by Kai-Fu Lee, has quickly gained prominence as an "AI Tiger" by developing the Yi series of open-source models, which are notable for their strong bilingual (English/Chinese) capabilities and competitive performance in areas like coding, mathematics, and reasoning.
+Models & Release Dates (2024-2025):
+The Yi Series of models are open-sourced under the Apache 2.0 license and are designed as bilingual (English/Chinese) LLMs, trained on a 3 Terabyte multilingual corpus.74
+Yi-VL-6B & Yi-VL-34B (Vision-Language models) were released on January 23, 2024. Yi-VL-34B achieved state-of-the-art results on benchmarks like MMMU and CMMMU at the time of release.74
+Yi-9B was open-sourced on March 6, 2024, demonstrating strong performance for its size in code, math, and common-sense reasoning.74
+Yi-9B-200K, featuring a 200,000-token context window, was released on March 16, 2024.74 Its long-text capability was notably enhanced shortly after release.74
+The Yi-1.5 series models were open-sourced on May 13, 2024. This series brought improvements in coding, math, reasoning, and instruction-following abilities, and includes models in 6B, 9B, and 34B parameter sizes with varying context lengths (4K, 16K, 32K).74
+Yi-Coder: Launched in September 2024, Yi-Coder is an open-source code generation LLM available in 1.5B and 9B parameter versions. It supports 52 programming languages and features a 128,000-token context length.77
+Yi-Lightning: Released in October 2024, this model focuses on cost-efficient inference.79
+These 2024-2025 releases build upon earlier models from late 2023, such as the initial Yi-6B/34B and their 200K context versions.74
+Focus Areas:
+Bilingual (English/Chinese) LLMs: This is a core design principle of the Yi series, with models trained extensively on multilingual data.74
+Coding, Mathematics, and Reasoning: The Yi-1.5 series and Yi-9B specifically target strong performance in these demanding tasks.74 Yi-Coder is dedicated to code generation.77
+Vision-Language Capabilities: The Yi-VL models address multimodal tasks involving both images and text.74
+Long Context Processing: Models like Yi-9B-200K and Yi-Coder (128K) are designed to handle extensive input sequences.74
+Cost-Efficient Inference: Yi-Lightning is aimed at reducing the cost of deploying AI models.79
+Open Source Contributions & Strategy:
+01.AI has adopted a strong open-source strategy for its Yi model family, releasing models, code, and technical reports under the Apache 2.0 license.74 This includes making weights and tokenizer available via Hugging Face, ModelScope, and WiseModel.74
+The company emphasizes that while the Yi models adopt the Llama architecture for its stability and compatibility, they are not derivatives of Llama as they do not use Llama's weights and are trained on independently created datasets and pipelines.74
+01.AI maintains an active presence on GitHub (01-ai organization) and Hugging Face (01-ai organization) for model distribution and community engagement.74
+The stated rationale for their open-source approach is that many AI developers do not require or cannot afford the largest proprietary models, though 01.AI also plans to develop proprietary models for customers.79
+Impact & Context:
+01.AI is one of China's "Six Tigers" of AI.62 Founded in March 2023 by Kai-Fu Lee.79
+Achieved unicorn status (over $1 billion valuation) within eight months of launching, with backing from Alibaba Group and Xiaomi.62
+The company has focused on efficient model training, reportedly training models with significantly fewer GPUs and lower costs compared to some Western counterparts.79
+01.AI has strategically positioned itself by championing high-performing bilingual (English/Chinese) models through its open-source Yi series.74 This focus on bilingualism is particularly relevant given China's large domestic market and its increasing global interactions. By training their models on a massive 3 Terabyte multilingual corpus and independently developing their own high-quality datasets and training pipelines 74, 01.AI has been able to achieve competitive performance against other leading open-source models, and even some proprietary ones, in both English and Chinese benchmarks.74 The consistent release of new Yi versions throughout 2024, each targeting improvements in areas like coding, math, reasoning, vision-language capabilities, and long context processing 74, demonstrates a rapid iteration cycle and a commitment to broadening the utility of their open-source offerings under the Apache 2.0 license.74
+The company's emphasis on efficient model development and deployment, as highlighted by the cost-effective training of their models and the release of Yi-Lightning for cheaper inference 79, addresses a critical barrier to widespread AI adoption. By providing powerful open-source alternatives that are both high-performing and economically viable, 01.AI caters to a broad segment of the developer community that may not have access to, or the need for, the largest and most expensive proprietary models.79 This approach not only fosters a strong developer ecosystem around the Yi models but also aligns with the broader trend of democratizing access to advanced AI technologies, enabling innovation across a wider range of applications and industries. Their rapid ascent to unicorn status 62 underscores the market's validation of this strategy.
+E. MiniMax (MingZhiJingChen): Multimodal Innovation with Long Context and Open Models
+MiniMax has emerged as a significant player among China's "AI Tigers," focusing on large-scale AI models with strong multimodal capabilities, ultra-long context processing, and an increasing commitment to open-source principles.
+Models & Release Dates (2024-2025):
+MiniMax-01 Series (Open-source, MIT License): Unveiled in January 2025, this series includes 80:
+MiniMax-Text-01: A language model with 456 billion total parameters (45.9B activated per token), featuring a novel Lightning Attention mechanism and MoE. It supports a context window of up to 4 million tokens during inference.80
+MiniMax-VL-01: A multimodal vision-language model built upon MiniMax-Text-01, integrating a 303M parameter Vision Transformer. It supports dynamic resolution image processing.80
+ABAB 6.5 series: A Mixture of Experts language model officially launched on April 17, 2024.82
+Hailuo AI platform:
+Launched March 2024 as a multimodal LLM consumer platform for AI text and music generation.58
+video-01: Text-to-video model under Hailuo AI, launched September 2024.82
+Audio functions for Hailuo AI launched January 20, 2025.82
+Model T2V-01-Director and I2V-01-Director (Hailuo AI Video-01 family) released January 28, 2025, for advanced video creation.82
+Speech-02: A new text-to-speech model released in April 2025, supporting over 30 languages and processing up to 200,000 characters.82 Earlier Speech-01-HD was also available.84
+Focus Areas:
+Ultra-Long Context: MiniMax-Text-01's 4 million token context is a key differentiator, aimed at the "AI Agent era".80
+Multimodal Capabilities: Strong focus on integrating text, vision (MiniMax-VL-01), audio (Speech-02, Hailuo audio), and video (Hailuo video-01).58
+Innovative Architectures: Implementation of Lightning Attention at scale in MiniMax-01 for computational efficiency.81
+Consumer-facing Applications: Hailuo AI platform and early success with the Talkie app (launched June 2023).58
+AI Agents: The long context capabilities are explicitly linked to enabling more complex AI agents.81
+Open Source Contributions & Strategy:
+Strategic shift towards open source: Founder Yan Junjie stated, "If we had to start over, we would have gone open source on day one".85
+MiniMax-Text-01 and MiniMax-VL-01 models are open-sourced under the MIT license and available on GitHub (MiniMax-AI/MiniMax-01) and Hugging Face (MiniMaxAI organization).80
+Integration with China's National Supercomputing Internet Platform, providing open model weights and API interfaces for MiniMax-Text-01 and MiniMax-VL-01 to developers.80
+Open-source utilities for TTS workflows available on GitHub (Audio-Tools repository).84
+API platform for developers with cost-effective pricing (e.g., MiniMax-01 API at $0.2/million input tokens, $1.1/million output tokens).80
+Impact & Context:
+One of China's "Six Tigers" of AI.62 Founded December 2021.82
+Substantial funding, including a $600 million round led by Alibaba in March 2024, valuing the company at $2.5 billion.62
+Aiming to redefine its market identity from product strength to innovation, open source, and technological leadership.85
+MiniMax's strategic pivot towards open source, particularly with the release of its powerful MiniMax-01 series (Text-01 and VL-01) in January 2025 under the permissive MIT license 80, marks a significant development. This move, underscored by founder Yan Junjie's reflection on wishing for an earlier open-source start 85, indicates a recognition of the power of community-driven innovation and the competitive advantages of transparency in the current AI climate. The integration of these advanced models into the National Supercomputing Internet Platform with open weights and APIs further amplifies their accessibility and potential impact within China's developer ecosystem.80 This strategy aims to shift MiniMax's identity towards being a leader in foundational technology and open innovation, rather than just a provider of consumer-facing AI products like Hailuo.85
+A key technological differentiator for MiniMax is its focus on ultra-long context processing, with MiniMax-Text-01 supporting an impressive 4 million tokens.80 This capability is explicitly aimed at enabling the next generation of sophisticated AI agents that require sustained memory and the ability to process vast amounts of information.81 Combined with their innovative Lightning Attention architecture, designed to drastically reduce computational costs while handling such long contexts 81, MiniMax is addressing critical challenges in scaling AI capabilities. Their strong push into multimodal AI, with models for vision (VL-01), video (Hailuo video-01), and advanced speech synthesis (Speech-02) 82, further positions them at the forefront of developing versatile and powerful AI systems. This combination of open-sourcing advanced, long-context multimodal models with novel efficient architectures demonstrates a clear strategy to compete on both technological innovation and accessibility.
+F. StepFun AI: Advancing Open Source Generative AI for Image and Video
+StepFun AI, another of China's "AI Tigers," has made notable open-source contributions in the generative AI space, particularly focusing on image editing and text-to-video generation in 2024-2025.
+Models & Release Dates (2024-2025):
+Step1X-Edit (Image Editing Model): Officially launched on Hugging Face and GitHub on April 24-25, 2025.87 Technical report, inference code, model weights, evaluation code, and benchmark data (GEdit-Bench) were released.87 An FP8 quantized version (Step1X-Edit-FP8) and ComfyUI plugins became available through community contributions shortly after.87
+Step-Video-TI2V (Text-driven Image-to-Video Model): Introduced in a technical report dated March 20, 2025.89 This model builds upon the earlier Step-Video-T2V (30B parameter text-to-video model).89 Open-sourced on GitHub.90
+Step-Audio: An open-source audio model series, including Step-Audio-Chat and Step-Audio-TTS-3B, available on Hugging Face and GitHub.90
+Step1X-3D: Focused on high-fidelity and controllable generation of textured 3D assets, open-sourced on GitHub.90
+Focus Areas:
+Image Editing: Step1X-Edit aims for performance comparable to closed-source models like GPT-4o and Gemini2 Flash, using a Multimodal LLM (Qwen-VL) and a diffusion image decoder (DiT) for high-precision editing via natural language.87
+Text-to-Video & Image-to-Video Generation: Step-Video-TI2V focuses on generating videos from images and text prompts, offering control over motion dynamics.89
+Generative AI Tools & Benchmarks: Development of GEdit-Bench for image editing evaluation and Step-Video-TI2V-Eval for image-to-video evaluation.87
+Multimodal AI: Integrating language, image, and video modalities.
+3D Asset Generation: Step1X-3D.90
+Audio Generation & Interaction: Step-Audio series.90
+Open Source Contributions & Strategy:
+Strong commitment to open source with models like Step1X-Edit and Step-Video-TI2V released under permissive licenses like Apache 2.0 and MIT via GitHub (stepfun-ai org) and Hugging Face (stepfun-ai org).87
+Provides detailed model usage instructions, requirements, and inference scripts.87
+Encourages community contributions, as seen with ComfyUI plugins and FP8 model weight updates for Step1X-Edit.87
+Aims to build an "open-source design platform" with a model ecosystem, template marketplace, and cloud inference services.88
+Impact & Context:
+One of China's "Six Tigers" of AI.62 Founded April 2023.91
+StepFun's open-source releases have generated enthusiastic community responses.88
+Their models, like Step1X-Edit, require substantial GPU resources (e.g., ~50GB VRAM for 1024x1024 resolution) for full capability.88
+StepFun AI has rapidly established itself as a key contributor to the open-source generative AI landscape, particularly with its 2025 releases of Step1X-Edit for image manipulation 87 and Step-Video-TI2V for video generation.89 Their strategy of open-sourcing these sophisticated tools, complete with technical reports, benchmarks like GEdit-Bench 87, and model weights under permissive licenses (Apache 2.0, MIT) 88, fosters transparency and encourages community engagement. This approach not only accelerates the development and refinement of their models through external contributions but also positions StepFun AI as a provider of cutting-edge, accessible tools for creators and developers.
+The technical architecture of models like Step1X-Edit, which integrates powerful multimodal LLMs (like Qwen-VL) with advanced diffusion transformers (DiT) 88, demonstrates a focus on achieving performance comparable to leading closed-source alternatives. By providing detailed usage guides and encouraging community-driven enhancements, such as ComfyUI plugins for Step1X-Edit 87, StepFun AI is actively building an ecosystem around its technologies. Their ambition to create a comprehensive "open-source design platform" 88 suggests a long-term vision of becoming a central hub for open generative AI innovation, offering not just models but a suite of resources for the creative community. This commitment to open, high-performance generative tools is a defining characteristic of their contribution to China's AI surge.
+G. Shengshu Technology (Shengshu AI): Advancing Video Generation with Vidu
+Shengshu Technology has quickly gained recognition for its Vidu AI video generation platform, aiming to compete with global leaders like OpenAI's Sora by focusing on high-quality, consistent, and dynamic video creation.
+Models & Release Dates (2024-2025):
+Vidu Platform: AI video generation platform. China's first video large model, "Vidu," was unveiled in April 2024 in collaboration with Tsinghua University, based on their original U-ViT architecture (integrating Diffusion and Transformer).92 It could initially generate 16-second, 1080P HD videos.92
+Vidu Q1 (April 22, 2025): High-performance generative AI video model with enhanced image quality (up to 1080p), cinematic transitions ("First-to-Last Frame" tech), precise AI audio effects (48kHz HD), and improved animation style consistency. Based on ShengShu's U-ViT architecture.92
+Vidu 2.0 (Announced Jan 15, 2025): Update to the Vidu application, focused on speed (clip generation <10 seconds), cost reduction (55% cheaper than industry average), and user-friendliness (prompt "Templates").94 Commercially available since July 2024.94
+Focus Areas:
+Text-to-Video, Image-to-Video, Reference-to-Video: Vidu supports multiple creation modes, including maintaining consistency with reference subjects (characters, objects, scenes) and using first/last frames for transitions.93
+High-Quality Video Generation: Emphasis on cinematic quality, smooth transitions, dynamic motion, and consistency in elements like characters and scenes.93
+Multimodal Integration: Combining text, image, 3D, and video within their U-ViT framework.96
+Content Creation Efficiency & Cost Reduction: Vidu aims to significantly reduce video production costs and time.62
+Industry Applications: Targeting art, design, gaming, filmmaking, social media, advertising, and cultural tourism.96 Secured rights to adapt online novels into concept shorts.62
+Open Source Contributions & Strategy:
+Shengshu Technology's core U-ViT architecture (fusing Diffusion and Transformers) was introduced in 2022 and is foundational to Vidu.94 While academic papers on U-ViT and related techniques are published 96, the Vidu platform itself and its specific model versions (Q1, 2.0) do not appear to be explicitly open-sourced in the provided materials for 2024-2025.
+Vidu Q1 API was launched, and a text-to-audio model was released simultaneously (May 10, 2025).92 An API platform for Vidu was announced earlier, allowing enterprise/developer integration.62
+The company emphasizes its mission to develop advanced multimodal generative models and enhance human creativity and productivity.94
+Impact & Context:
+Founded in March 2023, Shengshu Technology is a rising AI startup in China.62
+Vidu is positioned as a competitor to OpenAI's Sora.62
+Strategic partnerships with Zhipu AI (large model joint innovation) and Feishu (integration into multi-dimensional tables).92
+Shengshu Technology, through its Vidu platform, is making a concentrated push in the competitive AI video generation market, with a clear focus on delivering high-fidelity, dynamic, and consistent video content.93 The development of Vidu is rooted in their original U-ViT architecture, which innovatively combines Diffusion and Transformer technologies, first introduced in 2022 and forming the backbone of their models unveiled in 2024 and 2025.92 Releases like Vidu Q1 in April 2025 brought significant enhancements in image quality, cinematic transitions, and audio effects 93, while the Vidu 2.0 update announced in January 2025 emphasized dramatic improvements in generation speed and cost-efficiency.94 This rapid iteration aims to make sophisticated video creation tools more accessible to a broader range of users, from independent creators to enterprises in sectors like filmmaking, advertising, and gaming.62
+While Shengshu Technology actively publishes research related to its underlying technologies like U-ViT and various multimodal training techniques 96, the Vidu platform and its specific iterations (Vidu Q1, Vidu 2.0) do not appear to be explicitly open-sourced for general public use or modification based on the available information for 2024-2025. Instead, the company seems to be focusing on providing access through its Vidu Studio platform 93 and APIs for enterprise and developer integration.62 This strategy allows them to maintain control over their core IP while still enabling broader application and monetization of their advanced video generation capabilities. Their partnerships, such as with Zhipu AI for joint model innovation 92, suggest a collaborative approach within the industry, even if their primary product offering remains proprietary.
+H. Infinigence AI: Optimizing AI Infrastructure and Reducing Compute Costs
+Infinigence AI has carved out a distinct niche by focusing on the foundational layer of AI deployment: creating infrastructure and computing clusters designed to drastically reduce the cost and complexity of running AI models.
+Models & Release Dates (2024-2025):
+Infinigence AI does not primarily focus on developing and releasing its own large language or generative models in the same vein as other "AI Tigers." Instead, its contributions are centered on AI infrastructure optimization.
+Open-source projects on GitHub (infinigence org):
+Infini-Megrez & Infini-Megrez-Omni: Python-based projects, with Omni updated Feb 2025. These appear to be core model-related or serving-related frameworks.100 Infini-Megrez was last updated Dec 2024.100
+FlashOverlap (Cuda, updated May 2025): A lightweight design for computation-communication overlap.100
+Semi-PD (Python, updated May 2025): A prefill & decode disaggregated LLM serving framework with shared GPU memory and fine-grained compute isolation.100
+SpecEE (C++, updated Apr 2025): Repository for "Accelerating Large Language Model Inference with Speculative Early Exiting (ISCA25)".100
+LVEval: Repository for the LV-Eval Benchmark.100
+InfiniWebSearch: Demo built on Megrez-3B-Instruct with web search integration (Dec 2024).100
+Focus Areas:
+AI Compute Cost Reduction: A primary goal is to make AI models as accessible as utilities like water and electricity by dramatically cutting deployment costs.62 Claimed to have reduced AI compute power cost by 10,000 times in a specific collaboration.103
+AI Infrastructure and Computing Clusters: Developing solutions to optimize the synergy between hardware and software for AI deployment.62
+Efficient LLM Serving & Inference: Projects like Semi-PD and SpecEE target optimizing LLM inference performance and resource utilization.100
+Heterogeneous Computing Power Activation: Aiming to utilize diverse computing resources efficiently.62
+Open Source Contributions & Strategy:
+Maintains an active GitHub presence (infinigence) with several open-source projects under licenses like Apache 2.0.100
+Their open-source work directly reflects their focus on infrastructure optimization, LLM serving, and efficient computation.
+Collaborated with the Shanghai Foundation Model Innovation Center and INESA to launch a "compute power supermarket" in February (year not specified, likely 2024 or early 2025 given context).103
+Provides API key access for models like Qwen-72b-instruct to support challenges like the AgentSociety Challenge @ WWW 2025.104
+Impact & Context:
+Founded in May 2023, Infinigence AI quickly grew, securing approximately 1 billion yuan (US$137 million) in funding by late 2024/early 2025.62
+A resident company at the Shanghai Foundation Model Innovation Center, benefiting from its ecosystem and support.103
+Their work is crucial for enabling domestic large-model algorithms to operate efficiently across various Chinese-made chips, strengthening China's computing power industry.105
+Infinigence AI has adopted a highly strategic focus on tackling one of the most significant bottlenecks in the widespread adoption of artificial intelligence: the cost and complexity of AI computation and infrastructure.62 Rather than directly competing in the race to build ever-larger foundational models, Infinigence AI is concentrating on the critical enabling layer that supports these models. Their claim of reducing AI compute power costs by as much as 10,000 times in specific collaborations 103 and their overarching goal to make AI model deployment as accessible as a utility service 62 highlight an ambition to fundamentally alter the economics of AI. This focus is particularly vital in an environment where access to cutting-edge hardware can be constrained and where optimizing the use of available resources is paramount.
+The company's open-source contributions on GitHub, such as Semi-PD for disaggregated LLM serving, FlashOverlap for computation-communication overlap, and SpecEE for accelerating LLM inference 100, directly reflect this infrastructure-centric approach. By open-sourcing these tools and frameworks, primarily under the Apache 2.0 license, Infinigence AI not only contributes valuable solutions to the developer community but also likely aims to standardize and promote efficient practices for deploying large models, potentially driving adoption of their broader commercial offerings or services. Their collaboration with the Shanghai Foundation Model Innovation Center to launch a "compute power supermarket" 103 further underscores their commitment to democratizing access to AI compute resources, which is a critical factor for fostering innovation across the entire AI ecosystem in China.
+The following table summarizes the open-source contributions of these rising Chinese AI firms in 2024-2025:
+Table 2: Key Open Source Contributions from Rising Chinese AI Firms (2024-2025)
+Company
+Key Open Source Models/Platforms (2024-2025)
+Primary Focus Areas
+Notable 2024-2025 Features/Innovations
+Primary License(s)
+Zhipu AI (Z.ai)
+GLM-4 series (32B/9B), GLM-Z1 inference models (32B/9B), GLM-Z1-Rumination (32B Agent), CogView4 (Text-to-Image), GLM-4-Voice. Z.ai platform.
+Agent Capabilities, Efficient Inference, Reasoning (Math, Code, Logic), Multimodal AI (Vision, Voice, Text-to-Image). Ecosystem Building (Z Fund).
+GLM-Z1: 200 tokens/sec inference, 1/30th cost of DeepSeek-R1. Rumination: Autonomous agent tasks. CogView4: Chinese character generation. "Open Source Year 2025". RMB 300M Z Fund for open source.
+MIT
+Baichuan AI
+Baichuan2-7B/13B, Baichuan-Audio (Speech Interaction Framework), Baichuan-M1 series (Healthcare LLM components/research).
+Multimodal AI (Baichuan4 series - proprietary), Vertical Applications (Healthcare, Education, Finance), Speech Interaction, Cost Optimization.
+Baichuan-Audio: Open-sourced end-to-end speech framework. Baichuan-M1: Focus on medical data quality/sampling. Baichuan4-Air (MoE). Reported halt in basic model training post-DeepSeek.
+Apache 2.0, Community License
+Moonshot AI
+Kimi-VL (2.8B active params, 128k context Vision-Language), Kimi-Audio (Universal Audio), Muon Optimizer, Mooncake (Serving Platform code/data), Kimina-Prover Preview (Formal Reasoning), MoBA (Long Context).
+Long Context Length (Kimi 2M chars), Multimodal Reasoning (Kimi 1.5), Resource Efficiency, Scalable Architecture, AGI, Formal Reasoning.
+Kimi 1.5: o1-level performance. Kimi-VL: Efficient MoE, UI understanding. Kimi-Audio: 13M hrs pre-training. Muon: Efficient LLM training. Mooncake: FAST'25 Best Paper. Kimina-Prover: RL for formal reasoning.
+MIT
+01.AI
+Yi-VL (6B/34B Vision-Language, Jan'24), Yi-9B (Mar'24), Yi-9B-200K (Mar'24), Yi-1.5 series (6B/9B/34B, May'24), Yi-Coder (1.5B/9B Code LLM, Sep'24), Yi-Lightning (Oct'24).
+Bilingual (English/Chinese) LLMs, Coding, Math, Reasoning, Vision-Language, Long Context, Cost-Efficient Inference.
+Yi-VL-34B: SOTA on MMMU/CMMMU (Jan'24). Yi-1.5: Improved coding/math/reasoning. Yi-Coder: 128k context, 52 languages. Yi-Lightning: Low-cost inference. Independent datasets/pipelines.
+Apache 2.0
+MiniMax
+MiniMax-Text-01 (456B/45.9B active, 4M token context), MiniMax-VL-01 (Vision-Language) (Jan'25). Audio-Tools repository.
+Ultra-Long Context, Multimodal AI (Vision, Video, Audio - Hailuo platform), Innovative Architectures (Lightning Attention), Consumer Apps, AI Agents.
+MiniMax-01: Lightning Attention, 4M token context. Speech-02 (Apr'25): 30+ languages, 99% human voice similarity. Integration with National Supercomputing Platform (open weights/APIs). Strategic shift to open source.
+MIT
+StepFun AI
+Step1X-Edit (Image Editing, Apr'25), Step-Video-TI2V (Image-to-Video, Mar'25), Step-Audio series, Step1X-3D. GEdit-Bench, Step-Video-TI2V-Eval benchmarks.
+Image Editing, Text/Image-to-Video Generation, Multimodal AI, 3D Asset Generation, Audio Generation, Open Benchmarks.
+Step1X-Edit: Qwen-VL + DiT, challenges GPT-4o. Step-Video-TI2V: Control over motion dynamics. GEdit-Bench for image editing eval. Community contributions (ComfyUI plugins). Aiming for "open-source design platform."
+Apache 2.0, MIT
+Shengshu Technology
+U-ViT architecture research papers. Vidu platform (Q1 Apr'25, Vidu 2.0 Jan'25) and APIs are primary access points.
+Text/Image/Reference-to-Video Generation, High-Quality Video, Multimodal Integration, Content Creation Efficiency.
+Vidu Q1: 1080p, cinematic transitions, AI audio. Vidu 2.0: <10s generation, 55% cheaper. U-ViT architecture (Diffusion+Transformer). Focus on commercial platform and APIs rather than direct model open-sourcing.
+N/A (Platform/API access)
+Infinigence AI
+Infini-Megrez, Infini-Megrez-Omni, FlashOverlap (Compute-Communication Overlap), Semi-PD (LLM Serving), SpecEE (LLM Inference Acceleration), LVEval (Benchmark).
+AI Compute Cost Reduction, AI Infrastructure, Efficient LLM Serving & Inference, Heterogeneous Computing.
+Semi-PD: Disaggregated LLM serving. SpecEE: Speculative early exiting for inference. FlashOverlap: Lightweight overlap. "Compute power supermarket" collaboration. Focus on enabling efficient operation of domestic LLMs on Chinese chips.
+Apache 2.0
+
+IV. Academic and Research Institutions: Fueling the Open Source Engine
+Chinese universities and national research laboratories are pivotal in driving AI innovation and contributing to the open-source ecosystem. They not only produce a significant volume of AI research and talent but also release influential open-source projects and platforms.
+A. Tsinghua University: A Hub for AI Talent and Foundational Model Startups
+Tsinghua University stands out as a leading academic institution in AI, contributing significantly through research, talent development, and as an incubator for influential AI startups, including several "AI Tigers" like Zhipu AI, Baichuan AI, Moonshot AI, and MiniMax.4
+Key Open Source Projects & Focus (2024-2025):
+AgentCPM-GUI (May 2025): Jointly released by Tsinghua's THUNLP Lab and Mianbi Intelligence, this is reportedly the first open-source GUI (Graphical User Interface) agent specialized for Chinese mobile applications. Built on Mianbi's MiniCPM-V model (8B parameters), it uses phone screen images as input to identify interface elements and execute user instructions across over 30 mainstream Chinese apps (e.g., AutoNavi Map, Bilibili). It boasts high efficiency with an average action length of 9.7 tokens.106 The project aims to promote intelligent upgrades in the Android ecosystem by lowering development costs for intelligent interaction in Chinese apps.106
+Institute for AI Industry Research (AIR): Actively engages in research across AI+IoT, AI+Transportation, AI+Healthcare, Big Data Intelligence, and more.107 AIR established a Joint Research Center for Scalable Large Model Intelligence Technology (SIA Lab) with ByteDance in October 2024, focusing on pre-trained LLMs to enhance AI performance in internet domains.107
+Tsinghua Embodied AI Lab (TEA Lab): GitHub repositories include diffusion_reward (ECCV 2024), TwoByTwo (CVPR 2025, multi-task pairwise objects assembly), DemoGen (RSS25, synthetic demonstration generation), and Robo-ABC (ECCV 2024, affordance generalization for robot manipulation), mostly under MIT license.108
+Open Source Philosophy: While not explicitly detailed as a singular "philosophy" in the snippets, Tsinghua's actions demonstrate a strong inclination towards impactful research and fostering innovation that can be practically applied. The launch of AgentCPM-GUI as a fully open-source project is a clear example.106 The university's broader initiatives emphasize interdisciplinary integration (e.g., AI+X), serving national strategic needs, and international collaboration.109 The establishment of the Department of Statistics and Data Science in July 2024, leveraging strengths in engineering and business to advance statistical methods in AI and big data, further points to a commitment to foundational and applied AI research.109 Symposia, like the NUS-Tsinghua PhD Symposium on AI in Urban Design (Nov 2024), promote research exchange.110
+Ranking & Output: Tsinghua University is consistently ranked as a top academic institution for AI research paper output.4
+The development and open-sourcing of AgentCPM-GUI by Tsinghua University's THUNLP Lab in collaboration with Mianbi Intelligence 106 is a significant practical contribution. This tool directly addresses the complexities of interacting with diverse Chinese mobile applications, a domain where localized understanding and optimization are crucial. By making AgentCPM-GUI open source, Tsinghua is not only showcasing its technical capabilities but also providing a foundational tool that can significantly lower the barrier for developers to create more intelligent and automated user experiences within the Android ecosystem, particularly for the Chinese market. This aligns with a broader pattern of Tsinghua fostering impactful AI research that translates into real-world applications, as also evidenced by its role in incubating several leading AI startups.5
+The establishment of joint research initiatives like the SIA Lab with ByteDance for scalable LLMs 107 and the diverse projects from specialized labs like TEA Lab focusing on embodied AI and robotics 108 further illustrate Tsinghua's strategy. This involves deep collaboration with industry to tackle cutting-edge problems while simultaneously contributing to the open-source knowledge base through publications and code releases. This dual approach ensures that academic research remains relevant and rapidly disseminates, fueling both commercial innovation and further academic exploration.
+B. Peking University: Advancing Open Video Generation and Foundational AI Research
+Peking University is another key academic contributor to China's AI landscape, with notable open-source projects in areas like video generation and a focus on the philosophical and ethical dimensions of AI.
+Key Open Source Projects & Focus (2024-2025):
+Open-Sora-Plan: An ambitious open-source project hosted on GitHub (PKU-YuanGroup/Open-Sora-Plan) aiming to reproduce OpenAI's Sora text-to-video model. The project encourages community contributions and details its architecture (e.g., 3D full attention, Sparse Attention, CausalVideoVAE, WFVAE) and various versions released throughout 2024 (v1.0.0 Apr 2024, v1.1.0 May 2024, v1.2.0 July 2024, v1.3.0 Oct 2024).111 The plan includes support for Huawei Ascend AI computing systems.111
+PKU-Baichuan-MLSystemLab: A joint laboratory with Baichuan Inc. focusing on Data-Centric Machine Learning (DCML), LLMs, and ML Systems. Their GitHub page (PKU-Baichuan-MLSystemLab) lists several 2024 papers and repositories related to LLM evaluation benchmarks (FB-Bench, SysBench, CFBench, MathScape), instruction tuning (BUTTON), and data management (DataSculpt, BaichuanSEED).112
+AI Ethics and Philosophy: The Berggruen Research Center at Peking University actively engages in research on AI ethics, biotechnology philosophy, and the intersection of technology and humanities. It promotes cross-disciplinary dialogue on the future implications of AI.113 They co-organized a workshop on Philosophy and AI in April 2025.114
+Open Source Philosophy: Peking University's involvement in large-scale open-source projects like Open-Sora-Plan demonstrates a commitment to collaborative, open scientific reproduction and advancement.111 Their research in AI ethics also emphasizes openness and exploring diverse cultural perspectives on AI governance.113 Associate Professor Stephen Minas commented on DeepSeek's potential as a "gift to the developing world," suggesting an awareness of the global implications of open-source AI.115
+Ranking & Output: Peking University is a leading institution for AI-related research papers and citations.4
+Peking University's Open-Sora-Plan 111 is a prime example of academia driving ambitious open-source replication efforts for cutting-edge AI technologies. By aiming to reproduce OpenAI's Sora model and openly sharing their progress, architecture (like 3D attention and CausalVideoVAE), and versioned releases, the PKU-YuanGroup is fostering a collaborative environment for advancing text-to-video generation. This initiative not only democratizes access to the complex techniques involved in such models but also serves as a valuable educational and research platform for students and developers globally. The plan to incorporate support for domestic hardware like Huawei Ascend 111 also aligns with broader national goals of building a self-reliant AI ecosystem.
+Beyond specific model development, Peking University's engagement in areas like AI ethics and governance through its Berggruen Research Center 113 and joint labs focusing on foundational aspects of LLMs and data-centric AI with industry partners like Baichuan 112 highlights a holistic approach. This combination of practical open-source engineering with deep theoretical and ethical inquiry contributes to a more robust and responsible development trajectory for AI in China. The university's high ranking in AI research output 4 is a testament to the strength of this comprehensive engagement.
+C. Shanghai AI Laboratory: AI for Science and Autonomous Driving through Open Platforms
+The Shanghai AI Laboratory (SHLAB) plays a crucial role as a state-affiliated research institution fostering collaboration and driving innovation, particularly in "AI for Science" and autonomous driving, with a strong emphasis on open-source platforms.
+Key Open Source Projects & Focus (2024-2025):
+Open-Sciencelab (GitHub org): Hosts various projects focused on "AI for Science." Recent (2024-2025) repositories include:
+GraphGen (updated May 2025, Apache 2.0): Enhancing LLM supervised fine-tuning with knowledge-driven synthetic data.116
+Virtual-Scientists (updated May 2025, Apache 2.0): Multi-Agent System for Science of Science (ACL 2025).116
+WeedStemDetection (updated May 2025, AAAI-2025): Method and dataset for weed stem detection in agriculture.116
+SeedBench (updated Apr 2025, GPL-3.0, ACL 2025): Benchmark for evaluating LLMs in seed science.116
+Crop (updated May 2025, Apache 2.0, NeurIPS 2024): Assessing LLM utility in crop science.116
+Intern-WingWing (updated Sep 2024, MIT, NeurIPS 2024): AFBench, a benchmark for airfoil design.116
+Autonomous Driving Laboratory (ADLab): Focuses on next-generation autonomous driving systems integrating human knowledge and common-sense reasoning. Publications and preprints in 2024 include work on OASim (open adaptive simulator), LimSim++ (closed-loop platform for multimodal LLMs in driving), DiLu (knowledge-driven autonomous driving with LLMs), and ReSimAD (zero-shot 3D domain transfer).117
+OpenMMLab: An established open-source computer vision algorithm system that facilitates academic and industry applications with global users.4 (While foundational, specific 2024-2025 updates to OpenMMLab itself are not detailed in these snippets, its continued relevance is noted).
+DOLPHIN framework (Jan 2025): Developed with Fudan University, a closed-loop auto-research framework for automating the scientific research process (idea generation, experiment execution, feedback incorporation).118 Open-source status not explicitly stated for DOLPHIN itself.
+Open Source Strategy & Goals: Shanghai AI Lab aims to accelerate the construction of a global science and technology innovation center. Their funding opportunities for 2025-2026 emphasize basic theories and technologies of AI, including embodied autonomous learning, model co-evolution, reasoning enhancement for scientific missions, long-term planning for intelligent agents, traceable LLM architectures, and multimodal generated content identification.119 They promote open-source communities and collaboration platforms for large models.105
+Impact & Context:
+SHLAB is a key state-affiliated research institution.4
+Involved in AI safety research and policy, leading a working group on large models with major Chinese tech companies (July 2023).4
+Part of Shanghai's broader strategy to become a key hub for AI innovation, with coordinated policy measures for computing power, infrastructure, and model innovation.105
+The Shanghai AI Laboratory (SHLAB) is clearly directing significant effort towards "AI for Science," leveraging open-source methodologies to accelerate research and development across diverse scientific domains. Their Open-Sciencelab initiative on GitHub 116 hosts a growing number of specialized projects—from GraphGen for improving LLM fine-tuning using synthetic data, to benchmarks and models for agriculture (WeedStemDetection, SeedBench, Crop) and engineering (Intern-WingWing for airfoil design). These projects, largely under permissive licenses like Apache 2.0 and MIT, and often tied to publications at major AI conferences in 2024 and 2025, demonstrate a commitment to open, reproducible scientific research powered by AI. The DOLPHIN framework, developed with Fudan University for automating the entire scientific research pipeline 118, further exemplifies this ambition to transform scientific discovery itself through AI.
+In parallel, SHLAB's Autonomous Driving Laboratory (ADLab) is pushing the frontiers of autonomous systems by integrating advanced AI concepts like large language models and common-sense reasoning into driving systems.117 The consistent output of research papers and preprints in 2024 detailing open simulators (OASim) and knowledge-driven approaches (DiLu) indicates a strategy of openly sharing foundational research to spur innovation in this critical field. This dual focus on AI for fundamental science and AI for complex real-world applications like autonomous driving, supported by open platforms like OpenMMLab 4 and a strategic push for open collaboration 105, positions SHLAB as a vital node in China's national AI innovation network. Their work not only contributes direct open-source tools and datasets but also helps define research agendas and foster a collaborative environment.
+D. Institute of Automation, Chinese Academy of Sciences (CASIA): Automating Scientific Research with ScienceOne
+The Institute of Automation of the Chinese Academy of Sciences (CASIA) is another significant government research institute contributing to AI, particularly with initiatives aimed at automating and enhancing the scientific research process itself.
+Key Open Source Projects & Focus (2024-2025):
+ScienceOne Platform (Unveiled May 7, 2025): An AI-driven research platform designed to overcome limitations of generic AI models in scientific research. It integrates capabilities in data comprehension, computational optimization, and reasoning evaluation. Developed in collaboration with other CAS institutes.120
+S1-Literature: An AI literature assistant within ScienceOne, capable of synthesizing thousands of papers into structured reviews and providing analysis tools like concept mapping and citation tracing.120
+S1-ToolChain: A workflow orchestrator within ScienceOne that autonomously coordinates over 300 specialized scientific tools.120
+Open Source Status of ScienceOne: The available materials do not explicitly state whether ScienceOne or its components (S1-Literature, S1-ToolChain) are open source.120
+Broader CAS AI Initiatives: CAS encourages the use of AI, digital infrastructure, and open platforms in co-funded research programs aimed at sustainable development, particularly under the ANSO framework for Belt and Road countries (2025 call for proposals).121
+GitHub Presence (ia-cas): The official GitHub organization for ia-cas shows limited recent activity on AI-specific open-source projects within the 2024-2025 timeframe. Most repositories listed are older or forks of general tools (e.g., pandas-cookbook).122 However, CASIA researchers are active in the broader AI community, contributing to surveys and collections of resources on topics like Vision-Language-Action models for Embodied AI.8
+Ranking & Output: The Institute of Automation is a significant contributor to AI research papers in China.4
+The Institute of Automation, Chinese Academy of Sciences (CASIA), made a notable contribution in May 2025 with the launch of its ScienceOne platform.120 This AI-driven system, featuring tools like S1-Literature for advanced literature analysis and S1-ToolChain for orchestrating scientific workflows 120, aims to directly address the challenges of applying general AI models to specialized scientific research. By focusing on enhancing data comprehension, computational optimization, and reasoning evaluation specifically for scientific tasks, ScienceOne represents a strategic effort to automate and accelerate the research process itself. This initiative aligns with the broader trend of developing "AI for Science" tools, designed to empower researchers across various disciplines.
+While the direct open-source status of the ScienceOne platform and its components is not explicitly clarified in the provided 2024-2025 materials 120, the Chinese Academy of Sciences, as a whole, encourages the use of open platforms and AI in its international co-funding research programs.121 CASIA's high output of AI research papers 4 and its researchers' engagement with the global AI community, for instance, through contributions to surveys on embodied AI 8, indicate a deep involvement in advancing AI knowledge. The ScienceOne platform, even if not fully open-source itself, is likely to leverage and contribute to the broader ecosystem of scientific tools and data, potentially integrating with or inspiring open initiatives in the future as it matures. Its development underscores a national-level commitment to harnessing AI for scientific breakthroughs.
+V. Trends and Overall Landscape of Open Source AI in China (2024-2025)
+The period from 2024 into 2025 has revealed several overarching trends in China's open-source AI contributions, painting a picture of a rapidly evolving, highly competitive, and strategically important sector.
+Accelerated Pace of Open-Source Releases: Chinese entities, from tech giants to startups, significantly increased the number and sophistication of their open-source AI model releases. This is evident in the flurry of activity from companies like DeepSeek, Alibaba (Qwen, Wan), Baidu (ERNIE plans), Zhipu AI (GLM series), Moonshot AI (Kimi-VL, Kimi-Audio), 01.AI (Yi series), and StepFun AI (Step1X-Edit) throughout 2024 and early 2025.1 Thomas Wolf of Hugging Face noted in January 2025 that 4 out of 6 top trending repos on GitHub were from Chinese AI teams, signaling a marked shift from 2024.123
+The "DeepSeek Shock" and Competitive Dynamics: The release of DeepSeek's high-performance, low-cost open models (R1 in Jan 2025) had a notable impact, compelling other players like Baichuan AI to reportedly re-evaluate their own model development and commercialization strategies.5 This highlights how open-source releases can rapidly alter market dynamics and intensify competition.
+Focus on Multimodality and Agentic AI: A strong trend is the development and open-sourcing of models with multimodal capabilities (handling text, image, audio, video) and agentic properties (tool use, reasoning, autonomous task completion). Examples include Alibaba's Qwen2.5-VL and Wan series, ByteDance's Seed1.5-VL, Zhipu's GLM-4 and Rumination models, Moonshot's Kimi-VL and Kimi-Audio, and 01.AI's Yi-VL.15 This reflects a push towards more versatile and capable AI systems.
+Strategic Blend of Open Source and Proprietary: Many leading companies are adopting a hybrid strategy. They release powerful open-source foundational models to build community, attract talent, and drive adoption (often under permissive licenses like MIT or Apache 2.0), while also offering proprietary models, enterprise solutions, or value-added services through cloud platforms (e.g., Alibaba Cloud PAI, Zhipu MaaS).15 Huawei is a prime example with proprietary Pangu models and open MindSpore framework.45
+Emphasis on Efficiency and Cost Reduction: Driven by factors including hardware access limitations and market competition, there's a significant focus on developing models and infrastructure that are computationally efficient and cost-effective to train and deploy. DeepSeek's low training costs 1, Zhipu's fast inference GLM-Z1 models 53, Moonshot's efficient Kimi-VL 69, and Infinigence AI's entire business model around reducing compute costs 62 exemplify this.
+Strong GitHub and Hugging Face Presence: Chinese AI entities are increasingly leveraging global platforms like GitHub and Hugging Face for releasing models, code, and engaging with the international developer community. Download statistics and star counts for models from Alibaba (Qwen), DeepSeek, Zhipu AI (GLM), 01.AI (Yi), and others indicate significant global interest and adoption.15
+Influence of Government Support and National Strategy: China's national AI strategy, which aims for global leadership by 2030 and emphasizes AI's role in economic transformation, provides a supportive backdrop for these developments.4 Government-affiliated research labs (SHAI, CASIA) and university-linked startups (the "AI Tigers") play a crucial role in this ecosystem.4 The government also promotes open-source AI as a means for foreign developers to access advanced models at low cost.126
+Growing Ecosystem of Tools and Benchmarks: Beyond models, there's a growing contribution of open-source tools (e.g., DeepSeek's infrastructure libraries, ByteDance's DeerFlow, Moonshot's Muon optimizer) and benchmarks (e.g., StepFun's GEdit-Bench, SHAI's SeedBench).7
+AI for Science: Academic institutions and research labs are notably pushing open-source AI applications in scientific research, aiming to automate discovery and analysis across various fields.106
+Regulatory Landscape and IP Considerations: While open-source thrives, China is also developing regulations around AI, particularly concerning content generation, data sourcing for training, copyright, and security vulnerabilities, which are especially pertinent for open models.127 There's an ongoing effort to balance innovation with intellectual property protection and national security.127
+The surge in open-source AI contributions from China between 2024 and 2025 is not merely an increase in quantity but a significant leap in quality, strategic intent, and global impact. The "DeepSeek Shock" 12 served as a catalyst, demonstrating that Chinese firms could produce frontier-level open models at highly competitive costs, thereby recalibrating market expectations worldwide. This has spurred a dynamic where established giants like Alibaba and Baidu are accelerating their open-source initiatives for their Qwen and ERNIE families respectively 15, not just to compete, but to build robust ecosystems around their cloud platforms and enterprise offerings. This strategic embrace of openness is crucial for attracting global developers and fostering innovation at scale.
+Simultaneously, the "AI Tigers" and other startups are leveraging open source to rapidly innovate and carve out niches in areas like agentic AI (Zhipu AI 53), ultra-long context (Moonshot AI 68), bilingualism (01.AI 74), and specialized generative tools (StepFun AI 87, Shengshu 93). Their ability to attract substantial funding 58 while pursuing open strategies indicates strong investor confidence in this model. The overarching trend points towards a sophisticated blend: companies are open-sourcing powerful foundational capabilities to build communities and drive broad adoption, while often retaining proprietary layers or specialized vertical solutions for monetization. This is further supported by national AI strategies that encourage technological self-reliance and global competitiveness 4, with academic institutions playing a vital role in talent creation and foundational open research.4 The increasing prominence of Chinese projects on global platforms like GitHub and Hugging Face 123 is a clear indicator of their growing influence in the international open-source AI community.
+VI. Conclusion
+The period from 2024 to early 2025 has been a watershed for open-source AI in China. Driven by intense domestic competition, strategic national objectives, and a desire for global technological leadership, Chinese entities have emerged as formidable contributors to the global open-source AI ecosystem.
+DeepSeek has acted as a significant disruptor, its high-performance, low-cost open models like R1 and V3 challenging established norms and accelerating the open-source trend among its peers. Alibaba is leveraging its extensive cloud infrastructure and the popular Qwen model family to democratize AI access globally, backed by massive financial investment and the ModelScope community. Baidu is strategically pivoting its ERNIE models towards open source, aiming to bolster its dominant AI Cloud business and cultivate a vast developer ecosystem around its PaddlePaddle platform. ByteDance, through its restructured Seed AI team, is making significant open-source contributions in foundational and multimodal AI, indicating a strong push into core AI research and development. Tencent is pursuing a hybrid strategy, open-sourcing powerful Hunyuan models while emphasizing "AI for Good" and integrating AI across its vast product lines. Huawei, while keeping its flagship Pangu models largely proprietary for industry solutions, is fostering an open ecosystem around its MindSpore framework and Ascend hardware to drive adoption of its infrastructure.
+Beyond these giants, the "AI Tigers" – Zhipu AI, Baichuan AI, Moonshot AI, 01.AI, MiniMax, StepFun AI – alongside specialized firms like Shengshu Technology and Infinigence AI, are injecting dynamism into the open-source landscape. They are focusing on diverse areas, from agentic AI and ultra-long context models to bilingual capabilities, generative multimedia tools, and critical AI infrastructure optimization. Many of these startups are rapidly releasing advanced models under permissive licenses, often outmaneuvering larger players in specific niches.
+Academic institutions like Tsinghua University, Peking University, and the Shanghai AI Laboratory remain crucial, not only as talent pipelines and research powerhouses but also as direct contributors of impactful open-source projects, particularly in "AI for Science" and cutting-edge applications like GUI agents and video generation.
+Collectively, these contributions paint a picture of a Chinese AI sector that is increasingly embracing openness as a strategic tool. This involves not just releasing models, but also sharing architectural insights, training methodologies, developer tools, and benchmarks. The focus is clearly on building comprehensive ecosystems, fostering innovation, and lowering the barriers to AI adoption both domestically and internationally. While challenges related to regulation, IP, and geopolitical factors persist, the trajectory indicates that Chinese players will continue to be leading and influential forces in shaping the future of open-source artificial intelligence.
+Works cited
+Top 6 Chinese AI Models Like DeepSeek (LLMs) You Should Know - Index.dev, accessed May 19, 2025, https://www.index.dev/blog/chinese-ai-models-deepseek
+Deepseek introduces new technologies to the AI world - The Daily ..., accessed May 19, 2025, https://www.dailycardinal.com/article/2025/03/deepseek-introduces-new-technologies-to-the-ai-world
+deepseek-ai/DeepSeek-V3 - Hugging Face, accessed May 19, 2025, https://huggingface.co/deepseek-ai/DeepSeek-V3
+US-China AI Gap: 2025 Analysis of Model Performance, Investment ..., accessed May 19, 2025, https://www.recordedfuture.com/research/measuring-the-us-china-ai-gap
+China's AI Surge: Exploring the Context – ERI - Eurasian Research Institute, accessed May 19, 2025, https://www.eurasian-research.org/publication/chinas-ai-surge-exploring-the-context/
+DeepSeek's release of an open-weight frontier AI model, accessed May 19, 2025, https://www.iiss.org/publications/strategic-comments/2025/04/deepseeks-release-of-an-open-weight-frontier-ai-model/
+DeepSeek · GitHub, accessed May 19, 2025, https://github.com/deepseek-ai
+zchoi/Awesome-Embodied-Robotics-and-Agent: This is a curated list of "Embodied AI or robot with Large Language Models" research. Watch this repository for the latest updates! - GitHub, accessed May 19, 2025, https://github.com/zchoi/Awesome-Embodied-Robotics-and-Agent
+deepseek-ai (DeepSeek) - Hugging Face, accessed May 19, 2025, https://huggingface.co/deepseek-ai
+What is Deep Seek? | DeepSeek AI Blog, accessed May 19, 2025, https://deepseek.ai/blog/what-is-deep-seek
+Strategic Snapshot: China's AI Ambitions - The Jamestown Foundation, accessed May 19, 2025, https://jamestown.org/program/strategic-snapshot-chinas-ai-ambitions/
+Bonus Exclusive | Baichuan Intelligence Hits the Brakes, Adjusts Medical ToB, and Basic R&D Comes to a Halt, accessed May 19, 2025, https://eu.36kr.com/en/p/3210061076562823
+A Deep-Dive Into DeepSeek: The AI That Has Taken the World by Storm, accessed May 19, 2025, https://thesciencesurvey.com/news/2025/04/30/a-deep-dive-into-deepseek-the-ai-that-has-taken-the-world-by-storm/
+DeepSeek report - Select Committee on the CCP |, accessed May 19, 2025, https://selectcommitteeontheccp.house.gov/sites/evo-subsites/selectcommitteeontheccp.house.gov/files/evo-media-document/DeepSeek%20Final.pdf
+Alibaba's Open-Source AI Journey - Alizila, accessed May 19, 2025, https://www.alizila.com/alibabas-open-source-ai-journey-innovation-collaboration-and-future-visions/
+Alibaba's Open-Source AI Journey: Innovation, Collaboration, and Future Visions, accessed May 19, 2025, https://www.alibabacloud.com/blog/alibabas-open-source-ai-journey-innovation-collaboration-and-future-visions_602026
+Alibaba Unveils QwQ-32B AI Model, Challenges DeepSeek and ..., accessed May 19, 2025, https://opentools.ai/news/alibaba-unveils-qwq-32b-ai-model-challenges-deepseek-and-openai
+Cloud Giant Alibaba Invests $53B In AI Infrastructure As Stock Surges, accessed May 19, 2025, https://www.crn.com/news/cloud/2025/cloud-giant-alibaba-invests-53b-in-ai-infrastructure-as-stock-surges
+Alibaba Unveils its Latest Open-Source Video Generation Model, accessed May 19, 2025, https://www.alibabagroup.com/document-1851424828087599104
+Alibaba Introduces Open-Source Model for Video Creation and Editing, accessed May 19, 2025, https://www.alibabacloud.com/blog/602226
+Alibaba Cloud Strengthens AI Capabilities with Innovations for International Customers, accessed May 19, 2025, https://laotiantimes.com/2025/04/08/alibaba-cloud-strengthens-ai-capabilities-with-innovations-for-international-customers/
+Top 10 open source LLMs for 2025 - NetApp Instaclustr, accessed May 19, 2025, https://www.instaclustr.com/education/top-10-open-source-llms-for-2025/
+Alibaba Cloud - GitHub, accessed May 19, 2025, https://github.com/aliyun
+Baidu launches new AI model despite high competition - Tech in Asia, accessed May 19, 2025, https://www.techinasia.com/news/baidu-launches-new-ai-model-despite-high-competition
+China and the world's AI race: Baidu's new reasoning model - TechHQ, accessed May 19, 2025, https://techhq.com/2025/03/china-and-the-worlds-ai-race-baidus-new-reasoning-model/
+Baidu Q4 financial report · TechNode, accessed May 19, 2025, https://technode.com/2025/02/20/baidu-q4-financial-report-ai-cloud-revenue-surges-offsets-losses/
+Baidu's Ernie 4.5 Outperforms GPT 4.5 By A Mile - Labellerr, accessed May 19, 2025, https://www.labellerr.com/blog/baidu-launches-ernie-4-5-and-x1/
+PaddlePaddle · GitHub, accessed May 19, 2025, https://github.com/paddlepaddle
+Baidu Launches AI Open Program to Empower Developers in Embracing MCP - AIbase, accessed May 19, 2025, https://www.aibase.com/news/17525
+ERNIE - Hugging Face, accessed May 19, 2025, https://huggingface.co/docs/transformers/v4.46.0/model_doc/ernie
+baidu (ERNIE) - Hugging Face, accessed May 19, 2025, https://huggingface.co/baidu
+ByteDance Restructures AI: ByteDance AI Lab Merges into Seed AI - AIbase, accessed May 19, 2025, https://www.aibase.com/news/17204
+ByteDance-Seed - GitHub, accessed May 19, 2025, https://github.com/ByteDance-Seed
+ByteDance dropped UI-TARS-1.5 on Hugging Face An open-source SOTA multi modal agent built upon a powerful vision-language model. It Surpass OPENAI operator on ALL benchmarks and achieves 42.5% on OSWORLD : r/singularity - Reddit, accessed May 19, 2025, https://www.reddit.com/r/singularity/comments/1kf6xbw/bytedance_dropped_uitars15_on_hugging_face_an/
+Student Researcher – Doubao (Seed) – Foundation Model AI Platform – 2025 Start (PhD) - Office of Career and Professional Development - Georgia Southern University, accessed May 19, 2025, https://ocpd.georgiasouthern.edu/jobs/bytedance-inc-student-researcher-doubao-seed-foundation-model-ai-platform-2025-start-phd-2/
+ByteDance Seed, accessed May 19, 2025, https://seed.bytedance.com/
+Report: ByteDance Consolidates AI R&D Teams, AI Lab to Merge into Seed - AIbase, accessed May 19, 2025, https://www.aibase.com/news/17203
+ByteDance aims to match Meta's 2025 sales as TikTok grows - Tech in Asia, accessed May 19, 2025, https://www.techinasia.com/news/bytedance-aims-match-metas-2025-sales-tiktok-grows
+static.www.tencent.com, accessed May 19, 2025, https://static.www.tencent.com/uploads/2025/03/19/f55938d61be94cf9700a971a4db08809.pdf
+tencent/HunyuanVideo - Hugging Face, accessed May 19, 2025, https://huggingface.co/tencent/HunyuanVideo
+AI Daily: Kimi's New Audio Foundation Model Kimi-Audio; Step1X-Edit, an Open-Source Image Editing Model; Quark AI Super Box Launches - Take a Photo and Ask Quark - AIbase, accessed May 19, 2025, https://www.aibase.com/news/17574
+environmental, social and governance report 2024 - Tencent, accessed May 19, 2025, https://static.www.tencent.com/uploads/2025/04/08/00ef711d9596ce09344c0260b14cda7e.pdf
+tencent-ailab/MuQ: Official repository of the paper "MuQ: Self-Supervised Music Representation Learning with Mel Residual Vector Quantization". - GitHub, accessed May 19, 2025, https://github.com/tencent-ailab/MuQ
+Tencent restructures AI unit, adds teams for foundational models - Tech in Asia, accessed May 19, 2025, https://www.techinasia.com/news/tencent-restructures-ai-unit-adds-teams-foundational-models
+Huawei PanGu - Wikipedia, accessed May 19, 2025, https://en.wikipedia.org/wiki/Huawei_PanGu
+Huawei's Pangu Ultra MoE: A Breakthrough in AI Language Models - UBOS.tech, accessed May 19, 2025, https://ubos.tech/news/huaweis-pangu-ultra-moe-a-breakthrough-in-ai-language-models/
+Huawei: Towards AI ON for New Growth in the AI Era, accessed May 19, 2025, https://www.huawei.com/en/news/2025/3/towards-ai-on
+Huawei Unveils Five Innovative ICT Services & Software Solutions to Enable Digital Intelligence Acceleration, accessed May 19, 2025, https://www.huawei.com/en/news/2025/3/MWC-Five-Innovation-solution
+MindSpore - GitHub, accessed May 19, 2025, https://github.com/mindspore-ai
+Huawei - CANN | onnxruntime - GitHub Pages, accessed May 19, 2025, https://fs-eire.github.io/onnxruntime/docs/execution-providers/community-maintained/CANN-ExecutionProvider.html
+Forging an AI Cloud Foundation: Huawei Cloud Accelerates Intelligence with APAC Partners, accessed May 19, 2025, https://www.huaweicloud.com/intl/en-us/news/20250509171254135.html
+2024 Annual Report - Huawei, accessed May 19, 2025, https://www.huawei.com/en/annual-report/2024
+Zhipu.AI's Open-Source Power Play: Blazing-Fast GLM Models & Global Expansion Ahead of Potential IPO | Synced, accessed May 19, 2025, https://syncedreview.com/2025/04/16/zhipu-ais-open-source-power-play-blazing-fast-glm-models-global-expansion-ahead-of-potential-ipo/
+Zhipu AI Secures 500 Million RMB in Funding to Support Global Open-Source Community, accessed May 19, 2025, https://www.aibase.com/news/17296
+Zhipu AI Launches New Domain Z.ai and Open-Sources 32B/9B GLM Model Series - AIbase, accessed May 19, 2025, https://www.aibase.com/news/17132
+Z.ai Unveils New GLM Open-Source Models with World-Class Reasoning Performance, accessed May 19, 2025, https://www.prnewswire.com/news-releases/zai-unveils-new-glm-open-source-models-with-world-class-reasoning-performance-302429306.html
+Z.ai & THUKEG · GitHub, accessed May 19, 2025, https://github.com/THUDM
+Beyond DeepSeek: An Overview of Chinese AI Tigers and Their ..., accessed May 19, 2025, https://www.topbots.com/chinese-ai-tigers-overview/
+THUDM (Z.ai & THUKEG) - Hugging Face, accessed May 19, 2025, https://huggingface.co/THUDM
+Zhipu AI model supports GLM-Z1 series · Issue #18052 · langgenius/dify - GitHub, accessed May 19, 2025, https://github.com/langgenius/dify/issues/18052
+Hugging Face's Top Model Leaderboard Unveiled: AI Innovation Continues to Heat Up, accessed May 19, 2025, https://www.aibase.com/news/17346
+Rising Chinese AI Firms To Watch in 2025 - CCN.com, accessed May 19, 2025, https://www.ccn.com/news/technology/beyond-deepseek-rising-chinese-ai-firms-to-watch-in-2025/
+Meet China's top six AI unicorns: who are leading the wave of AI in China - TechNode, accessed May 19, 2025, https://technode.com/2025/01/09/meet-chinas-top-six-ai-unicorns-who-are-leading-the-wave-of-ai-in-china/
+Baichuan - Wikipedia, accessed May 19, 2025, https://en.wikipedia.org/wiki/Baichuan
+baichuan-inc/Baichuan2-7B-Base - Hugging Face, accessed May 19, 2025, https://huggingface.co/baichuan-inc/Baichuan2-7B-Base
+Baichuan-Audio: A Unified Framework for End-to-End Speech Interaction - GitHub, accessed May 19, 2025, https://github.com/baichuan-inc/Baichuan-Audio
+Baichuan-M1: Pushing the Medical Capability of Large Language Models - arXiv, accessed May 19, 2025, https://arxiv.org/html/2502.12671v1
+Moonshot AI - Wikipedia, accessed May 19, 2025, https://en.wikipedia.org/wiki/Moonshot_AI
+Moonshot AI's open-source Kimi-VL tackles text, images and video ..., accessed May 19, 2025, https://the-decoder.com/moonshot-ais-open-source-kimi-vl-tackles-text-images-and-video-with-just-2-8-billion-parameters/
+Kimi - An AI assistant that can perform deductive reasoning and is capable of deep thinking. - Moonshot AI, accessed May 19, 2025, https://kimi.moonshot.cn/
+Moonshot AI, accessed May 19, 2025, https://www.moonshot.cn/
+Moonshot AI - GitHub, accessed May 19, 2025, https://github.com/moonshotai
+moonshotai/Kimi-Audio-7B-Instruct - Hugging Face, accessed May 19, 2025, https://huggingface.co/moonshotai/Kimi-Audio-7B-Instruct
+01-ai/Yi: A series of large language models trained from scratch by developers @01-ai - GitHub, accessed May 19, 2025, https://github.com/01-ai/Yi
+Question · 01-ai/Yi-34B at cdd371a27cd7a7ed5da76f0ad2cc360aa3a41ae7 - Hugging Face, accessed May 19, 2025, https://huggingface.co/01-ai/Yi-34B/blob/cdd371a27cd7a7ed5da76f0ad2cc360aa3a41ae7/Question
+01-ai/Yi-VL-34B - Hugging Face, accessed May 19, 2025, https://huggingface.co/01-ai/Yi-VL-34B
+01-ai - Hugging Face, accessed May 19, 2025, https://huggingface.co/01-ai
+01.AI - GitHub, accessed May 19, 2025, https://github.com/01-ai
+01.AI - Wikipedia, accessed May 19, 2025, https://en.wikipedia.org/wiki/01.AI
+National Supercomputing Internet Platform Launches MiniMax ..., accessed May 19, 2025, https://www.aibase.com/news/17205
+MiniMax-01 is Now Open-Source: Scaling Lightning Attention for the AI Agent Era, accessed May 19, 2025, https://huggingface.co/blog/MiniMax-AI/minimax01
+MiniMax (company) - Wikipedia, accessed May 19, 2025, https://en.wikipedia.org/wiki/MiniMax_(company)
+MiniMax-AI/MiniMax-01: The official repo of MiniMax-Text-01 and MiniMax-VL-01, large-language-model & vision-language-model based on Linear Attention - GitHub, accessed May 19, 2025, https://github.com/MiniMax-AI/MiniMax-01
+The Rise of MiniMax Audio: Redefining Text-to-Speech with Hyper-Realistic AI Voices, accessed May 19, 2025, https://www.abdulazizahwan.com/2025/04/the-rise-of-minimax-audio-redefining-text-to-speech-with-hyper-realistic-ai-voices.html
+Forget the price wars—MiniMax goes open-source to rewrite the AI playbook - Kr Asia, accessed May 19, 2025, https://kr-asia.com/forget-the-price-wars-minimax-goes-open-source-to-rewrite-the-ai-playbook
+MiniMaxAI (MiniMax) - Hugging Face, accessed May 19, 2025, https://huggingface.co/MiniMaxAI
+stepfun-ai/Step1X-Edit: A SOTA open-source image editing model, which aims to provide comparable performance against the closed-source models like GPT-4o and Gemini 2 Flash. - GitHub, accessed May 19, 2025, https://github.com/stepfun-ai/Step1X-Edit
+Open-Source Revolution! Step1X-Edit Lands on Hugging Face, Generating Images with Natural Language, Rivaling GPT-4o! - AIbase, accessed May 19, 2025, https://www.aibase.com/news/17601
+Step-Video-TI2V Technical Report: A State-of-the-Art Text-Driven Image-to-Video Generation Model - arXiv, accessed May 19, 2025, https://arxiv.org/html/2503.11251v1
+stepfun-ai - GitHub, accessed May 19, 2025, https://github.com/stepfun-ai
+stepfun-ai (StepFun) - Hugging Face, accessed May 19, 2025, https://huggingface.co/stepfun-ai
+Vidu AI Video Generation Model by Shenshu Technology Officially Launched Globally - Convert Images/Text to Video - AIbase, accessed May 19, 2025, https://www.aibase.com/news/10666
+Vidu Q1 Officially Launched: Higher Definition, Smoother Frame Rates, accessed May 19, 2025, https://www.aibase.com/news/17390
+ShengShu Technology Announces Vidu 2.0, Offering the Industry's ..., accessed May 19, 2025, https://www.prnewswire.com/news-releases/shengshu-technology-announces-vidu-2-0--offering-the-industrys-fastest-generative-video-302351677.html
+Vidu AI: AI Video Generator - Text & Image to Video in Seconds, accessed May 19, 2025, https://www.vidu.com/
+ShengShu Technology, accessed May 19, 2025, https://www.shengshu-ai.com/home
+ShengShu Technology, accessed May 19, 2025, https://www.shengshu.com/
+ShengShu Technology, accessed May 19, 2025, https://www.shengshu.com/en
+Shengshu Technology's Vidu Secures Rights to Adapt 7 Hit Online Novel IPs into Concept Shorts - AIbase, accessed May 19, 2025, https://www.aibase.com/news/16466
+Infinigence - GitHub, accessed May 19, 2025, https://github.com/infinigence
+Infinigence - Hugging Face, accessed May 19, 2025, https://huggingface.co/organizations/Infinigence/activity/all
+infinigence/LVEval: Repository of LV-Eval Benchmark - GitHub, accessed May 19, 2025, https://github.com/infinigence/LVEval
+Shanghai takes the lead in promoting AI development for shared progress of mankind, accessed May 19, 2025, https://www.shine.cn/opinion/2504304172/
+Overview - WWW'25 AgentSociety Challenge, accessed May 19, 2025, https://tsinghua-fib-lab.github.io/AgentSocietyChallenge/pages/overview.html
+Shanghai accelerates high-quality development of its artificial intelligence industry, accessed May 19, 2025, https://en.people.cn/n3/2025/0506/c90000-20311017.html
+Tsinghua Collaborates with MemSET Intelligence to Open Source ..., accessed May 19, 2025, https://www.aibase.com/news/18058
+Tsinghua AIR, accessed May 19, 2025, https://air.tsinghua.edu.cn/en/
+Tsinghua Embodied AI Lab (TEA Lab) - GitHub, accessed May 19, 2025, https://github.com/TEA-Lab
+TSINGHUA 2024 IN REVIEW, accessed May 19, 2025, https://www.tsinghua.edu.cn/en/pdf/Tsinghua_2024_in_Review.pdf
+Urban Design and Research in the Age of AI: Highlights from the NUS-Tsinghua Collaboration - NUS DoA - National University of Singapore, accessed May 19, 2025, https://cde.nus.edu.sg/arch/news_and_events/news_ay2425_age_of_ai_120325/
+PKU-YuanGroup/Open-Sora-Plan: This project aim to ... - GitHub, accessed May 19, 2025, https://github.com/PKU-YuanGroup/Open-Sora-Plan
+PKU-Baichuan-MLSystemLab - GitHub, accessed May 19, 2025, https://github.com/PKU-Baichuan-MLSystemLab
+Peking University Berggruen Research Center Fellowship, accessed May 19, 2025, https://www.oir.pku.edu.cn/system/_content/download.jsp?urltype=news.DownloadAttachUrl&owner=1409797161&wbfileid=16444111
+26-27 April 2025 – Workshop on Philosophy and AI (PHAI) (第二届哲学与人工智能研讨会) at the Venue Berggruen Institute China Center, No. 54 Yannan Garden, Peking University, Beijing - AI & Humanity Lab, accessed May 19, 2025, https://ai-humanity.net/26-27-april-2025-workshop-on-philosophy-and-ai-phai-%E7%AC%AC%E4%BA%8C%E5%B1%8A%E5%93%B2%E5%AD%A6%E4%B8%8E%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E7%A0%94%E8%AE%A8%E4%BC%9A-at-the-venue-ber/
+Stephen Minas：Could DeepSeek be a gift to the developing world?, accessed May 19, 2025, https://stl.pku.edu.cn/news/news/a3711.html
+AI for Science Center@Shanghai Artificial Intelligence Laboratory ..., accessed May 19, 2025, https://github.com/open-sciencelab
+ADLab of Shanghai AI Lab, accessed May 19, 2025, https://pjlab-adg.github.io/
+Researchers from Fudan University and Shanghai AI Lab Introduces DOLPHIN: A Closed-Loop Framework for Automating Scientific Research with Iterative Feedback - MarkTechPost, accessed May 19, 2025, https://www.marktechpost.com/2025/01/12/researchers-from-fudan-university-and-shanghai-ai-lab-introduces-dolphin-a-closed-loop-framework-for-automating-scientific-research-with-iterative-feedback/
+2025 STCSM "General Artificial Intelligence Large Model" Basic Research Special Program (First Round), accessed May 19, 2025, https://research.shanghai.nyu.edu/resources/research-grants/funding-opportunities/2025-stcsm-general-artificial-intelligence-large
+Chinese Institute Launches AI-powered Research Platform "ScienceOne", accessed May 19, 2025, https://english.cas.cn/newsroom/cas_media/202505/t20250507_1042601.shtml
+【2025 Call】CAS-ANSO Co-funding Research Project, accessed May 19, 2025, http://www.anso.org.cn/programmes/ScienceProgram/Cofunding/202504/t20250411_831733.html
+Institute of Automation Chinese Academy of Sciences - GitHub, accessed May 19, 2025, https://github.com/ia-cas
+Thomas Wolf: "4 out of the 6 top trending repos on GitHub are from Chinese AI teams today 2025 is gonna look quite different from 2024" — Bluesky, accessed May 19, 2025, https://bsky.app/profile/thomwolf.bsky.social/post/3leu7ve32mk2u
+Top 10 open source LLMs for 2024 - Instaclustr, accessed May 19, 2025, https://www.instaclustr.com/education/top-10-open-source-llms-for-2024/
+Top 12 Open Source Models on HuggingFace in 2025 - Analytics Vidhya, accessed May 19, 2025, https://www.analyticsvidhya.com/blog/2024/12/top-open-source-models-on-hugging-face/
+Framework for Artificial Intelligence Diffusion - FDD, accessed May 19, 2025, https://www.fdd.org/analysis/2025/05/15/framework-for-artificial-intelligence-diffusion/
+Open Questions for China's Open-Source AI Regulation - Just Security, accessed May 19, 2025, https://www.justsecurity.org/111053/chinas-open-source-ai-regulation/
