@@ -24,7 +24,7 @@ This framework consolidates enterprise AI deployment options into **4 architectu
 | **Example 2** | **NATO NCIA**: Google Distributed Cloud air-gapped deployment for classified JATEC workloads; Vertex AI enabled ([Google Cloud Press](https://www.googlecloudpresscorner.com/2025-11-24-NATO-and-Google-Cloud-Sign-Multi-Million-Dollar-Deal-for-AI-Enabled-Sovereign-Cloud)) | **O2 Telefónica Germany**: Physical AWS Outposts racks for 5G core data plane serving 1M+ subscribers ([Telefónica Press](https://www.telefonica.de/news/press-releases-telefonica-germany/2025/03/o2-telefonica-selects-amazon-web-services-for-its-cloud-native-ims-voice-and-5g-core-networks.html)) | **Azure Stack Edge Healthcare**: Physical appliances with NVIDIA T4 GPUs at hospital facilities; <1 sec inference for X-ray/CT with cloud MLOps ([Digital Thought Disruption](https://digitalthoughtdisruption.com/2025/07/17/azure-local-gpu-on-prem-ai-regulated-industries/)) | **Walmart WCNP**: 545,000+ pods on 93,000+ nodes; self-managed platform spanning 6,000+ stores/DCs + Azure/GCP ([SiliconANGLE](https://siliconangle.com/2025/09/30/walmart-leverages-developer-focused-ai-agents-boost-software-innovation-aifactoriesdatacenters/)) |
 | **Example 3** | **Singapore Government**: Three agencies (GovTech, CSIT, HTSTA) deploying Google Gemini on air-gapped Google Distributed Cloud for national security ([Google Cloud Press](https://www.googlecloudpresscorner.com/2025-08-28-Google-Cloud-Makes-Gemini-Everywhere-Vision-a-Reality,-Doubles-Down-on-Enterprise-AI-Commitment-to-Singapore)) | **Walmart Edge**: 1,500 cameras across 1,000+ stores with cloud orchestration for inventory and shelf scanning ([Future Stores WBR](https://futurestores.wbresearch.com/blog/walmart-ai-powered-store-strategy-future-amazon-go)) | *No additional verified example found in 2025 sources* | *No additional verified example found in 2025 sources* |
 | **Tech Stack** | NVIDIA H100/B200 GPUs; InfiniBand 400 Gbps; self-hosted K8s (OpenShift/Rancher); on-prem MLOps (Kubeflow, MLflow); encrypted LLM weights; offline model management | AWS Outposts racks / Azure Stack HCI / Google Anthos; managed K8s (EKS Anywhere, AKS Arc, GKE Anthos); vendor MLOps integration; LLM encrypted on vendor-managed nodes | On-prem GPU clusters for inference; self-hosted or managed K8s; on-prem: LLM weights, inference, data processing; cloud: SageMaker/Vertex AI, Datadog, dev environments | Self-hosted K8s spanning on-prem + cloud IaaS; all software self-managed (MLflow, Prometheus, Grafana); cloud = raw EC2/GCE VMs only; full LLM encryption responsibility |
-| **On-Prem Intensity** | **5/5** - All compute, storage, networking on-prem; no cloud dependency | **4/5** - Substantial on-prem racks/servers; cloud for control plane and burst | **4/5** - On-prem GPU clusters for inference; cloud for training/burst and operational tools | **4/5** - On-prem primary; cloud IaaS for burst compute only |
+| **On-Prem Intensity** | **5/5** - All compute, storage, networking on-prem; no cloud dependency | **2-4/5** - Varies by LLM placement: 4/5 if LLM on-prem, 2-3/5 if LLM in cloud (API calls) | **4/5** - On-prem GPU clusters for inference; cloud for training/burst and operational tools | **4/5** - On-prem primary; cloud IaaS for burst compute only |
 | **Ease of Implementation** | **2/5** - All infrastructure self-managed; no hybrid complexity but full operational burden; LLM encryption your responsibility; 12-24 months typical | **4/5** - Cloud vendor handles orchestration, updates, monitoring; fastest hybrid deployment; LLM encryption handled by vendor tooling; 3-6 months typical | **3/5** - Must make strategic software placement decisions; integration complexity between environments; LLM encryption on-prem; 6-12 months typical | **1/5** - You manage entire stack across TWO environments; no vendor support; highest operational burden; all LLM security your responsibility; 12+ months typical |
 | **Key Observations** | Best for maximum sovereignty (defense, classified); can operate fully disconnected; no vendor lock-in; requires deep in-house expertise; economical at scale after 3-5 years | "Sweet spot" for most enterprises wanting hybrid; single pane of glass management; vendor lock-in risk; fastest time-to-value for hybrid deployments | Optimizes for both sovereignty AND operational ease; keeps "crown jewels" on-prem while offloading complexity; requires clear decision framework for software placement | Maximum control and flexibility; avoids vendor lock-in for software; highest expertise requirements; best for organizations with strong platform engineering teams |
 
@@ -35,9 +35,11 @@ This framework consolidates enterprise AI deployment options into **4 architectu
 | # | Architecture | Hardware | Software | On-Prem Intensity | Ease | Timeline |
 |---|--------------|----------|----------|:-----------------:|:----:|----------|
 | 1 | **Fully On-Prem** | On-prem only | On-prem managed | 5/5 | 2/5 | 12-24 mo |
-| 2 | **Cloud-Managed Hybrid** | On-prem + Cloud | Cloud managed | 4/5 | 4/5 | 3-6 mo |
+| 2 | **Cloud-Managed Hybrid** | On-prem + Cloud | Cloud managed | 2-4/5* | 4/5 | 3-6 mo |
 | 3 | **Hybrid-Managed** | On-prem + Cloud | Strategic split | 4/5 | 3/5 | 6-12 mo |
 | 4 | **Self-Managed Hybrid** | On-prem + Cloud | On-prem managed | 4/5 | 1/5 | 12+ mo |
+
+*\*Architecture 2 intensity varies by LLM placement: 4/5 if LLM runs on-prem, 2-3/5 if LLM accessed via cloud API*
 
 ---
 
@@ -93,9 +95,18 @@ Licensed proprietary LLM downloaded and deployed on-prem with high encryption at
 - Existing cloud relationship/expertise
 - Willing to accept vendor lock-in for operational ease
 
-### LLM Deployment
+### LLM Deployment & Infrastructure Intensity
 
-Licensed proprietary LLM deployed via cloud vendor's management plane, encrypted, pinned to on-prem nodes. Vendor tooling assists with encryption and key management.
+LLM placement significantly affects on-prem infrastructure intensity:
+
+| LLM Placement | On-Prem Intensity | On-Prem Infrastructure | Data Flow |
+|---------------|:-----------------:|------------------------|-----------|
+| **LLM on-prem** (pinned to on-prem nodes) | **4/5** | GPU clusters required | Data stays on-prem |
+| **LLM in cloud** (API calls) | **2-3/5** | Lighter compute (no GPUs) | Data sent to cloud for inference |
+
+**LLM on-prem**: Licensed proprietary LLM deployed via cloud vendor's management plane, encrypted, pinned to on-prem nodes. Vendor tooling assists with encryption and key management. Requires substantial GPU infrastructure.
+
+**LLM in cloud**: On-prem handles application logic, data preprocessing, and orchestration. LLM inference via cloud API (e.g., Azure OpenAI, Bedrock). Significantly reduces on-prem hardware requirements but data leaves premises for inference.
 
 ### Example Companies
 
@@ -261,6 +272,7 @@ Q3: Do you want to use cloud managed services (SageMaker, managed K8s, etc.)?
 
 | Factor | Arch 1 | Arch 2 | Arch 3 | Arch 4 |
 |--------|--------|--------|--------|--------|
+| On-prem intensity | 5/5 | 2-4/5 (varies by LLM) | 4/5 | 4/5 |
 | Internet required | No (optional) | Yes | Yes | Yes |
 | Cloud vendor dependency | None | High | Medium | Low (IaaS only) |
 | Operational burden | High | Low | Medium | Very High |
