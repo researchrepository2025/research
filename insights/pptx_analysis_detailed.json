@@ -1,0 +1,3374 @@
+{
+  "file_path": "/Users/nicholaspate/Documents/01_Active/Corp_Strat/ezAI/insights/strategy-goals-tactics-slides.pptx",
+  "metadata": {
+    "title": "Strategy, Goals & Tactics",
+    "author": "Corporate Strategy",
+    "subject": "PptxGenJS Presentation",
+    "created": "2025-12-16 13:49:48",
+    "modified": "2025-12-16 13:49:48"
+  },
+  "slide_dimensions": {
+    "width_inches": 10.0,
+    "height_inches": 5.625
+  },
+  "slides": [
+    {
+      "number": 1,
+      "slide_id": 256,
+      "layout_name": "DEFAULT",
+      "shapes": [
+        {
+          "index": 0,
+          "type": "AUTO_SHAPE (1)",
+          "name": "Text 0",
+          "position": {
+            "left": 0.2916666666666667,
+            "top": 0.25,
+            "width": 4.813125546806649,
+            "height": 0.2916666666666667
+          },
+          "text": "Strategy vs. Goals vs. Tactics",
+          "paragraphs": [
+            {
+              "text": "Strategy vs. Goals vs. Tactics",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "Strategy vs. Goals vs. Tactics",
+                  "font": {
+                    "name": "Arial",
+                    "size": 21.0,
+                    "bold": true,
+                    "color": null
+                  }
+                }
+              ]
+            }
+          ],
+          "line": {
+            "color": {
+              "type": "Other"
+            }
+          }
+        },
+        {
+          "index": 1,
+          "type": "AUTO_SHAPE (1)",
+          "name": "Text 1",
+          "position": {
+            "left": 0.2916666666666667,
+            "top": 0.5833333333333334,
+            "width": 9.605,
+            "height": 0.1603193350831146
+          },
+          "text": "Understanding the hierarchy of corporate planning",
+          "paragraphs": [
+            {
+              "text": "Understanding the hierarchy of corporate planning",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "Understanding the hierarchy of corporate planning",
+                  "font": {
+                    "name": "Arial",
+                    "size": 8.25,
+                    "color": null
+                  }
+                }
+              ]
+            }
+          ],
+          "line": {
+            "color": {
+              "type": "Other"
+            }
+          }
+        },
+        {
+          "index": 2,
+          "type": "AUTO_SHAPE (1)",
+          "name": "Text 2",
+          "position": {
+            "left": 0.2916666666666667,
+            "top": 1.1225590551181102,
+            "width": 3.013834208223972,
+            "height": 3.7109372265966756
+          },
+          "paragraphs": [
+            {
+              "text": "",
+              "level": 0,
+              "alignment": null
+            }
+          ],
+          "fill": null,
+          "line": {
+            "color": {
+              "type": "Other"
+            }
+          }
+        },
+        {
+          "index": 3,
+          "type": "AUTO_SHAPE (1)",
+          "name": "Text 3",
+          "position": {
+            "left": 0.4375,
+            "top": 1.2683923884514436,
+            "width": 2.7766108923884514,
+            "height": 0.18945319335083113
+          },
+          "text": "STRATEGY",
+          "paragraphs": [
+            {
+              "text": "STRATEGY",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "STRATEGY",
+                  "font": {
+                    "name": "Arial",
+                    "size": 9.75,
+                    "bold": true,
+                    "color": null
+                  }
+                }
+              ]
+            }
+          ],
+          "line": {
+            "color": {
+              "type": "Other"
+            }
+          }
+        },
+        {
+          "index": 4,
+          "type": "AUTO_SHAPE (1)",
+          "name": "Text 4",
+          "position": {
+            "left": 0.4375,
+            "top": 1.4786789151356081,
+            "width": 2.7766108923884514,
+            "height": 0.14583333333333334
+          },
+          "text": "Where & how to compete",
+          "paragraphs": [
+            {
+              "text": "Where & how to compete",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "Where & how to compete",
+                  "font": {
+                    "name": "Arial",
+                    "size": 7.5,
+                    "color": null
+                  }
+                }
+              ]
+            }
+          ],
+          "line": {
+            "color": {
+              "type": "Other"
+            }
+          }
+        },
+        {
+          "index": 5,
+          "type": "AUTO_SHAPE (1)",
+          "name": "Text 5",
+          "position": {
+            "left": 0.4375,
+            "top": 1.8953455818022746,
+            "width": 2.7221675415573054,
+            "height": 0.7373042432195975
+          },
+          "paragraphs": [
+            {
+              "text": "",
+              "level": 0,
+              "alignment": null
+            }
+          ],
+          "fill": null,
+          "line": {
+            "color": {
+              "type": "Other"
+            }
+          }
+        },
+        {
+          "index": 6,
+          "type": "AUTO_SHAPE (1)",
+          "name": "Text 6",
+          "position": {
+            "left": 0.5416666666666666,
+            "top": 1.9995122484689414,
+            "width": 2.5641108923884515,
+            "height": 0.14583333333333334
+          },
+          "text": "DEFINITION",
+          "paragraphs": [
+            {
+              "text": "DEFINITION",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "DEFINITION",
+                  "font": {
+                    "name": "Arial",
+                    "size": 7.5,
+                    "bold": true,
+                    "color": null
+                  }
+                }
+              ]
+            }
+          ],
+          "line": {
+            "color": {
+              "type": "Other"
+            }
+          }
+        },
+        {
+          "index": 7,
+          "type": "AUTO_SHAPE (1)",
+          "name": "Text 7",
+          "position": {
+            "left": 0.5416666666666666,
+            "top": 2.2078455818022746,
+            "width": 2.5641108923884515,
+            "height": 0.3206375765529309
+          },
+          "text": "Integrated set of choices that position the organization to win—including what NOT to do",
+          "paragraphs": [
+            {
+              "text": "Integrated set of choices that position the organization to win—including what NOT to do",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "Integrated set of choices that position the organization to win—including what NOT to do",
+                  "font": {
+                    "name": "Arial",
+                    "size": 8.25,
+                    "color": null
+                  }
+                }
+              ]
+            }
+          ],
+          "line": {
+            "color": {
+              "type": "Other"
+            }
+          }
+        },
+        {
+          "index": 8,
+          "type": "AUTO_SHAPE (1)",
+          "name": "Text 8",
+          "position": {
+            "left": 0.4375,
+            "top": 2.9034831583552054,
+            "width": 2.7221675415573054,
+            "height": 0.7509765966754156
+          },
+          "paragraphs": [
+            {
+              "text": "",
+              "level": 0,
+              "alignment": null
+            }
+          ],
+          "fill": null,
+          "line": {
+            "color": {
+              "type": "Other"
+            }
+          }
+        },
+        {
+          "index": 9,
+          "type": "AUTO_SHAPE (1)",
+          "name": "Shape 9",
+          "position": {
+            "left": 0.4531255468066492,
+            "top": 2.9034831583552054,
+            "width": 0.0,
+            "height": 0.7509765966754156
+          },
+          "paragraphs": [
+            {
+              "text": "",
+              "level": 0,
+              "alignment": null
+            }
+          ],
+          "line": {
+            "color": null,
+            "width": 2.25
+          }
+        },
+        {
+          "index": 10,
+          "type": "AUTO_SHAPE (1)",
+          "name": "Text 10",
+          "position": {
+            "left": 0.5729166666666666,
+            "top": 2.986816491688539,
+            "width": 2.5322364391951004,
+            "height": 0.13118438320209974
+          },
+          "text": "✓ CORRECT",
+          "paragraphs": [
+            {
+              "text": "✓ CORRECT",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "✓ CORRECT",
+                  "font": {
+                    "name": "Arial",
+                    "size": 6.75,
+                    "bold": true,
+                    "color": null
+                  }
+                }
+              ]
+            }
+          ],
+          "line": {
+            "color": {
+              "type": "Other"
+            }
+          }
+        },
+        {
+          "index": 11,
+          "type": "AUTO_SHAPE (1)",
+          "name": "Text 11",
+          "position": {
+            "left": 0.5729166666666666,
+            "top": 3.1492508748906385,
+            "width": 2.5322364391951004,
+            "height": 0.4218755468066492
+          },
+          "text": "\"Dominate mid-market manufacturing software through vertical specialization. We will NOT pursue enterprise or horizontal apps.\"",
+          "paragraphs": [
+            {
+              "text": "\"Dominate mid-market manufacturing software through vertical specialization. We will NOT pursue enterprise or horizontal apps.\"",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "\"Dominate mid-market manufacturing software through vertical specialization. We will NOT pursue enterprise or horizontal apps.\"",
+                  "font": {
+                    "name": "Arial",
+                    "size": 7.5,
+                    "color": null
+                  }
+                }
+              ]
+            }
+          ],
+          "line": {
+            "color": {
+              "type": "Other"
+            }
+          }
+        },
+        {
+          "index": 12,
+          "type": "AUTO_SHAPE (1)",
+          "name": "Text 12",
+          "position": {
+            "left": 0.4375,
+            "top": 3.9044597550306213,
+            "width": 2.7221675415573054,
+            "height": 0.7832031933508311
+          },
+          "paragraphs": [
+            {
+              "text": "",
+              "level": 0,
+              "alignment": null
+            }
+          ],
+          "fill": null,
+          "line": {
+            "color": {
+              "type": "Other"
+            }
+          }
+        },
+        {
+          "index": 13,
+          "type": "AUTO_SHAPE (1)",
+          "name": "Shape 13",
+          "position": {
+            "left": 0.4531255468066492,
+            "top": 3.9044597550306213,
+            "width": 0.0,
+            "height": 0.7832031933508311
+          },
+          "paragraphs": [
+            {
+              "text": "",
+              "level": 0,
+              "alignment": null
+            }
+          ],
+          "line": {
+            "color": null,
+            "width": 2.25
+          }
+        },
+        {
+          "index": 14,
+          "type": "AUTO_SHAPE (1)",
+          "name": "Text 14",
+          "position": {
+            "left": 0.5729166666666666,
+            "top": 3.9877930883639543,
+            "width": 2.5322364391951004,
+            "height": 0.13118438320209974
+          },
+          "text": "✗ INCORRECT",
+          "paragraphs": [
+            {
+              "text": "✗ INCORRECT",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "✗ INCORRECT",
+                  "font": {
+                    "name": "Arial",
+                    "size": 6.75,
+                    "bold": true,
+                    "color": null
+                  }
+                }
+              ]
+            }
+          ],
+          "line": {
+            "color": {
+              "type": "Other"
+            }
+          }
+        },
+        {
+          "index": 15,
+          "type": "AUTO_SHAPE (1)",
+          "name": "Text 15",
+          "position": {
+            "left": 0.5729166666666666,
+            "top": 4.150227471566054,
+            "width": 2.5322364391951004,
+            "height": 0.28125
+          },
+          "text": "\"Be the best software company and grow revenue 20%.\"",
+          "paragraphs": [
+            {
+              "text": "\"Be the best software company and grow revenue 20%.\"",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "\"Be the best software company and grow revenue 20%.\"",
+                  "font": {
+                    "name": "Arial",
+                    "size": 7.5,
+                    "color": null
+                  }
+                }
+              ]
+            }
+          ],
+          "line": {
+            "color": {
+              "type": "Other"
+            }
+          }
+        },
+        {
+          "index": 16,
+          "type": "AUTO_SHAPE (1)",
+          "name": "Text 16",
+          "position": {
+            "left": 0.5729166666666666,
+            "top": 4.473144138232721,
+            "width": 2.5322364391951004,
+            "height": 0.13118438320209974
+          },
+          "text": "↳ No choices, no trade-offs—this is a goal, not a strategy",
+          "paragraphs": [
+            {
+              "text": "↳ No choices, no trade-offs—this is a goal, not a strategy",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "↳ No choices, no trade-offs—this is a goal, not a strategy",
+                  "font": {
+                    "name": "Arial",
+                    "size": 6.75,
+                    "italic": true,
+                    "color": null
+                  }
+                }
+              ]
+            }
+          ],
+          "line": {
+            "color": {
+              "type": "Other"
+            }
+          }
+        },
+        {
+          "index": 17,
+          "type": "AUTO_SHAPE (1)",
+          "name": "Text 17",
+          "position": {
+            "left": 3.4721675415573054,
+            "top": 1.1518558617672792,
+            "width": 3.0555008748906385,
+            "height": 3.65250656167979
+          },
+          "paragraphs": [
+            {
+              "text": "",
+              "level": 0,
+              "alignment": null
+            }
+          ],
+          "fill": null,
+          "line": {
+            "color": null,
+            "width": 1.5
+          }
+        },
+        {
+          "index": 18,
+          "type": "AUTO_SHAPE (1)",
+          "name": "Text 18",
+          "position": {
+            "left": 3.638834208223972,
+            "top": 1.3185225284339457,
+            "width": 2.7766108923884514,
+            "height": 0.18945319335083113
+          },
+          "text": "GOALS",
+          "paragraphs": [
+            {
+              "text": "GOALS",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "GOALS",
+                  "font": {
+                    "name": "Arial",
+                    "size": 9.75,
+                    "bold": true,
+                    "color": null
+                  }
+                }
+              ]
+            }
+          ],
+          "line": {
+            "color": {
+              "type": "Other"
+            }
+          }
+        },
+        {
+          "index": 19,
+          "type": "AUTO_SHAPE (1)",
+          "name": "Text 19",
+          "position": {
+            "left": 3.638834208223972,
+            "top": 1.5288090551181102,
+            "width": 2.7766108923884514,
+            "height": 0.14583333333333334
+          },
+          "text": "What outcomes to achieve",
+          "paragraphs": [
+            {
+              "text": "What outcomes to achieve",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "What outcomes to achieve",
+                  "font": {
+                    "name": "Arial",
+                    "size": 7.5,
+                    "color": null
+                  }
+                }
+              ]
+            }
+          ],
+          "line": {
+            "color": {
+              "type": "Other"
+            }
+          }
+        },
+        {
+          "index": 20,
+          "type": "AUTO_SHAPE (1)",
+          "name": "Text 20",
+          "position": {
+            "left": 3.638834208223972,
+            "top": 1.945475721784777,
+            "width": 2.7221675415573054,
+            "height": 0.9184569116360455
+          },
+          "paragraphs": [
+            {
+              "text": "",
+              "level": 0,
+              "alignment": null
+            }
+          ],
+          "fill": null,
+          "line": {
+            "color": null,
+            "width": 0.75
+          }
+        },
+        {
+          "index": 21,
+          "type": "AUTO_SHAPE (1)",
+          "name": "Text 21",
+          "position": {
+            "left": 3.7534175415573054,
+            "top": 2.0600590551181104,
+            "width": 2.5428608923884513,
+            "height": 0.14583333333333334
+          },
+          "text": "DEFINITION",
+          "paragraphs": [
+            {
+              "text": "DEFINITION",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "DEFINITION",
+                  "font": {
+                    "name": "Arial",
+                    "size": 7.5,
+                    "bold": true,
+                    "color": null
+                  }
+                }
+              ]
+            }
+          ],
+          "line": {
+            "color": {
+              "type": "Other"
+            }
+          }
+        },
+        {
+          "index": 22,
+          "type": "AUTO_SHAPE (1)",
+          "name": "Text 22",
+          "position": {
+            "left": 3.7534175415573054,
+            "top": 2.2683923884514434,
+            "width": 2.5428608923884513,
+            "height": 0.4809569116360455
+          },
+          "text": "Specific, measurable outcomes with defined timeframes (SMART: Specific, Measurable, Achievable, Relevant, Time-bound)",
+          "paragraphs": [
+            {
+              "text": "Specific, measurable outcomes with defined timeframes (SMART: Specific, Measurable, Achievable, Relevant, Time-bound)",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "Specific, measurable outcomes with defined timeframes (SMART: Specific, Measurable, Achievable, Relevant, Time-bound)",
+                  "font": {
+                    "name": "Arial",
+                    "size": 8.25,
+                    "color": null
+                  }
+                }
+              ]
+            }
+          ],
+          "line": {
+            "color": {
+              "type": "Other"
+            }
+          }
+        },
+        {
+          "index": 23,
+          "type": "AUTO_SHAPE (1)",
+          "name": "Text 23",
+          "position": {
+            "left": 3.638834208223972,
+            "top": 3.1347659667541556,
+            "width": 2.7221675415573054,
+            "height": 0.6103510498687664
+          },
+          "paragraphs": [
+            {
+              "text": "",
+              "level": 0,
+              "alignment": null
+            }
+          ],
+          "fill": null,
+          "line": {
+            "color": {
+              "type": "Other"
+            }
+          }
+        },
+        {
+          "index": 24,
+          "type": "AUTO_SHAPE (1)",
+          "name": "Shape 24",
+          "position": {
+            "left": 3.6544597550306213,
+            "top": 3.1347659667541556,
+            "width": 0.0,
+            "height": 0.6103510498687664
+          },
+          "paragraphs": [
+            {
+              "text": "",
+              "level": 0,
+              "alignment": null
+            }
+          ],
+          "line": {
+            "color": null,
+            "width": 2.25
+          }
+        },
+        {
+          "index": 25,
+          "type": "AUTO_SHAPE (1)",
+          "name": "Text 25",
+          "position": {
+            "left": 3.7742508748906385,
+            "top": 3.218099300087489,
+            "width": 2.5322364391951004,
+            "height": 0.13118438320209974
+          },
+          "text": "✓ CORRECT",
+          "paragraphs": [
+            {
+              "text": "✓ CORRECT",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "✓ CORRECT",
+                  "font": {
+                    "name": "Arial",
+                    "size": 6.75,
+                    "bold": true,
+                    "color": null
+                  }
+                }
+              ]
+            }
+          ],
+          "line": {
+            "color": {
+              "type": "Other"
+            }
+          }
+        },
+        {
+          "index": 26,
+          "type": "AUTO_SHAPE (1)",
+          "name": "Text 26",
+          "position": {
+            "left": 3.7742508748906385,
+            "top": 3.3805336832895887,
+            "width": 2.5322364391951004,
+            "height": 0.28125
+          },
+          "text": "\"Acquire 500 new manufacturing customers in North America by December 2026.\"",
+          "paragraphs": [
+            {
+              "text": "\"Acquire 500 new manufacturing customers in North America by December 2026.\"",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "\"Acquire 500 new manufacturing customers in North America by December 2026.\"",
+                  "font": {
+                    "name": "Arial",
+                    "size": 7.5,
+                    "color": null
+                  }
+                }
+              ]
+            }
+          ],
+          "line": {
+            "color": {
+              "type": "Other"
+            }
+          }
+        },
+        {
+          "index": 27,
+          "type": "AUTO_SHAPE (1)",
+          "name": "Text 27",
+          "position": {
+            "left": 3.638834208223972,
+            "top": 3.995117016622922,
+            "width": 2.7221675415573054,
+            "height": 0.6425776465441819
+          },
+          "paragraphs": [
+            {
+              "text": "",
+              "level": 0,
+              "alignment": null
+            }
+          ],
+          "fill": null,
+          "line": {
+            "color": {
+              "type": "Other"
+            }
+          }
+        },
+        {
+          "index": 28,
+          "type": "AUTO_SHAPE (1)",
+          "name": "Shape 28",
+          "position": {
+            "left": 3.6544597550306213,
+            "top": 3.995117016622922,
+            "width": 0.0,
+            "height": 0.6425776465441819
+          },
+          "paragraphs": [
+            {
+              "text": "",
+              "level": 0,
+              "alignment": null
+            }
+          ],
+          "line": {
+            "color": null,
+            "width": 2.25
+          }
+        },
+        {
+          "index": 29,
+          "type": "AUTO_SHAPE (1)",
+          "name": "Text 29",
+          "position": {
+            "left": 3.7742508748906385,
+            "top": 4.078450349956255,
+            "width": 2.5322364391951004,
+            "height": 0.13118438320209974
+          },
+          "text": "✗ INCORRECT",
+          "paragraphs": [
+            {
+              "text": "✗ INCORRECT",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "✗ INCORRECT",
+                  "font": {
+                    "name": "Arial",
+                    "size": 6.75,
+                    "bold": true,
+                    "color": null
+                  }
+                }
+              ]
+            }
+          ],
+          "line": {
+            "color": {
+              "type": "Other"
+            }
+          }
+        },
+        {
+          "index": 30,
+          "type": "AUTO_SHAPE (1)",
+          "name": "Text 30",
+          "position": {
+            "left": 3.7742508748906385,
+            "top": 4.240885826771653,
+            "width": 2.5322364391951004,
+            "height": 0.14062554680664918
+          },
+          "text": "\"Grow market share significantly.\"",
+          "paragraphs": [
+            {
+              "text": "\"Grow market share significantly.\"",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "\"Grow market share significantly.\"",
+                  "font": {
+                    "name": "Arial",
+                    "size": 7.5,
+                    "color": null
+                  }
+                }
+              ]
+            }
+          ],
+          "line": {
+            "color": {
+              "type": "Other"
+            }
+          }
+        },
+        {
+          "index": 31,
+          "type": "AUTO_SHAPE (1)",
+          "name": "Text 31",
+          "position": {
+            "left": 3.7742508748906385,
+            "top": 4.423176946631671,
+            "width": 2.5322364391951004,
+            "height": 0.13118438320209974
+          },
+          "text": "↳ Vague, no metrics, no deadline—unmeasurable",
+          "paragraphs": [
+            {
+              "text": "↳ Vague, no metrics, no deadline—unmeasurable",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "↳ Vague, no metrics, no deadline—unmeasurable",
+                  "font": {
+                    "name": "Arial",
+                    "size": 6.75,
+                    "italic": true,
+                    "color": null
+                  }
+                }
+              ]
+            }
+          ],
+          "line": {
+            "color": {
+              "type": "Other"
+            }
+          }
+        },
+        {
+          "index": 32,
+          "type": "AUTO_SHAPE (1)",
+          "name": "Text 32",
+          "position": {
+            "left": 6.694336176727909,
+            "top": 1.2527668416447943,
+            "width": 3.013834208223972,
+            "height": 3.4505205599300086
+          },
+          "paragraphs": [
+            {
+              "text": "",
+              "level": 0,
+              "alignment": null
+            }
+          ],
+          "fill": null,
+          "line": {
+            "color": {
+              "type": "Other"
+            }
+          }
+        },
+        {
+          "index": 33,
+          "type": "AUTO_SHAPE (1)",
+          "name": "Text 33",
+          "position": {
+            "left": 6.8401695100612425,
+            "top": 1.3986001749781278,
+            "width": 2.7766108923884514,
+            "height": 0.18945319335083113
+          },
+          "text": "TACTICS",
+          "paragraphs": [
+            {
+              "text": "TACTICS",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "TACTICS",
+                  "font": {
+                    "name": "Arial",
+                    "size": 9.75,
+                    "bold": true,
+                    "color": null
+                  }
+                }
+              ]
+            }
+          ],
+          "line": {
+            "color": {
+              "type": "Other"
+            }
+          }
+        },
+        {
+          "index": 34,
+          "type": "AUTO_SHAPE (1)",
+          "name": "Text 34",
+          "position": {
+            "left": 6.8401695100612425,
+            "top": 1.6088867016622923,
+            "width": 2.7766108923884514,
+            "height": 0.14583333333333334
+          },
+          "text": "How to execute",
+          "paragraphs": [
+            {
+              "text": "How to execute",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "How to execute",
+                  "font": {
+                    "name": "Arial",
+                    "size": 7.5,
+                    "color": null
+                  }
+                }
+              ]
+            }
+          ],
+          "line": {
+            "color": {
+              "type": "Other"
+            }
+          }
+        },
+        {
+          "index": 35,
+          "type": "AUTO_SHAPE (1)",
+          "name": "Text 35",
+          "position": {
+            "left": 6.8401695100612425,
+            "top": 2.025553368328959,
+            "width": 2.7221675415573054,
+            "height": 0.7581375765529309
+          },
+          "paragraphs": [
+            {
+              "text": "",
+              "level": 0,
+              "alignment": null
+            }
+          ],
+          "fill": null,
+          "line": {
+            "color": null,
+            "width": 0.75
+          }
+        },
+        {
+          "index": 36,
+          "type": "AUTO_SHAPE (1)",
+          "name": "Text 36",
+          "position": {
+            "left": 6.954752843394576,
+            "top": 2.1401367016622923,
+            "width": 2.5428608923884513,
+            "height": 0.14583333333333334
+          },
+          "text": "DEFINITION",
+          "paragraphs": [
+            {
+              "text": "DEFINITION",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "DEFINITION",
+                  "font": {
+                    "name": "Arial",
+                    "size": 7.5,
+                    "bold": true,
+                    "color": null
+                  }
+                }
+              ]
+            }
+          ],
+          "line": {
+            "color": {
+              "type": "Other"
+            }
+          }
+        },
+        {
+          "index": 37,
+          "type": "AUTO_SHAPE (1)",
+          "name": "Text 37",
+          "position": {
+            "left": 6.954752843394576,
+            "top": 2.3484700349956253,
+            "width": 2.5428608923884513,
+            "height": 0.3206375765529309
+          },
+          "text": "Specific actions and initiatives to achieve goals. Short-term, adjustable, with clear ownership.",
+          "paragraphs": [
+            {
+              "text": "Specific actions and initiatives to achieve goals. Short-term, adjustable, with clear ownership.",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "Specific actions and initiatives to achieve goals. Short-term, adjustable, with clear ownership.",
+                  "font": {
+                    "name": "Arial",
+                    "size": 8.25,
+                    "color": null
+                  }
+                }
+              ]
+            }
+          ],
+          "line": {
+            "color": {
+              "type": "Other"
+            }
+          }
+        },
+        {
+          "index": 38,
+          "type": "AUTO_SHAPE (1)",
+          "name": "Text 38",
+          "position": {
+            "left": 6.8401695100612425,
+            "top": 3.054524278215223,
+            "width": 2.7221675415573054,
+            "height": 0.6103510498687664
+          },
+          "paragraphs": [
+            {
+              "text": "",
+              "level": 0,
+              "alignment": null
+            }
+          ],
+          "fill": null,
+          "line": {
+            "color": {
+              "type": "Other"
+            }
+          }
+        },
+        {
+          "index": 39,
+          "type": "AUTO_SHAPE (1)",
+          "name": "Shape 39",
+          "position": {
+            "left": 6.855793963254593,
+            "top": 3.054524278215223,
+            "width": 0.0,
+            "height": 0.6103510498687664
+          },
+          "paragraphs": [
+            {
+              "text": "",
+              "level": 0,
+              "alignment": null
+            }
+          ],
+          "line": {
+            "color": null,
+            "width": 2.25
+          }
+        },
+        {
+          "index": 40,
+          "type": "AUTO_SHAPE (1)",
+          "name": "Text 40",
+          "position": {
+            "left": 6.975586176727909,
+            "top": 3.1378576115485566,
+            "width": 2.5322364391951004,
+            "height": 0.13118438320209974
+          },
+          "text": "✓ CORRECT",
+          "paragraphs": [
+            {
+              "text": "✓ CORRECT",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "✓ CORRECT",
+                  "font": {
+                    "name": "Arial",
+                    "size": 6.75,
+                    "bold": true,
+                    "color": null
+                  }
+                }
+              ]
+            }
+          ],
+          "line": {
+            "color": {
+              "type": "Other"
+            }
+          }
+        },
+        {
+          "index": 41,
+          "type": "AUTO_SHAPE (1)",
+          "name": "Text 41",
+          "position": {
+            "left": 6.975586176727909,
+            "top": 3.3002930883639543,
+            "width": 2.5322364391951004,
+            "height": 0.28125
+          },
+          "text": "\"Sponsor NAM conference; hire 3 vertical sales reps; launch LinkedIn campaign targeting plant managers.\"",
+          "paragraphs": [
+            {
+              "text": "\"Sponsor NAM conference; hire 3 vertical sales reps; launch LinkedIn campaign targeting plant managers.\"",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "\"Sponsor NAM conference; hire 3 vertical sales reps; launch LinkedIn campaign targeting plant managers.\"",
+                  "font": {
+                    "name": "Arial",
+                    "size": 7.5,
+                    "color": null
+                  }
+                }
+              ]
+            }
+          ],
+          "line": {
+            "color": {
+              "type": "Other"
+            }
+          }
+        },
+        {
+          "index": 42,
+          "type": "AUTO_SHAPE (1)",
+          "name": "Text 42",
+          "position": {
+            "left": 6.8401695100612425,
+            "top": 3.914876421697288,
+            "width": 2.7221675415573054,
+            "height": 0.6425776465441819
+          },
+          "paragraphs": [
+            {
+              "text": "",
+              "level": 0,
+              "alignment": null
+            }
+          ],
+          "fill": null,
+          "line": {
+            "color": {
+              "type": "Other"
+            }
+          }
+        },
+        {
+          "index": 43,
+          "type": "AUTO_SHAPE (1)",
+          "name": "Shape 43",
+          "position": {
+            "left": 6.855793963254593,
+            "top": 3.914876421697288,
+            "width": 0.0,
+            "height": 0.6425776465441819
+          },
+          "paragraphs": [
+            {
+              "text": "",
+              "level": 0,
+              "alignment": null
+            }
+          ],
+          "line": {
+            "color": null,
+            "width": 2.25
+          }
+        },
+        {
+          "index": 44,
+          "type": "AUTO_SHAPE (1)",
+          "name": "Text 44",
+          "position": {
+            "left": 6.975586176727909,
+            "top": 3.9982097550306213,
+            "width": 2.5322364391951004,
+            "height": 0.13118438320209974
+          },
+          "text": "✗ INCORRECT",
+          "paragraphs": [
+            {
+              "text": "✗ INCORRECT",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "✗ INCORRECT",
+                  "font": {
+                    "name": "Arial",
+                    "size": 6.75,
+                    "bold": true,
+                    "color": null
+                  }
+                }
+              ]
+            }
+          ],
+          "line": {
+            "color": {
+              "type": "Other"
+            }
+          }
+        },
+        {
+          "index": 45,
+          "type": "AUTO_SHAPE (1)",
+          "name": "Text 45",
+          "position": {
+            "left": 6.975586176727909,
+            "top": 4.160644138232721,
+            "width": 2.5322364391951004,
+            "height": 0.14062554680664918
+          },
+          "text": "\"Do more marketing and sales.\"",
+          "paragraphs": [
+            {
+              "text": "\"Do more marketing and sales.\"",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "\"Do more marketing and sales.\"",
+                  "font": {
+                    "name": "Arial",
+                    "size": 7.5,
+                    "color": null
+                  }
+                }
+              ]
+            }
+          ],
+          "line": {
+            "color": {
+              "type": "Other"
+            }
+          }
+        },
+        {
+          "index": 46,
+          "type": "AUTO_SHAPE (1)",
+          "name": "Text 46",
+          "position": {
+            "left": 6.975586176727909,
+            "top": 4.342936351706037,
+            "width": 2.5322364391951004,
+            "height": 0.13118438320209974
+          },
+          "text": "↳ Not actionable—no specific activity or owner",
+          "paragraphs": [
+            {
+              "text": "↳ Not actionable—no specific activity or owner",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "↳ Not actionable—no specific activity or owner",
+                  "font": {
+                    "name": "Arial",
+                    "size": 6.75,
+                    "italic": true,
+                    "color": null
+                  }
+                }
+              ]
+            }
+          ],
+          "line": {
+            "color": {
+              "type": "Other"
+            }
+          }
+        },
+        {
+          "index": 47,
+          "type": "AUTO_SHAPE (1)",
+          "name": "Shape 47",
+          "position": {
+            "left": 0.2916666666666667,
+            "top": 5.155273403324585,
+            "width": 9.416666666666666,
+            "height": 0.0
+          },
+          "paragraphs": [
+            {
+              "text": "",
+              "level": 0,
+              "alignment": null
+            }
+          ],
+          "line": {
+            "color": null,
+            "width": 0.75
+          }
+        },
+        {
+          "index": 48,
+          "type": "AUTO_SHAPE (1)",
+          "name": "Text 48",
+          "position": {
+            "left": 0.2916666666666667,
+            "top": 5.2229822834645665,
+            "width": 9.605,
+            "height": 0.13118438320209974
+          },
+          "text": "Key insight: Strategy defines what NOT to do • Goals are measurable targets • Tactics are swappable actions",
+          "paragraphs": [
+            {
+              "text": "Key insight: Strategy defines what NOT to do • Goals are measurable targets • Tactics are swappable actions",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "Key insight:",
+                  "font": {
+                    "name": "Arial",
+                    "size": 6.75,
+                    "bold": true,
+                    "color": null
+                  }
+                },
+                {
+                  "text": " Strategy defines what NOT to do • Goals are measurable targets • Tactics are swappable actions",
+                  "font": {
+                    "name": "Arial",
+                    "size": 6.75,
+                    "color": null
+                  }
+                }
+              ]
+            }
+          ],
+          "line": {
+            "color": {
+              "type": "Other"
+            }
+          }
+        }
+      ],
+      "shape_count": 49
+    },
+    {
+      "number": 2,
+      "slide_id": 257,
+      "layout_name": "DEFAULT",
+      "shapes": [
+        {
+          "index": 0,
+          "type": "AUTO_SHAPE (1)",
+          "name": "Text 0",
+          "position": {
+            "left": 0.2916666666666667,
+            "top": 0.2708333333333333,
+            "width": 7.171875546806649,
+            "height": 0.2708333333333333
+          },
+          "text": "Strategy Creates Alignment—Its Absence Creates Chaos",
+          "paragraphs": [
+            {
+              "text": "Strategy Creates Alignment—Its Absence Creates Chaos",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "Strategy Creates Alignment—Its Absence Creates Chaos",
+                  "font": {
+                    "name": "Arial",
+                    "size": 19.5,
+                    "bold": true,
+                    "color": null
+                  }
+                }
+              ]
+            }
+          ],
+          "line": {
+            "color": {
+              "type": "Other"
+            }
+          }
+        },
+        {
+          "index": 1,
+          "type": "PICTURE (13)",
+          "name": "Image 0",
+          "position": {
+            "left": 0.2916666666666667,
+            "top": 0.8792322834645669,
+            "width": 4.604166666666667,
+            "height": 4.0166010498687665
+          },
+          "line": {
+            "color": {
+              "type": "Other"
+            }
+          }
+        },
+        {
+          "index": 2,
+          "type": "AUTO_SHAPE (1)",
+          "name": "Text 1",
+          "position": {
+            "left": 0.41562445319335084,
+            "top": 1.0458989501312337,
+            "width": 4.35625,
+            "height": 0.2041010498687664
+          },
+          "text": "✗ WITHOUT STRATEGY",
+          "paragraphs": [
+            {
+              "text": "✗ WITHOUT STRATEGY",
+              "level": 0,
+              "alignment": "CENTER (2)",
+              "runs": [
+                {
+                  "text": "✗ WITHOUT STRATEGY",
+                  "font": {
+                    "name": "Arial",
+                    "size": 10.5,
+                    "bold": true,
+                    "color": null
+                  }
+                }
+              ]
+            }
+          ],
+          "line": {
+            "color": {
+              "type": "Other"
+            }
+          }
+        },
+        {
+          "index": 3,
+          "type": "AUTO_SHAPE (1)",
+          "name": "Text 2",
+          "position": {
+            "left": 0.41562445319335084,
+            "top": 1.2916666666666667,
+            "width": 4.35625,
+            "height": 0.14583333333333334
+          },
+          "text": "Siloed tactics, misaligned effort",
+          "paragraphs": [
+            {
+              "text": "Siloed tactics, misaligned effort",
+              "level": 0,
+              "alignment": "CENTER (2)",
+              "runs": [
+                {
+                  "text": "Siloed tactics, misaligned effort",
+                  "font": {
+                    "name": "Arial",
+                    "size": 7.5,
+                    "color": null
+                  }
+                }
+              ]
+            }
+          ],
+          "line": {
+            "color": {
+              "type": "Other"
+            }
+          }
+        },
+        {
+          "index": 4,
+          "type": "AUTO_SHAPE (1)",
+          "name": "Text 3",
+          "position": {
+            "left": 1.65625,
+            "top": 1.7291666666666667,
+            "width": 1.875,
+            "height": 0.4166666666666667
+          },
+          "paragraphs": [
+            {
+              "text": "",
+              "level": 0,
+              "alignment": null
+            }
+          ],
+          "fill": null,
+          "line": {
+            "color": null,
+            "width": 1.5
+          }
+        },
+        {
+          "index": 5,
+          "type": "AUTO_SHAPE (1)",
+          "name": "Text 4",
+          "position": {
+            "left": 2.0777996500437443,
+            "top": 1.8572594050743656,
+            "width": 1.0525393700787402,
+            "height": 0.1603193350831146
+          },
+          "text": "No Strategy Defined",
+          "paragraphs": [
+            {
+              "text": "No Strategy Defined",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "No Strategy Defined",
+                  "font": {
+                    "name": "Arial",
+                    "size": 8.25,
+                    "italic": true,
+                    "color": null
+                  }
+                }
+              ]
+            }
+          ],
+          "line": {
+            "color": {
+              "type": "Other"
+            }
+          }
+        },
+        {
+          "index": 6,
+          "type": "AUTO_SHAPE (1)",
+          "name": "Text 5",
+          "position": {
+            "left": 2.1458333333333335,
+            "top": 2.2291666666666665,
+            "width": 0.020833333333333332,
+            "height": 0.20833333333333334
+          },
+          "paragraphs": [
+            {
+              "text": "",
+              "level": 0,
+              "alignment": null
+            }
+          ],
+          "fill": null,
+          "line": {
+            "color": {
+              "type": "Other"
+            }
+          }
+        },
+        {
+          "index": 7,
+          "type": "AUTO_SHAPE (1)",
+          "name": "Text 6",
+          "position": {
+            "left": 2.5833333333333335,
+            "top": 2.2291666666666665,
+            "width": 0.020833333333333332,
+            "height": 0.20833333333333334
+          },
+          "paragraphs": [
+            {
+              "text": "",
+              "level": 0,
+              "alignment": null
+            }
+          ],
+          "fill": null,
+          "line": {
+            "color": {
+              "type": "Other"
+            }
+          }
+        },
+        {
+          "index": 8,
+          "type": "AUTO_SHAPE (1)",
+          "name": "Text 7",
+          "position": {
+            "left": 3.0208333333333335,
+            "top": 2.2291666666666665,
+            "width": 0.020833333333333332,
+            "height": 0.20833333333333334
+          },
+          "paragraphs": [
+            {
+              "text": "",
+              "level": 0,
+              "alignment": null
+            }
+          ],
+          "fill": null,
+          "line": {
+            "color": {
+              "type": "Other"
+            }
+          }
+        },
+        {
+          "index": 9,
+          "type": "AUTO_SHAPE (1)",
+          "name": "Text 8",
+          "position": {
+            "left": 1.5520833333333333,
+            "top": 2.5208333333333335,
+            "width": 2.0833333333333335,
+            "height": 0.375
+          },
+          "paragraphs": [
+            {
+              "text": "",
+              "level": 0,
+              "alignment": null
+            }
+          ],
+          "fill": null,
+          "line": {
+            "color": null,
+            "width": 1.5
+          }
+        },
+        {
+          "index": 10,
+          "type": "AUTO_SHAPE (1)",
+          "name": "Text 9",
+          "position": {
+            "left": 1.9046227034120735,
+            "top": 2.628092738407699,
+            "width": 1.4058202099737533,
+            "height": 0.1603193350831146
+          },
+          "text": "🎯 GOAL: Grow Revenue",
+          "paragraphs": [
+            {
+              "text": "🎯 GOAL: Grow Revenue",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "🎯 GOAL: Grow Revenue",
+                  "font": {
+                    "name": "Arial",
+                    "size": 8.25,
+                    "bold": true,
+                    "color": null
+                  }
+                }
+              ]
+            }
+          ],
+          "line": {
+            "color": {
+              "type": "Other"
+            }
+          }
+        },
+        {
+          "index": 11,
+          "type": "AUTO_SHAPE (1)",
+          "name": "Text 10",
+          "position": {
+            "left": 0.9162598425196851,
+            "top": 3.132730752405949,
+            "width": 0.13380905511811023,
+            "height": 1.0470374015748032
+          },
+          "text": "NO GUARDRAILS",
+          "paragraphs": [
+            {
+              "text": "NO GUARDRAILS",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "NO GUARDRAILS",
+                  "font": {
+                    "name": "Arial",
+                    "size": 6.75,
+                    "color": null
+                  }
+                }
+              ]
+            }
+          ],
+          "line": {
+            "color": {
+              "type": "Other"
+            }
+          }
+        },
+        {
+          "index": 12,
+          "type": "AUTO_SHAPE (1)",
+          "name": "Text 11",
+          "position": {
+            "left": 4.140055774278215,
+            "top": 3.132730752405949,
+            "width": 0.13380905511811023,
+            "height": 1.0470374015748032
+          },
+          "text": "NO GUARDRAILS",
+          "paragraphs": [
+            {
+              "text": "NO GUARDRAILS",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "NO GUARDRAILS",
+                  "font": {
+                    "name": "Arial",
+                    "size": 6.75,
+                    "color": null
+                  }
+                }
+              ]
+            }
+          ],
+          "line": {
+            "color": {
+              "type": "Other"
+            }
+          }
+        },
+        {
+          "index": 13,
+          "type": "AUTO_SHAPE (1)",
+          "name": "Text 12",
+          "position": {
+            "left": 1.4127602799650043,
+            "top": 3.03125,
+            "width": 0.375,
+            "height": 0.375
+          },
+          "paragraphs": [
+            {
+              "text": "",
+              "level": 0,
+              "alignment": null
+            }
+          ],
+          "fill": null,
+          "line": {
+            "color": null,
+            "width": 1.5
+          }
+        },
+        {
+          "index": 14,
+          "type": "AUTO_SHAPE (1)",
+          "name": "Text 13",
+          "position": {
+            "left": 1.4455807086614174,
+            "top": 3.303653762029746,
+            "width": 0.3093591426071741,
+            "height": 0.3093591426071741
+          },
+          "paragraphs": [
+            {
+              "text": "",
+              "level": 0,
+              "alignment": null
+            }
+          ],
+          "fill": null,
+          "line": {
+            "color": {
+              "type": "Other"
+            }
+          }
+        },
+        {
+          "index": 15,
+          "type": "AUTO_SHAPE (1)",
+          "name": "Text 14",
+          "position": {
+            "left": 1.3386198600174979,
+            "top": 3.4895833333333335,
+            "width": 0.5232808398950132,
+            "height": 0.11653652668416448
+          },
+          "text": "\"Cut all costs\"",
+          "paragraphs": [
+            {
+              "text": "\"Cut all costs\"",
+              "level": 0,
+              "alignment": "CENTER (2)",
+              "runs": [
+                {
+                  "text": "\"Cut all costs\"",
+                  "font": {
+                    "name": "Arial",
+                    "size": 6.0,
+                    "color": null
+                  }
+                }
+              ]
+            }
+          ],
+          "line": {
+            "color": {
+              "type": "Other"
+            }
+          }
+        },
+        {
+          "index": 16,
+          "type": "AUTO_SHAPE (1)",
+          "name": "Text 15",
+          "position": {
+            "left": 3.205077646544182,
+            "top": 2.9791666666666665,
+            "width": 0.375,
+            "height": 0.375
+          },
+          "paragraphs": [
+            {
+              "text": "",
+              "level": 0,
+              "alignment": null
+            }
+          ],
+          "fill": null,
+          "line": {
+            "color": null,
+            "width": 1.5
+          }
+        },
+        {
+          "index": 17,
+          "type": "AUTO_SHAPE (1)",
+          "name": "Text 16",
+          "position": {
+            "left": 3.318452537182852,
+            "top": 3.408069772528434,
+            "width": 0.14825021872265967,
+            "height": 0.23594378827646545
+          },
+          "paragraphs": [
+            {
+              "text": "",
+              "level": 0,
+              "alignment": null
+            }
+          ],
+          "fill": null,
+          "line": {
+            "color": {
+              "type": "Other"
+            }
+          }
+        },
+        {
+          "index": 18,
+          "type": "AUTO_SHAPE (1)",
+          "name": "Text 17",
+          "position": {
+            "left": 3.0387970253718284,
+            "top": 3.6770833333333335,
+            "width": 0.7077241907261592,
+            "height": 0.11653652668416448
+          },
+          "text": "\"Chase enterprise\"",
+          "paragraphs": [
+            {
+              "text": "\"Chase enterprise\"",
+              "level": 0,
+              "alignment": "CENTER (2)",
+              "runs": [
+                {
+                  "text": "\"Chase enterprise\"",
+                  "font": {
+                    "name": "Arial",
+                    "size": 6.0,
+                    "color": null
+                  }
+                }
+              ]
+            }
+          ],
+          "line": {
+            "color": {
+              "type": "Other"
+            }
+          }
+        },
+        {
+          "index": 19,
+          "type": "AUTO_SHAPE (1)",
+          "name": "Text 18",
+          "position": {
+            "left": 2.406169072615923,
+            "top": 3.7584634733158353,
+            "width": 0.375,
+            "height": 0.375
+          },
+          "paragraphs": [
+            {
+              "text": "",
+              "level": 0,
+              "alignment": null
+            }
+          ],
+          "fill": null,
+          "line": {
+            "color": null,
+            "width": 1.5
+          }
+        },
+        {
+          "index": 20,
+          "type": "AUTO_SHAPE (1)",
+          "name": "Text 19",
+          "position": {
+            "left": 2.457402668416448,
+            "top": 4.049281496062992,
+            "width": 0.27253062117235344,
+            "height": 0.27253062117235344
+          },
+          "paragraphs": [
+            {
+              "text": "",
+              "level": 0,
+              "alignment": null
+            }
+          ],
+          "fill": null,
+          "line": {
+            "color": {
+              "type": "Other"
+            }
+          }
+        },
+        {
+          "index": 21,
+          "type": "AUTO_SHAPE (1)",
+          "name": "Text 20",
+          "position": {
+            "left": 2.263462379702537,
+            "top": 4.216796806649169,
+            "width": 0.6605763342082239,
+            "height": 0.11653652668416448
+          },
+          "text": "\"Expand globally\"",
+          "paragraphs": [
+            {
+              "text": "\"Expand globally\"",
+              "level": 0,
+              "alignment": "CENTER (2)",
+              "runs": [
+                {
+                  "text": "\"Expand globally\"",
+                  "font": {
+                    "name": "Arial",
+                    "size": 6.0,
+                    "color": null
+                  }
+                }
+              ]
+            }
+          ],
+          "line": {
+            "color": {
+              "type": "Other"
+            }
+          }
+        },
+        {
+          "index": 22,
+          "type": "AUTO_SHAPE (1)",
+          "name": "Text 21",
+          "position": {
+            "left": 1.2809241032370953,
+            "top": 3.5520833333333335,
+            "width": 0.375,
+            "height": 0.375
+          },
+          "paragraphs": [
+            {
+              "text": "",
+              "level": 0,
+              "alignment": null
+            }
+          ],
+          "fill": null,
+          "line": {
+            "color": null,
+            "width": 1.5
+          }
+        },
+        {
+          "index": 23,
+          "type": "AUTO_SHAPE (1)",
+          "name": "Text 22",
+          "position": {
+            "left": 1.4051957567804025,
+            "top": 3.8287773403324583,
+            "width": 0.12645778652668416,
+            "height": 0.3007797462817148
+          },
+          "paragraphs": [
+            {
+              "text": "",
+              "level": 0,
+              "alignment": null
+            }
+          ],
+          "fill": null,
+          "line": {
+            "color": {
+              "type": "Other"
+            }
+          }
+        },
+        {
+          "index": 24,
+          "type": "AUTO_SHAPE (1)",
+          "name": "Text 23",
+          "position": {
+            "left": 1.1354166666666667,
+            "top": 4.010416666666667,
+            "width": 0.679336176727909,
+            "height": 0.11653652668416448
+          },
+          "text": "\"Discount heavily\"",
+          "paragraphs": [
+            {
+              "text": "\"Discount heavily\"",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "\"Discount heavily\"",
+                  "font": {
+                    "name": "Arial",
+                    "size": 6.0,
+                    "color": null
+                  }
+                }
+              ]
+            }
+          ],
+          "line": {
+            "color": {
+              "type": "Other"
+            }
+          }
+        },
+        {
+          "index": 25,
+          "type": "AUTO_SHAPE (1)",
+          "name": "Text 24",
+          "position": {
+            "left": 1.2410476815398075,
+            "top": 4.458333333333333,
+            "width": 2.7054035433070864,
+            "height": 0.2708333333333333
+          },
+          "paragraphs": [
+            {
+              "text": "",
+              "level": 0,
+              "alignment": null
+            }
+          ],
+          "fill": null,
+          "line": {
+            "color": {
+              "type": "Other"
+            }
+          }
+        },
+        {
+          "index": 26,
+          "type": "AUTO_SHAPE (1)",
+          "name": "Text 25",
+          "position": {
+            "left": 1.3868810148731407,
+            "top": 4.520833333333333,
+            "width": 2.4620122484689415,
+            "height": 0.14583333333333334
+          },
+          "text": "RESULT: Wasted resources, conflicting priorities",
+          "paragraphs": [
+            {
+              "text": "RESULT: Wasted resources, conflicting priorities",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "RESULT: Wasted resources, conflicting priorities",
+                  "font": {
+                    "name": "Arial",
+                    "size": 7.5,
+                    "bold": true,
+                    "color": null
+                  }
+                }
+              ]
+            }
+          ],
+          "line": {
+            "color": {
+              "type": "Other"
+            }
+          }
+        },
+        {
+          "index": 27,
+          "type": "PICTURE (13)",
+          "name": "Image 1",
+          "position": {
+            "left": 5.104166666666667,
+            "top": 0.9563801399825022,
+            "width": 4.604166666666667,
+            "height": 3.8623042432195978
+          },
+          "line": {
+            "color": {
+              "type": "Other"
+            }
+          }
+        },
+        {
+          "index": 28,
+          "type": "AUTO_SHAPE (1)",
+          "name": "Text 26",
+          "position": {
+            "left": 5.228124453193351,
+            "top": 1.1230468066491688,
+            "width": 4.35625,
+            "height": 0.2041010498687664
+          },
+          "text": "✓ WITH STRATEGY",
+          "paragraphs": [
+            {
+              "text": "✓ WITH STRATEGY",
+              "level": 0,
+              "alignment": "CENTER (2)",
+              "runs": [
+                {
+                  "text": "✓ WITH STRATEGY",
+                  "font": {
+                    "name": "Arial",
+                    "size": 10.5,
+                    "bold": true,
+                    "color": null
+                  }
+                }
+              ]
+            }
+          ],
+          "line": {
+            "color": {
+              "type": "Other"
+            }
+          }
+        },
+        {
+          "index": 29,
+          "type": "AUTO_SHAPE (1)",
+          "name": "Text 27",
+          "position": {
+            "left": 5.228124453193351,
+            "top": 1.3688156167979002,
+            "width": 4.35625,
+            "height": 0.14583333333333334
+          },
+          "text": "Clear choices create aligned execution",
+          "paragraphs": [
+            {
+              "text": "Clear choices create aligned execution",
+              "level": 0,
+              "alignment": "CENTER (2)",
+              "runs": [
+                {
+                  "text": "Clear choices create aligned execution",
+                  "font": {
+                    "name": "Arial",
+                    "size": 7.5,
+                    "color": null
+                  }
+                }
+              ]
+            }
+          ],
+          "line": {
+            "color": {
+              "type": "Other"
+            }
+          }
+        },
+        {
+          "index": 30,
+          "type": "AUTO_SHAPE (1)",
+          "name": "Text 28",
+          "position": {
+            "left": 6.15625,
+            "top": 1.8063156167979002,
+            "width": 2.5,
+            "height": 0.5
+          },
+          "paragraphs": [
+            {
+              "text": "",
+              "level": 0,
+              "alignment": null
+            }
+          ],
+          "fill": null,
+          "line": {
+            "color": {
+              "type": "Other"
+            }
+          }
+        },
+        {
+          "index": 31,
+          "type": "AUTO_SHAPE (1)",
+          "name": "Text 29",
+          "position": {
+            "left": 6.368986220472441,
+            "top": 1.9208989501312337,
+            "width": 2.074365704286964,
+            "height": 0.2708333333333333
+          },
+          "text": "STRATEGY: Win mid-market manufacturing\nTrade-off: NOT enterprise, NOT horizontal",
+          "paragraphs": [
+            {
+              "text": "STRATEGY: Win mid-market manufacturing\nTrade-off: NOT enterprise, NOT horizontal",
+              "level": 0,
+              "alignment": "CENTER (2)",
+              "runs": [
+                {
+                  "text": "STRATEGY:",
+                  "font": {
+                    "name": "Arial",
+                    "size": 7.5,
+                    "bold": true,
+                    "color": null
+                  }
+                },
+                {
+                  "text": " Win mid-market manufacturing\n",
+                  "font": {
+                    "name": "Arial",
+                    "size": 7.5,
+                    "color": null
+                  }
+                },
+                {
+                  "text": "Trade-off: NOT enterprise, NOT horizontal",
+                  "font": {
+                    "name": "Arial",
+                    "size": 7.5,
+                    "color": null
+                  }
+                }
+              ]
+            }
+          ],
+          "line": {
+            "color": {
+              "type": "Other"
+            }
+          }
+        },
+        {
+          "index": 32,
+          "type": "AUTO_SHAPE (1)",
+          "name": "Shape 30",
+          "position": {
+            "left": 6.364583333333333,
+            "top": 2.4833989501312335,
+            "width": 2.0833333333333335,
+            "height": 0.0
+          },
+          "paragraphs": [
+            {
+              "text": "",
+              "level": 0,
+              "alignment": null
+            }
+          ],
+          "line": {
+            "color": null,
+            "width": 13.5
+          }
+        },
+        {
+          "index": 33,
+          "type": "AUTO_SHAPE (1)",
+          "name": "Shape 31",
+          "position": {
+            "left": 7.927083333333333,
+            "top": 2.3896489501312335,
+            "width": 0.0,
+            "height": 0.1875
+          },
+          "paragraphs": [
+            {
+              "text": "",
+              "level": 0,
+              "alignment": null
+            }
+          ],
+          "line": {
+            "color": null,
+            "width": 75.0
+          }
+        },
+        {
+          "index": 34,
+          "type": "AUTO_SHAPE (1)",
+          "name": "Shape 32",
+          "position": {
+            "left": 6.885416666666667,
+            "top": 2.3896489501312335,
+            "width": 0.0,
+            "height": 0.1875
+          },
+          "paragraphs": [
+            {
+              "text": "",
+              "level": 0,
+              "alignment": null
+            }
+          ],
+          "line": {
+            "color": null,
+            "width": 75.0
+          }
+        },
+        {
+          "index": 35,
+          "type": "AUTO_SHAPE (1)",
+          "name": "Text 33",
+          "position": {
+            "left": 6.364583333333333,
+            "top": 2.660482283464567,
+            "width": 2.0833333333333335,
+            "height": 0.375
+          },
+          "paragraphs": [
+            {
+              "text": "",
+              "level": 0,
+              "alignment": null
+            }
+          ],
+          "fill": null,
+          "line": {
+            "color": null,
+            "width": 1.5
+          }
+        },
+        {
+          "index": 36,
+          "type": "AUTO_SHAPE (1)",
+          "name": "Text 34",
+          "position": {
+            "left": 6.589843613298338,
+            "top": 2.7677405949256344,
+            "width": 1.665469160104987,
+            "height": 0.1603193350831146
+          },
+          "text": "🎯 GOAL: 500 Mfg Customers",
+          "paragraphs": [
+            {
+              "text": "🎯 GOAL: 500 Mfg Customers",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "🎯 GOAL: 500 Mfg Customers",
+                  "font": {
+                    "name": "Arial",
+                    "size": 8.25,
+                    "bold": true,
+                    "color": null
+                  }
+                }
+              ]
+            }
+          ],
+          "line": {
+            "color": {
+              "type": "Other"
+            }
+          }
+        },
+        {
+          "index": 37,
+          "type": "PICTURE (13)",
+          "name": "Image 2",
+          "position": {
+            "left": 5.791666666666667,
+            "top": 3.1188156167979004,
+            "width": 0.03125,
+            "height": 1.0332031933508312
+          },
+          "line": {
+            "color": {
+              "type": "Other"
+            }
+          }
+        },
+        {
+          "index": 38,
+          "type": "PICTURE (13)",
+          "name": "Image 3",
+          "position": {
+            "left": 8.989583333333334,
+            "top": 3.1188156167979004,
+            "width": 0.03125,
+            "height": 1.0332031933508312
+          },
+          "line": {
+            "color": {
+              "type": "Other"
+            }
+          }
+        },
+        {
+          "index": 39,
+          "type": "AUTO_SHAPE (1)",
+          "name": "Text 35",
+          "position": {
+            "left": 5.726073928258968,
+            "top": 3.3229166666666665,
+            "width": 0.13380905511811023,
+            "height": 0.7291666666666666
+          },
+          "text": "GUARDRAILS",
+          "paragraphs": [
+            {
+              "text": "GUARDRAILS",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "GUARDRAILS",
+                  "font": {
+                    "name": "Arial",
+                    "size": 6.75,
+                    "bold": true,
+                    "color": null
+                  }
+                }
+              ]
+            }
+          ],
+          "line": {
+            "color": {
+              "type": "Other"
+            }
+          }
+        },
+        {
+          "index": 40,
+          "type": "AUTO_SHAPE (1)",
+          "name": "Text 36",
+          "position": {
+            "left": 8.955240594925634,
+            "top": 3.3229166666666665,
+            "width": 0.13380905511811023,
+            "height": 0.7291666666666666
+          },
+          "text": "GUARDRAILS",
+          "paragraphs": [
+            {
+              "text": "GUARDRAILS",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "GUARDRAILS",
+                  "font": {
+                    "name": "Arial",
+                    "size": 6.75,
+                    "bold": true,
+                    "color": null
+                  }
+                }
+              ]
+            }
+          ],
+          "line": {
+            "color": {
+              "type": "Other"
+            }
+          }
+        },
+        {
+          "index": 41,
+          "type": "AUTO_SHAPE (1)",
+          "name": "Text 37",
+          "position": {
+            "left": 5.90625,
+            "top": 3.222982283464567,
+            "width": 0.375,
+            "height": 0.375
+          },
+          "paragraphs": [
+            {
+              "text": "",
+              "level": 0,
+              "alignment": null
+            }
+          ],
+          "fill": null,
+          "line": {
+            "color": null,
+            "width": 1.5
+          }
+        },
+        {
+          "index": 42,
+          "type": "AUTO_SHAPE (1)",
+          "name": "Text 38",
+          "position": {
+            "left": 6.083333333333333,
+            "top": 3.6396489501312335,
+            "width": 0.020833333333333332,
+            "height": 0.2916666666666667
+          },
+          "paragraphs": [
+            {
+              "text": "",
+              "level": 0,
+              "alignment": null
+            }
+          ],
+          "fill": null,
+          "line": {
+            "color": {
+              "type": "Other"
+            }
+          }
+        },
+        {
+          "index": 43,
+          "type": "AUTO_SHAPE (1)",
+          "name": "Shape 39",
+          "position": {
+            "left": 6.041666666666667,
+            "top": 3.972982283464567,
+            "width": 0.10416666666666667,
+            "height": 0.0
+          },
+          "paragraphs": [
+            {
+              "text": "",
+              "level": 0,
+              "alignment": null
+            }
+          ],
+          "line": {
+            "color": null,
+            "width": 6.0
+          }
+        },
+        {
+          "index": 44,
+          "type": "AUTO_SHAPE (1)",
+          "name": "Shape 40",
+          "position": {
+            "left": 6.119792213473316,
+            "top": 3.9313156167979004,
+            "width": 0.0,
+            "height": 0.08333333333333333
+          },
+          "paragraphs": [
+            {
+              "text": "",
+              "level": 0,
+              "alignment": null
+            }
+          ],
+          "line": {
+            "color": null,
+            "width": 3.75
+          }
+        },
+        {
+          "index": 45,
+          "type": "AUTO_SHAPE (1)",
+          "name": "Shape 41",
+          "position": {
+            "left": 6.067708880139983,
+            "top": 3.9313156167979004,
+            "width": 0.0,
+            "height": 0.08333333333333333
+          },
+          "paragraphs": [
+            {
+              "text": "",
+              "level": 0,
+              "alignment": null
+            }
+          ],
+          "line": {
+            "color": null,
+            "width": 3.75
+          }
+        },
+        {
+          "index": 46,
+          "type": "AUTO_SHAPE (1)",
+          "name": "Text 42",
+          "position": {
+            "left": 5.775,
+            "top": 4.0354822834645665,
+            "width": 0.6375,
+            "height": 0.11653652668416448
+          },
+          "text": "NAM sponsor",
+          "paragraphs": [
+            {
+              "text": "NAM sponsor",
+              "level": 0,
+              "alignment": "CENTER (2)",
+              "runs": [
+                {
+                  "text": "NAM sponsor",
+                  "font": {
+                    "name": "Arial",
+                    "size": 6.0,
+                    "color": null
+                  }
+                }
+              ]
+            }
+          ],
+          "line": {
+            "color": {
+              "type": "Other"
+            }
+          }
+        },
+        {
+          "index": 47,
+          "type": "AUTO_SHAPE (1)",
+          "name": "Text 43",
+          "position": {
+            "left": 6.78125,
+            "top": 3.222982283464567,
+            "width": 0.375,
+            "height": 0.375
+          },
+          "paragraphs": [
+            {
+              "text": "",
+              "level": 0,
+              "alignment": null
+            }
+          ],
+          "fill": null,
+          "line": {
+            "color": null,
+            "width": 1.5
+          }
+        },
+        {
+          "index": 48,
+          "type": "AUTO_SHAPE (1)",
+          "name": "Text 44",
+          "position": {
+            "left": 6.958333333333333,
+            "top": 3.6396489501312335,
+            "width": 0.020833333333333332,
+            "height": 0.2916666666666667
+          },
+          "paragraphs": [
+            {
+              "text": "",
+              "level": 0,
+              "alignment": null
+            }
+          ],
+          "fill": null,
+          "line": {
+            "color": {
+              "type": "Other"
+            }
+          }
+        },
+        {
+          "index": 49,
+          "type": "AUTO_SHAPE (1)",
+          "name": "Shape 45",
+          "position": {
+            "left": 6.916666666666667,
+            "top": 3.972982283464567,
+            "width": 0.10416666666666667,
+            "height": 0.0
+          },
+          "paragraphs": [
+            {
+              "text": "",
+              "level": 0,
+              "alignment": null
+            }
+          ],
+          "line": {
+            "color": null,
+            "width": 6.0
+          }
+        },
+        {
+          "index": 50,
+          "type": "AUTO_SHAPE (1)",
+          "name": "Shape 46",
+          "position": {
+            "left": 6.994792213473316,
+            "top": 3.9313156167979004,
+            "width": 0.0,
+            "height": 0.08333333333333333
+          },
+          "paragraphs": [
+            {
+              "text": "",
+              "level": 0,
+              "alignment": null
+            }
+          ],
+          "line": {
+            "color": null,
+            "width": 3.75
+          }
+        },
+        {
+          "index": 51,
+          "type": "AUTO_SHAPE (1)",
+          "name": "Shape 47",
+          "position": {
+            "left": 6.942708880139983,
+            "top": 3.9313156167979004,
+            "width": 0.0,
+            "height": 0.08333333333333333
+          },
+          "paragraphs": [
+            {
+              "text": "",
+              "level": 0,
+              "alignment": null
+            }
+          ],
+          "line": {
+            "color": null,
+            "width": 3.75
+          }
+        },
+        {
+          "index": 52,
+          "type": "AUTO_SHAPE (1)",
+          "name": "Text 48",
+          "position": {
+            "left": 6.65,
+            "top": 4.0354822834645665,
+            "width": 0.6375,
+            "height": 0.11653652668416448
+          },
+          "text": "Vertical reps",
+          "paragraphs": [
+            {
+              "text": "Vertical reps",
+              "level": 0,
+              "alignment": "CENTER (2)",
+              "runs": [
+                {
+                  "text": "Vertical reps",
+                  "font": {
+                    "name": "Arial",
+                    "size": 6.0,
+                    "color": null
+                  }
+                }
+              ]
+            }
+          ],
+          "line": {
+            "color": {
+              "type": "Other"
+            }
+          }
+        },
+        {
+          "index": 53,
+          "type": "AUTO_SHAPE (1)",
+          "name": "Text 49",
+          "position": {
+            "left": 7.65625,
+            "top": 3.222982283464567,
+            "width": 0.375,
+            "height": 0.375
+          },
+          "paragraphs": [
+            {
+              "text": "",
+              "level": 0,
+              "alignment": null
+            }
+          ],
+          "fill": null,
+          "line": {
+            "color": null,
+            "width": 1.5
+          }
+        },
+        {
+          "index": 54,
+          "type": "AUTO_SHAPE (1)",
+          "name": "Text 50",
+          "position": {
+            "left": 7.833333333333333,
+            "top": 3.6396489501312335,
+            "width": 0.020833333333333332,
+            "height": 0.2916666666666667
+          },
+          "paragraphs": [
+            {
+              "text": "",
+              "level": 0,
+              "alignment": null
+            }
+          ],
+          "fill": null,
+          "line": {
+            "color": {
+              "type": "Other"
+            }
+          }
+        },
+        {
+          "index": 55,
+          "type": "AUTO_SHAPE (1)",
+          "name": "Shape 51",
+          "position": {
+            "left": 7.791666666666667,
+            "top": 3.972982283464567,
+            "width": 0.10416666666666667,
+            "height": 0.0
+          },
+          "paragraphs": [
+            {
+              "text": "",
+              "level": 0,
+              "alignment": null
+            }
+          ],
+          "line": {
+            "color": null,
+            "width": 6.0
+          }
+        },
+        {
+          "index": 56,
+          "type": "AUTO_SHAPE (1)",
+          "name": "Shape 52",
+          "position": {
+            "left": 7.869792213473316,
+            "top": 3.9313156167979004,
+            "width": 0.0,
+            "height": 0.08333333333333333
+          },
+          "paragraphs": [
+            {
+              "text": "",
+              "level": 0,
+              "alignment": null
+            }
+          ],
+          "line": {
+            "color": null,
+            "width": 3.75
+          }
+        },
+        {
+          "index": 57,
+          "type": "AUTO_SHAPE (1)",
+          "name": "Shape 53",
+          "position": {
+            "left": 7.817708880139983,
+            "top": 3.9313156167979004,
+            "width": 0.0,
+            "height": 0.08333333333333333
+          },
+          "paragraphs": [
+            {
+              "text": "",
+              "level": 0,
+              "alignment": null
+            }
+          ],
+          "line": {
+            "color": null,
+            "width": 3.75
+          }
+        },
+        {
+          "index": 58,
+          "type": "AUTO_SHAPE (1)",
+          "name": "Text 54",
+          "position": {
+            "left": 7.525,
+            "top": 4.0354822834645665,
+            "width": 0.6375,
+            "height": 0.11653652668416448
+          },
+          "text": "Mfg LinkedIn",
+          "paragraphs": [
+            {
+              "text": "Mfg LinkedIn",
+              "level": 0,
+              "alignment": "CENTER (2)",
+              "runs": [
+                {
+                  "text": "Mfg LinkedIn",
+                  "font": {
+                    "name": "Arial",
+                    "size": 6.0,
+                    "color": null
+                  }
+                }
+              ]
+            }
+          ],
+          "line": {
+            "color": {
+              "type": "Other"
+            }
+          }
+        },
+        {
+          "index": 59,
+          "type": "AUTO_SHAPE (1)",
+          "name": "Text 55",
+          "position": {
+            "left": 8.53125,
+            "top": 3.222982283464567,
+            "width": 0.375,
+            "height": 0.375
+          },
+          "paragraphs": [
+            {
+              "text": "",
+              "level": 0,
+              "alignment": null
+            }
+          ],
+          "fill": null,
+          "line": {
+            "color": null,
+            "width": 1.5
+          }
+        },
+        {
+          "index": 60,
+          "type": "AUTO_SHAPE (1)",
+          "name": "Text 56",
+          "position": {
+            "left": 8.708333333333334,
+            "top": 3.6396489501312335,
+            "width": 0.020833333333333332,
+            "height": 0.2916666666666667
+          },
+          "paragraphs": [
+            {
+              "text": "",
+              "level": 0,
+              "alignment": null
+            }
+          ],
+          "fill": null,
+          "line": {
+            "color": {
+              "type": "Other"
+            }
+          }
+        },
+        {
+          "index": 61,
+          "type": "AUTO_SHAPE (1)",
+          "name": "Shape 57",
+          "position": {
+            "left": 8.666666666666666,
+            "top": 3.972982283464567,
+            "width": 0.10416666666666667,
+            "height": 0.0
+          },
+          "paragraphs": [
+            {
+              "text": "",
+              "level": 0,
+              "alignment": null
+            }
+          ],
+          "line": {
+            "color": null,
+            "width": 6.0
+          }
+        },
+        {
+          "index": 62,
+          "type": "AUTO_SHAPE (1)",
+          "name": "Shape 58",
+          "position": {
+            "left": 8.744791119860018,
+            "top": 3.9313156167979004,
+            "width": 0.0,
+            "height": 0.08333333333333333
+          },
+          "paragraphs": [
+            {
+              "text": "",
+              "level": 0,
+              "alignment": null
+            }
+          ],
+          "line": {
+            "color": null,
+            "width": 3.75
+          }
+        },
+        {
+          "index": 63,
+          "type": "AUTO_SHAPE (1)",
+          "name": "Shape 59",
+          "position": {
+            "left": 8.692707786526684,
+            "top": 3.9313156167979004,
+            "width": 0.0,
+            "height": 0.08333333333333333
+          },
+          "paragraphs": [
+            {
+              "text": "",
+              "level": 0,
+              "alignment": null
+            }
+          ],
+          "line": {
+            "color": null,
+            "width": 3.75
+          }
+        },
+        {
+          "index": 64,
+          "type": "AUTO_SHAPE (1)",
+          "name": "Text 60",
+          "position": {
+            "left": 8.4,
+            "top": 4.0354822834645665,
+            "width": 0.6375,
+            "height": 0.11653652668416448
+          },
+          "text": "Case studies",
+          "paragraphs": [
+            {
+              "text": "Case studies",
+              "level": 0,
+              "alignment": "CENTER (2)",
+              "runs": [
+                {
+                  "text": "Case studies",
+                  "font": {
+                    "name": "Arial",
+                    "size": 6.0,
+                    "color": null
+                  }
+                }
+              ]
+            }
+          ],
+          "line": {
+            "color": {
+              "type": "Other"
+            }
+          }
+        },
+        {
+          "index": 65,
+          "type": "AUTO_SHAPE (1)",
+          "name": "Text 61",
+          "position": {
+            "left": 5.915690069991251,
+            "top": 4.3811843832021,
+            "width": 2.9811198600174977,
+            "height": 0.2708333333333333
+          },
+          "paragraphs": [
+            {
+              "text": "",
+              "level": 0,
+              "alignment": null
+            }
+          ],
+          "fill": null,
+          "line": {
+            "color": {
+              "type": "Other"
+            }
+          }
+        },
+        {
+          "index": 66,
+          "type": "AUTO_SHAPE (1)",
+          "name": "Text 62",
+          "position": {
+            "left": 6.061523403324585,
+            "top": 4.4436843832021,
+            "width": 2.7432425634295714,
+            "height": 0.14583333333333334
+          },
+          "text": "RESULT: Reinforcing tactics, compounding advantage",
+          "paragraphs": [
+            {
+              "text": "RESULT: Reinforcing tactics, compounding advantage",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "RESULT: Reinforcing tactics, compounding advantage",
+                  "font": {
+                    "name": "Arial",
+                    "size": 7.5,
+                    "bold": true,
+                    "color": null
+                  }
+                }
+              ]
+            }
+          ],
+          "line": {
+            "color": {
+              "type": "Other"
+            }
+          }
+        },
+        {
+          "index": 67,
+          "type": "AUTO_SHAPE (1)",
+          "name": "Shape 63",
+          "position": {
+            "left": 0.2916666666666667,
+            "top": 5.155273403324585,
+            "width": 9.416666666666666,
+            "height": 0.0
+          },
+          "paragraphs": [
+            {
+              "text": "",
+              "level": 0,
+              "alignment": null
+            }
+          ],
+          "line": {
+            "color": null,
+            "width": 0.75
+          }
+        },
+        {
+          "index": 68,
+          "type": "AUTO_SHAPE (1)",
+          "name": "Text 64",
+          "position": {
+            "left": 0.2916666666666667,
+            "top": 5.2229822834645665,
+            "width": 9.605,
+            "height": 0.13118438320209974
+          },
+          "text": "Porter: \"The essence of strategy is choosing what not to do.\" Trade-offs create guardrails that align everyone's tactics toward the goal.",
+          "paragraphs": [
+            {
+              "text": "Porter: \"The essence of strategy is choosing what not to do.\" Trade-offs create guardrails that align everyone's tactics toward the goal.",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "Porter:",
+                  "font": {
+                    "name": "Arial",
+                    "size": 6.75,
+                    "bold": true,
+                    "color": null
+                  }
+                },
+                {
+                  "text": " \"The essence of strategy is choosing what not to do.\" Trade-offs create guardrails that align everyone's tactics toward the goal.",
+                  "font": {
+                    "name": "Arial",
+                    "size": 6.75,
+                    "color": null
+                  }
+                }
+              ]
+            }
+          ],
+          "line": {
+            "color": {
+              "type": "Other"
+            }
+          }
+        }
+      ],
+      "shape_count": 69
+    }
+  ],
+  "total_slides": 2
+}

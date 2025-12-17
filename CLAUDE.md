@@ -1,0 +1,1 @@
+- never refer to claude or claude code in comments when you commit to github
