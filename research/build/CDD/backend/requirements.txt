@@ -1,0 +1,14 @@
+# CDD Backend Dependencies
+# FastAPI server with AG-UI streaming
+
+fastapi>=0.109.0
+uvicorn>=0.27.0
+pydantic>=2.5.0
+sse-starlette>=1.8.0
+python-multipart>=0.0.6
+
+# Optional Redis support (falls back to memory)
+aioredis>=2.0.0
+
+# Reference existing CDD dependencies
+# Install with: pip install -r requirements.txt -r backend/requirements.txt
