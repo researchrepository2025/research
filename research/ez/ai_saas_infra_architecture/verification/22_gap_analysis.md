@@ -19,7 +19,7 @@ The consolidated draft is commendably transparent about its limitations, but the
 
 **Location:** Section 4 (Classification Matrix), all cells
 
-**Problem:** The consolidated draft correctly states "No cell achieves Direct classification" (line 144). However, the 3 cells classified as Inferred ($50-200M and $200M+ Managed K8s, $200M+ Self-Managed K8s) are closer to Estimated than the label implies. The "Inferred" classification requires "derived through documented logical steps from direct data." But the chain from CNCF 80% K8s production (general enterprise) to Dynatrace 73% managed (general enterprise) to AI SaaS specifically requires an untested assumption (X2: "AI SaaS companies are more cloud-native than the average enterprise"). This is not a documented logical step -- it is an assumption-based adjustment.
+**Problem:** The consolidated draft correctly states "No cell achieves Direct classification" (line 144). However, the 3 cells classified as Inferred ($50-200M and $200M+ Managed K8s, $200M+ Self-Managed K8s) are closer to Estimated than the label implies. The "Inferred" classification requires "derived through documented logical steps from direct data." But the chain from CNCF 80% K8s production ([CNCF Annual Survey 2024](https://www.cncf.io/reports/cncf-annual-survey-2024/), general enterprise, n=750) to Dynatrace 73% managed ([Dynatrace Kubernetes in the Wild 2023](https://www.dynatrace.com/news/blog/kubernetes-in-the-wild-2023/), general enterprise) to AI SaaS specifically requires an untested assumption (X2: "AI SaaS companies are more cloud-native than the average enterprise"). This is not a documented logical step -- it is an assumption-based adjustment.
 
 **Evidence:** Agent 10 (Managed K8s deep dive) acknowledges this: "No source directly segments managed K8s vendor share among AI SaaS companies" (Gap G1). The 60-70% managed K8s estimate for >$10M ARR is explicitly classified as "Estimated (judgment + reasoning from multiple data points)" in Agent 10's own analysis. The consolidator upgraded it to Inferred for the $50-200M and $200M+ cells, but the upgrade is not fully justified.
 
@@ -33,9 +33,9 @@ The consolidated draft is commendably transparent about its limitations, but the
 
 **Location:** All EU Avg cells (Cloud-native EU: C:3, Managed K8s EU: C:3, Self-Managed K8s EU: C:3)
 
-**Problem:** All six EU cells across the three architecture rows flow from a single Wave 2 analysis (Agent 17, file 17_eu_market.md). Agent 17 explicitly states: "Almost no direct EU AI SaaS infrastructure data exists. Wave 1 files contain exactly two EU-based AI/ML company case studies (Stacks on GKE Autopilot, Medigold on Azure OpenAI) and one EU infrastructure mention (HubSpot EU datacenter)." Agent 17 self-rates at 3/10 confidence. The consolidated draft assigns C:3 to all EU cells, which is appropriate, but the draft then uses these cells in narrative conclusions (Executive Summary point 4: "EU shows 5-15 percentage points higher Kubernetes adoption") as though the finding has moderate reliability.
+**Problem:** All six EU cells across the three architecture rows flow from a single Wave 2 analysis (Agent 17, file 17_eu_market.md). Agent 17 explicitly states: "Almost no direct EU AI SaaS infrastructure data exists. Wave 1 files contain exactly two EU-based AI/ML company case studies (Stacks on GKE Autopilot ([Google Cloud Customers - Stacks](https://cloud.google.com/customers/stacks)), Medigold on Azure OpenAI ([Microsoft Azure Blog](https://azure.microsoft.com/en-us/blog/scaling-generative-ai-in-the-cloud-enterprise-use-cases-for-driving-secure-innovation/))) and one EU infrastructure mention (HubSpot EU datacenter ([CNCF Case Study - HubSpot](https://www.cncf.io/case-studies/hubspot/)))." Agent 17 self-rates at 3/10 confidence. The consolidated draft assigns C:3 to all EU cells, which is appropriate, but the draft then uses these cells in narrative conclusions (Executive Summary point 4: "EU shows 5-15 percentage points higher Kubernetes adoption") as though the finding has moderate reliability.
 
-**Evidence:** Agent 17's evidence chain for the 5-15pp EU K8s premium rests on: (a) CNCF regional cloud-native maturity data (82% EU vs 70% Americas), which measures cloud-native development intensity, not K8s adoption specifically; (b) a structural argument about GDPR favoring K8s; (c) a single EU startup (Stacks) choosing GKE. The chain from "higher cloud-native development intensity" to "higher K8s adoption among AI SaaS" requires two untested inference steps.
+**Evidence:** Agent 17's evidence chain for the 5-15pp EU K8s premium rests on: (a) CNCF regional cloud-native maturity data (82% EU vs 70% Americas) ([CNCF Annual Survey 2023](https://www.cncf.io/reports/cncf-annual-survey-2023/)), which measures cloud-native development intensity, not K8s adoption specifically; (b) a structural argument about GDPR favoring K8s; (c) a single EU startup (Stacks) choosing GKE ([Google Cloud Customers - Stacks](https://cloud.google.com/customers/stacks)). The chain from "higher cloud-native development intensity" to "higher K8s adoption among AI SaaS" requires two untested inference steps.
 
 **Recommended Correction:** Add explicit caveats to Executive Summary point 4: "EU shows 5-15 percentage points higher Kubernetes adoption -- **however, this finding rests on the weakest evidence in the entire analysis (2 EU case studies, self-reported 3/10 confidence) and should be treated as a directional hypothesis, not a finding.**" Consider removing specific percentage-point differentials from the EU cells and replacing with qualitative directional statements.
 
@@ -47,15 +47,15 @@ The consolidated draft is commendably transparent about its limitations, but the
 
 **Location:** All 21 cells, but most severe in Overall and US Avg columns
 
-**Problem:** The primary data sources (CNCF surveys, Dynatrace telemetry, Gartner reports) measure general enterprise populations, not AI SaaS companies specifically. The draft acknowledges this (Assumption X2: "AI SaaS companies are more cloud-native than the average enterprise"), but does not consistently flag where extrapolation occurs. Specific instances:
+**Problem:** The primary data sources (CNCF surveys ([CNCF Annual Survey 2024](https://www.cncf.io/reports/cncf-annual-survey-2024/)), Dynatrace telemetry ([Dynatrace Kubernetes in the Wild 2023](https://www.dynatrace.com/news/blog/kubernetes-in-the-wild-2023/)), Gartner reports ([Gartner Cloud Survey](https://www.gartner.com/en/documents/5405263))) measure general enterprise populations, not AI SaaS companies specifically. The draft acknowledges this (Assumption X2: "AI SaaS companies are more cloud-native than the average enterprise"), but does not consistently flag where extrapolation occurs. Specific instances:
 
-**(a) CNCF 80% K8s production adoption to AI SaaS K8s adoption:** The CNCF figure comes from self-selected cloud-native practitioners (n=750). Gartner's broader enterprise sample shows 54%. The draft uses an intermediate value for AI SaaS, but the adjustment magnitude is judgment-based. AI SaaS companies range from API-wrapper startups (which may not need K8s at all) to model-hosting companies (which almost certainly use K8s). Without knowing the API-wrapper vs model-hosting split by tier, the adjustment is ungrounded.
+**(a) CNCF 80% K8s production adoption to AI SaaS K8s adoption:** The CNCF figure comes from self-selected cloud-native practitioners (n=750) ([CNCF Annual Survey 2024](https://www.cncf.io/reports/cncf-annual-survey-2024/)). Gartner's broader enterprise sample shows 54% ([Gartner Cloud Survey](https://www.gartner.com/en/documents/5405263)). The draft uses an intermediate value for AI SaaS, but the adjustment magnitude is judgment-based. AI SaaS companies range from API-wrapper startups (which may not need K8s at all) to model-hosting companies (which almost certainly use K8s). Without knowing the API-wrapper vs model-hosting split by tier, the adjustment is ungrounded.
 
-**(b) Dynatrace 73% managed K8s to AI SaaS managed K8s:** Dynatrace observability data covers all cloud K8s clusters. AI SaaS companies may have different managed/self-managed ratios due to GPU scheduling requirements. The draft applies this figure without AI SaaS-specific adjustment.
+**(b) Dynatrace 73% managed K8s to AI SaaS managed K8s:** Dynatrace observability data covers all cloud K8s clusters ([Dynatrace Kubernetes in the Wild 2023](https://www.dynatrace.com/news/blog/kubernetes-in-the-wild-2023/)). AI SaaS companies may have different managed/self-managed ratios due to GPU scheduling requirements. The draft applies this figure without AI SaaS-specific adjustment.
 
 **(c) Employee count to revenue tier mapping:** Assumption X4 maps employee count to revenue tiers using "$200K-$500K ARR per employee." AI SaaS companies -- especially model-hosting ones -- may have different revenue-per-employee ratios. Compute-heavy companies can have high revenue with smaller teams. This mapping error propagates through all tier-specific cells.
 
-**Evidence:** Agent 12 (<$10M tier) explicitly notes: "CNCF data does not measure companies under 500 employees" (Evidence Gap 2). Agent 13 ($10-50M tier) notes: "K8s adoption data stops at 500-1,000 employees. Companies at $10-50M ARR (80-300 employees) are below the measurement threshold" (Evidence Gap 5).
+**Evidence:** Agent 12 (<$10M tier) explicitly notes: "CNCF data does not measure companies under 500 employees" ([Tigera Kubernetes Statistics](https://www.tigera.io/learn/guides/kubernetes-security/kubernetes-statistics/); [CommandLinux Kubernetes Statistics](https://commandlinux.com/statistics/linux-container-kubernetes-adoption-statistics/)) (Evidence Gap 2). Agent 13 ($10-50M tier) notes: "K8s adoption data stops at 500-1,000 employees. Companies at $10-50M ARR (80-300 employees) are below the measurement threshold" (Evidence Gap 5).
 
 **Recommended Correction:** Add a standardized caveat to every tier-specific cell: "Extrapolated from general enterprise data; no AI SaaS-specific measurement exists." Consider adding a "Population Extrapolation Risk" column to the estimate matrix.
 
@@ -69,7 +69,7 @@ The consolidated draft is commendably transparent about its limitations, but the
 
 **Problem:** The Overall estimates (Cloud-native 25-40%, Managed K8s 45-55%, Self-managed K8s 15-22%) are implicitly US-centric because Wave 1 data is predominantly US-sourced. The draft's Overall column does not specify a geographic scope. Is it global? US+EU? The absence of specification means readers may interpret it as global, but the evidence base is approximately 85%+ US-originated.
 
-Agent 17 (EU market) documents: "Wave 1 data has documented US/Americas bias" across jobs data (66-70% North America), engineering blogs (near 100% US companies), SEC filings (100% US), and VC data (100% US). If the Overall column is meant to represent "global AI SaaS," the EU, APAC, and other regions are barely represented.
+Agent 17 (EU market) documents: "Wave 1 data has documented US/Americas bias" across jobs data (66-70% North America), engineering blogs (near 100% US companies) ([Figma Blog](https://www.figma.com/blog/migrating-onto-kubernetes/); [OpenAI Blog](https://openai.com/index/scaling-kubernetes-to-7500-nodes/); [Grammarly Engineering Blog](https://www.grammarly.com/blog/engineering/ml-infrastructure-research-experimentation/)), SEC filings (100% US), and VC data (100% US). If the Overall column is meant to represent "global AI SaaS," the EU, APAC, and other regions are barely represented.
 
 **Evidence:** The Known Limitations section (item 11) states: "US-centric source bias is pervasive." But this limitation is not reflected in how the Overall column is computed or labeled.
 
@@ -91,7 +91,7 @@ Agent 17 (EU market) documents: "Wave 1 data has documented US/Americas bias" ac
 
 The draft acknowledges this ("Heavy reliance on gap analysis") but does not adjust confidence scores for Cloud-native cells accordingly. All 7 Cloud-native cells are classified as Estimated with evidence densities of Weak to Moderate, yet the confidence scores (C:3 to C:6) are not uniformly lower than Managed K8s cells despite having weaker evidence.
 
-**Evidence:** Agent 09 states: "Unlike Kubernetes adoption (measured by CNCF, Datadog, Red Hat, Gartner), cloud-native non-K8s adoption for AI SaaS has no dedicated survey or telemetry source."
+**Evidence:** Agent 09 states: "Unlike Kubernetes adoption (measured by CNCF ([CNCF Annual Survey 2024](https://www.cncf.io/reports/cncf-annual-survey-2024/)), Datadog ([Datadog State of Containers and Serverless 2025](https://www.datadoghq.com/state-of-containers-and-serverless/)), Red Hat ([Red Hat Kubernetes Adoption Survey](https://www.redhat.com/en/resources/kubernetes-adoption-security-market-trends-overview)), Gartner ([Gartner Cloud Survey](https://www.gartner.com/en/documents/5405263))), cloud-native non-K8s adoption for AI SaaS has no dedicated survey or telemetry source."
 
 **Recommended Correction:** Lower Cloud-native <$10M from C:6 to C:5. Lower Cloud-native $200M+ from C:5 to C:4. Add a note to the Cloud-native row: "This architecture category is measured indirectly by subtracting K8s adoption from total cloud-native adoption; all estimates carry an additional +/-10pp uncertainty from this indirect measurement method."
 
@@ -103,7 +103,7 @@ The draft acknowledges this ("Heavy reliance on gap analysis") but does not adju
 
 **Location:** Executive Summary point 6, Finding 8 in Agent 09, Section 6 in Agent 11
 
-**Problem:** The draft presents migration direction as a strong finding: "Four independent engineering blog disclosures document migrations toward K8s... Zero counter-migrations documented." The draft adds the caveat "though publication bias likely suppresses negative cases." However, this caveat understates the severity.
+**Problem:** The draft presents migration direction as a strong finding: "Four independent engineering blog disclosures document migrations toward K8s... Zero counter-migrations documented." The four documented migrations are: Figma ECS-to-EKS ([Figma Engineering Blog](https://www.figma.com/blog/migrating-onto-kubernetes/)), Grammarly EC2-to-EKS ([Grammarly Engineering Blog](https://www.grammarly.com/blog/engineering/ml-infrastructure-research-experimentation/)), HubSpot EC2-to-K8s ([CNCF Case Study - HubSpot](https://www.cncf.io/case-studies/hubspot/)), and Salesforce Data Cloud EC2-to-K8s ([Salesforce Engineering Blog](https://engineering.salesforce.com/tagged/kubernetes/)). The draft adds the caveat "though publication bias likely suppresses negative cases." However, this caveat understates the severity.
 
 Publication bias in engineering blogs is not symmetric. Companies publish blogs about:
 - Successful adoptions of popular technologies (K8s is popular, generates conference talks)
@@ -151,7 +151,7 @@ This resolution introduces a new definitional category ("primary or significant"
 
 These sum to 95-125%, implying 0-25% overlap. But Agent 15 ($200M+ tier) separately estimates "70-85% of companies in this tier run multiple architecture patterns simultaneously." If 70-85% use multiple architectures and the sum is 95-125%, the overlap is concentrated in a large majority of companies. The lack of an explicit overlap model makes it difficult to assess whether the individual cell estimates are internally consistent.
 
-**Evidence:** Agent 13 ($10-50M tier) estimates 40-55% multi-architecture usage. Agent 12 (<$10M tier) estimates 15-25%. These overlap rates have their own uncertainty but are not integrated into the primary matrix.
+**Evidence:** Agent 13 ($10-50M tier) estimates 40-55% multi-architecture usage. Agent 12 (<$10M tier) estimates 15-25%. These overlap rates have their own uncertainty but are not integrated into the primary matrix. The Datadog finding that "66% of organizations using serverless functions also use container orchestration" ([Datadog State of Containers and Serverless 2025](https://www.datadoghq.com/state-of-containers-and-serverless/)) provides direct evidence of multi-architecture overlap.
 
 **Recommended Correction:** Add a fourth row to the estimate matrix: "Multi-architecture overlap %" by tier. This would allow readers to check whether the three architecture rows are mutually consistent.
 
@@ -164,13 +164,13 @@ These sum to 95-125%, implying 0-25% overlap. But Agent 15 ($200M+ tier) separat
 **Location:** All cells, but particularly those citing CNCF and Dynatrace data
 
 **Problem:** The estimate matrix is dated 2026-02-12, but key underlying data sources span 2021-2025:
-- CNCF managed K8s provider breakdown: **2021** (5 years old)
-- Dynatrace 73% managed K8s: **2023** (3 years old)
-- Datadog 90% managed K8s: **2021** (5 years old)
-- CNCF 80% K8s production: **2024** (2 years old)
-- Gartner 54% K8s implementation: **2025** (1 year old)
+- CNCF managed K8s provider breakdown: **2021** (5 years old) ([CNCF Annual Survey 2021](https://www.cncf.io/announcements/2022/02/10/cncf-sees-record-kubernetes-and-container-adoption-in-2021-cloud-native-survey/))
+- Dynatrace 73% managed K8s: **2023** (3 years old) ([Dynatrace Kubernetes in the Wild 2023](https://www.dynatrace.com/news/blog/kubernetes-in-the-wild-2023/))
+- Datadog 90% managed K8s: **2021** (5 years old) ([Datadog Container Report 2021](https://www.datadoghq.com/container-report-2021/))
+- CNCF 80% K8s production: **2024** (2 years old) ([CNCF Annual Survey 2024](https://www.cncf.io/reports/cncf-annual-survey-2024/))
+- Gartner 54% K8s implementation: **2025** (1 year old) ([Gartner Cloud Survey](https://www.gartner.com/en/documents/5405263))
 
-The draft acknowledges temporal risk (Known Limitation 10: "All estimates reflect 2024-2025 data") but then states the managed K8s trend direction justifies using older data. However, managed K8s adoption has been accelerating (45% cloud-hosted in 2022 to 67% in 2025). Extrapolating 2023 Dynatrace data to 2026 could underestimate managed K8s adoption by 5-10pp.
+The draft acknowledges temporal risk (Known Limitation 10: "All estimates reflect 2024-2025 data") but then states the managed K8s trend direction justifies using older data. However, managed K8s adoption has been accelerating (45% cloud-hosted in 2022 to 67% in 2025 ([Dynatrace Kubernetes in the Wild 2023](https://www.dynatrace.com/news/blog/kubernetes-in-the-wild-2023/); [Tigera Kubernetes Statistics](https://www.tigera.io/learn/guides/kubernetes-security/kubernetes-statistics/))). Extrapolating 2023 Dynatrace data to 2026 could underestimate managed K8s adoption by 5-10pp.
 
 **Recommended Correction:** Add a "Data Currency" column to the evidence density map noting the most recent source year for each cell. Flag cells where the primary evidence is more than 2 years old.
 
@@ -184,7 +184,7 @@ The draft acknowledges temporal risk (Known Limitation 10: "All estimates reflec
 
 **Problem:** The draft repeatedly identifies the API-wrapper vs model-hosting distinction as critical: API-wrapper companies (calling OpenAI/Anthropic APIs) need minimal infrastructure and rarely use K8s; model-hosting companies need GPU orchestration and almost always use K8s. Assumption X7 rates this as "High" impact. Yet no source quantifies this split by tier.
 
-Agent 02 (analyst reports) provides the only data point: "37% using managed APIs, 25% self-hosting, 13% at the edge" for AI/ML model hosting. But this is not segmented by company size, revenue tier, or AI SaaS specifically. The split almost certainly varies dramatically by tier: most sub-$10M companies likely call APIs, while most $200M+ companies likely self-host.
+Agent 02 (analyst reports) provides the only data point: "37% using managed APIs, 25% self-hosting, 13% at the edge" for AI/ML model hosting ([CNCF Annual Cloud Native Survey 2025](https://www.cncf.io/announcements/2026/01/20/kubernetes-established-as-the-de-facto-operating-system-for-ai-as-production-use-hits-82-in-2025-cncf-annual-cloud-native-survey/)). But this is not segmented by company size, revenue tier, or AI SaaS specifically. The split almost certainly varies dramatically by tier: most sub-$10M companies likely call APIs, while most $200M+ companies likely self-host.
 
 If the actual split is, for example, 80% API-wrapper at <$10M vs 20% API-wrapper at $200M+, the architecture estimates would shift substantially: K8s adoption at <$10M would be lower than estimated (perhaps 10-20% instead of 20-35%), and cloud-native non-K8s at $200M+ would be lower than estimated (perhaps 5-10% instead of 15-25%).
 
@@ -200,21 +200,21 @@ All 21 cells ranked from strongest to weakest evidence, considering: number of i
 
 | Rank | Cell | Classification | Evidence Density | Confidence | Source Count | Key Justification |
 |------|------|----------------|------------------|------------|-------------|-------------------|
-| 1 | Managed K8s, $200M+ | I | Strong | C:7 | 4+ | Named companies (Anthropic/GKE, Snowflake/EKS, Notion/EKS, Figma/EKS), CNCF/Dynatrace convergence, SEC filing infrastructure signals |
-| 2 | Self-managed K8s, $200M+ | I | Strong | C:6 | 4+ | Named companies (OpenAI 7500 nodes, Databricks hybrid, Salesforce bare metal, HubSpot), Dynatrace 27% self-managed baseline |
-| 3 | Managed K8s, $10-50M | E | Moderate | C:6 | 2-3 | CNCF/Dynatrace convergence, Agent 10 and 13 overlap at 55-65%, case studies (Jasper, Cohere) near this tier |
-| 4 | Managed K8s, $50-200M | I | Moderate | C:6 | 2-3 | Dynatrace 73% managed applied to tier; Figma/Grammarly/Notion case studies; Agent 10/14 convergence after reconciliation |
-| 5 | Cloud-native, <$10M | E | Moderate | C:6 | 2 | VC stage guidance (Maven Solutions, SaaStr), CNCF small company exclusion (91% K8s users at 1000+ employees), Agents 09/12 converge |
-| 6 | Cloud-native, $200M+ | E | Moderate | C:5 | 2 | Agent 09 (5-15% primary) and Agent 15 (40-55% any use) provide different measures; Datadog serverless telemetry supports complementary usage |
-| 7 | Managed K8s, <$10M | E | Weak | C:5 | 1-2 | Agent 10/12 converge at 20-35%; Stacks (GKE) and Sonantic (EKS) are only named examples at this tier |
+| 1 | Managed K8s, $200M+ | I | Strong | C:7 | 4+ | Named companies (Anthropic/GKE ([Cloud Native Now](https://cloudnativenow.com/editorial-calendar/best-of-2025/how-anthropic-dogfoods-on-claude-code-2/)), Snowflake/EKS ([AWS Architecture Blog](https://aws.amazon.com/blogs/architecture/snowflake-running-millions-of-simulation-tests-with-amazon-eks/)), Notion/EKS ([Notion Blog](https://www.notion.com/blog/building-and-scaling-notions-data-lake)), Figma/EKS ([Figma Blog](https://www.figma.com/blog/migrating-onto-kubernetes/))), CNCF/Dynatrace convergence, SEC filing infrastructure signals |
+| 2 | Self-managed K8s, $200M+ | I | Strong | C:6 | 4+ | Named companies (OpenAI 7500 nodes ([OpenAI Blog](https://openai.com/index/scaling-kubernetes-to-7500-nodes/)), Databricks hybrid ([Databricks Blog](https://www.databricks.com/blog/managing-cicd-kubernetes-authentication-using-operators)), Salesforce bare metal ([Salesforce Engineering Blog](https://engineering.salesforce.com/tagged/kubernetes/)), HubSpot ([CNCF Case Study](https://www.cncf.io/case-studies/hubspot/))), Dynatrace 27% self-managed baseline ([Dynatrace 2023](https://www.dynatrace.com/news/blog/kubernetes-in-the-wild-2023/)) |
+| 3 | Managed K8s, $10-50M | E | Moderate | C:6 | 2-3 | CNCF/Dynatrace convergence ([CNCF 2024](https://www.cncf.io/reports/cncf-annual-survey-2024/); [Dynatrace 2023](https://www.dynatrace.com/news/blog/kubernetes-in-the-wild-2023/)), Agent 10 and 13 overlap at 55-65%, case studies (Jasper ([Jasper Blog](https://www.jasper.ai/blog/devx-renaissance-the-death-of-devops)), Cohere ([Oracle Case Study](https://www.oracle.com/cloud/technical-case-studies/cohere/))) near this tier |
+| 4 | Managed K8s, $50-200M | I | Moderate | C:6 | 2-3 | Dynatrace 73% managed applied to tier ([Dynatrace 2023](https://www.dynatrace.com/news/blog/kubernetes-in-the-wild-2023/)); Figma/Grammarly/Notion case studies ([Figma Blog](https://www.figma.com/blog/migrating-onto-kubernetes/); [Grammarly Blog](https://www.grammarly.com/blog/engineering/ml-infrastructure-research-experimentation/); [Notion Blog](https://www.notion.com/blog/building-and-scaling-notions-data-lake)); Agent 10/14 convergence after reconciliation |
+| 5 | Cloud-native, <$10M | E | Moderate | C:6 | 2 | VC stage guidance (Maven Solutions, SaaStr ([SaaStr](https://www.saastr.com/is-there-a-benchmark-for-of-revenue-that-an-enterprise-saas-business-should-spend-on-systems-infrastructures-like-aws-or-the-equivalent/))), CNCF small company exclusion (91% K8s users at 1000+ employees ([Tigera Kubernetes Statistics](https://www.tigera.io/learn/guides/kubernetes-security/kubernetes-statistics/))), Agents 09/12 converge |
+| 6 | Cloud-native, $200M+ | E | Moderate | C:5 | 2 | Agent 09 (5-15% primary) and Agent 15 (40-55% any use) provide different measures; Datadog serverless telemetry supports complementary usage ([Datadog State of Containers and Serverless 2025](https://www.datadoghq.com/state-of-containers-and-serverless/)) |
+| 7 | Managed K8s, <$10M | E | Weak | C:5 | 1-2 | Agent 10/12 converge at 20-35%; Stacks (GKE ([Google Cloud Customers - Stacks](https://cloud.google.com/customers/stacks))) and Sonantic (EKS ([Bion Consulting Case Study](https://www.bionconsulting.com/case-studies/scaling-ai-driven-voice-technology-with-aws-and-eks))) are only named examples at this tier |
 | 8 | Self-managed K8s, <$10M | E | Moderate | C:5 | 2 | Agent 11/12 converge at 2-5%; strong structural argument (team size, expertise requirements) |
 | 9 | Self-managed K8s, $10-50M | E | Weak | C:5 | 1-2 | Agent 11/13 overlap; no named companies at this exact tier self-managing K8s |
-| 10 | Cloud-native, US Avg | E | Moderate | C:5 | 2 | Agent 16 provides US-weighted estimate; Datadog Lambda 65% corroborates broad serverless usage; CNCF 70% NA serverless |
-| 11 | Managed K8s, US Avg | E | Moderate | C:5 | 2 | Agent 16 estimates 55-65% for $10M+; adjusted to 50-60% including sub-$10M; CNCF/case study support |
-| 12 | Managed K8s, Overall | E | Moderate | C:5 | 2 | Tier-weighted average; Gartner 54% provides external anchor; CNCF data after bias discount |
+| 10 | Cloud-native, US Avg | E | Moderate | C:5 | 2 | Agent 16 provides US-weighted estimate; Datadog Lambda 65% corroborates broad serverless usage ([Datadog State of Containers and Serverless 2025](https://www.datadoghq.com/blog/containers-and-serverless-2025-study-learnings/)); CNCF 70% NA serverless ([CNCF Annual Survey 2024](https://www.cncf.io/reports/cncf-annual-survey-2024/)) |
+| 11 | Managed K8s, US Avg | E | Moderate | C:5 | 2 | Agent 16 estimates 55-65% for $10M+; adjusted to 50-60% including sub-$10M; CNCF/case study support ([CNCF 2024](https://www.cncf.io/reports/cncf-annual-survey-2024/)) |
+| 12 | Managed K8s, Overall | E | Moderate | C:5 | 2 | Tier-weighted average; Gartner 54% provides external anchor ([Gartner Cloud Survey](https://www.gartner.com/en/documents/5405263)); CNCF data after bias discount ([CNCF 2024](https://www.cncf.io/reports/cncf-annual-survey-2024/)) |
 | 13 | Cloud-native, $10-50M | E | Weak | C:5 | 1 | 30pp conflict between agents; resolution by definitional compromise; single tier without named non-K8s companies |
-| 14 | Cloud-native, Overall | E | Moderate | C:4 | 2 | Derived by subtraction from K8s estimates; Agent 09 headline 25-40%; Gartner gap (100%-54%=46% non-K8s or non-cloud-native) |
-| 15 | Self-managed K8s, Overall | E | Moderate | C:4 | 2 | Agent 11 headline 15-22%; Dynatrace 27% self-managed baseline discounted for AI SaaS company size distribution |
+| 14 | Cloud-native, Overall | E | Moderate | C:4 | 2 | Derived by subtraction from K8s estimates; Agent 09 headline 25-40%; Gartner gap (100%-54%=46% non-K8s or non-cloud-native) ([Gartner Cloud Survey](https://www.gartner.com/en/documents/5405263)) |
+| 15 | Self-managed K8s, Overall | E | Moderate | C:4 | 2 | Agent 11 headline 15-22%; Dynatrace 27% self-managed baseline discounted for AI SaaS company size distribution ([Dynatrace 2023](https://www.dynatrace.com/news/blog/kubernetes-in-the-wild-2023/)) |
 | 16 | Cloud-native, $50-200M | E | Weak | C:4 | 1 | Agent 09 (10-20%) and Agent 14 (25-35%) conflict; no named AI SaaS companies at this tier using non-K8s as primary |
 | 17 | Self-managed K8s, $50-200M | E | Weak | C:4 | 1 | Agent 11 gives broad range for $10-200M combined (8-15%); no named self-managed companies at this specific tier |
 | 18 | Self-managed K8s, US Avg | E | Weak | C:4 | 1 | Agent 16 estimates 10-18%; derived from global self-managed data minus EU premium; no US-specific measurement |
@@ -233,7 +233,7 @@ All 21 cells ranked from strongest to weakest evidence, considering: number of i
 | Scenario | Assumption Change | Revised Estimate | Delta |
 |----------|-------------------|------------------|-------|
 | A: GDPR does NOT disadvantage serverless | GDPR equally served by serverless with proper configuration (Assumption A2 wrong) | 25-35% | +10pp |
-| B: EU cloud adoption catches US | EU enterprise cloud at 60% (vs 45.2% Eurostat 2023), closing gap | 20-30% | +5pp |
+| B: EU cloud adoption catches US | EU enterprise cloud at 60% (vs 45.2% Eurostat 2023 ([Eurostat](https://ec.europa.eu/eurostat/web/products-eurostat-news/w/ddn-20231208-1))), closing gap | 20-30% | +5pp |
 | C: EU follows US startup patterns | EU seed-stage AI SaaS uses PaaS/serverless at same rate as US (Assumption A8 wrong) | 25-40% (matches US) | +10-15pp |
 | D: Sovereignty drives EU to on-prem, not K8s | EU companies use VMs/bare metal for sovereignty, not K8s | 20-30% | +5pp (some shift from K8s to non-cloud-native, not to cloud-native non-K8s) |
 | E: Base case holds | GDPR + sovereignty pressure + no EU serverless providers | 15-25% | 0 |
@@ -248,13 +248,13 @@ All 21 cells ranked from strongest to weakest evidence, considering: number of i
 
 | Scenario | Assumption Change | Revised Estimate | Delta |
 |----------|-------------------|------------------|-------|
-| A: EU cloud-native maturity does NOT translate to higher K8s | 82% cloud-native figure reflects non-K8s cloud adoption too | 35-45% | -5pp |
+| A: EU cloud-native maturity does NOT translate to higher K8s | 82% cloud-native figure ([CNCF Annual Survey 2023](https://www.cncf.io/reports/cncf-annual-survey-2023/)) reflects non-K8s cloud adoption too | 35-45% | -5pp |
 | B: AKS EU enterprise dominance overstated | AKS strength is in traditional enterprise, not AI SaaS | 35-45% | -5pp |
 | C: EU sovereignty pushes more to self-managed | Self-managed K8s captures 30-40% instead of 20-30% | 35-45% | -5pp (transferred to self-managed) |
 | D: EU AI SaaS is smaller/earlier-stage than assumed | Fewer EU companies at $50M+ ARR where K8s dominates | 30-40% | -10pp |
-| E: Base case holds | AKS + GKE EU strength + 82% cloud-native maturity | 40-50% | 0 |
+| E: Base case holds | AKS + GKE EU strength + 82% cloud-native maturity ([CNCF 2023](https://www.cncf.io/reports/cncf-annual-survey-2023/)) | 40-50% | 0 |
 
-**Key Sensitivity:** This cell is most sensitive to whether the CNCF 82% EU cloud-native figure translates specifically to K8s adoption among AI SaaS. If EU cloud-native maturity manifests as PaaS or managed ML services rather than K8s, the estimate drops.
+**Key Sensitivity:** This cell is most sensitive to whether the CNCF 82% EU cloud-native figure ([CNCF Annual Survey 2023](https://www.cncf.io/reports/cncf-annual-survey-2023/)) translates specifically to K8s adoption among AI SaaS. If EU cloud-native maturity manifests as PaaS or managed ML services rather than K8s, the estimate drops.
 
 ---
 
@@ -270,7 +270,7 @@ All 21 cells ranked from strongest to weakest evidence, considering: number of i
 | D: On-prem K8s is actually VM-based, not K8s | EU companies use VMs for sovereignty, not self-managed K8s | 10-20% | -10pp |
 | E: Base case holds | GDPR + Gaia-X + EU-native providers drive self-management | 20-30% | 0 |
 
-**Key Sensitivity:** This cell's most critical assumption is that sovereignty requirements translate to self-managed K8s rather than managed K8s in EU-sovereign regions. If hyperscaler sovereign cloud offerings (AWS European Sovereign Cloud, Azure sovereign regions) satisfy EU requirements, the self-managed premium over US rates largely disappears.
+**Key Sensitivity:** This cell's most critical assumption is that sovereignty requirements translate to self-managed K8s rather than managed K8s in EU-sovereign regions. If hyperscaler sovereign cloud offerings (AWS European Sovereign Cloud, Azure sovereign regions) satisfy EU requirements, the self-managed premium over US rates largely disappears. A Gartner survey found 61% of Western European CIOs plan to increase reliance on local cloud providers, driven by sovereignty concerns ([Gartner Survey November 2025](https://www.gartner.com/en/newsroom/press-releases/2025-11-12-gartner-survey-reveals-geopolitics-will-drive-61-percent-of-cios-and-information-technology-leaders-in-western-europe-to-increase-reliance-on-local-cloud-providers)).
 
 ---
 
@@ -286,7 +286,7 @@ All 21 cells ranked from strongest to weakest evidence, considering: number of i
 | D: All companies at this tier have migrated to K8s | Migration pressure is stronger than estimated; non-K8s is lower | 10-20% | -10pp |
 | E: Base case holds | Mix of API-wrappers and deliberate non-K8s architects | 20-30% | 0 |
 
-**Key Sensitivity:** Most sensitive to the API-wrapper vs model-hosting split. If more companies at this tier are API-wrappers than assumed, cloud-native non-K8s adoption would be higher because these companies have no GPU orchestration need.
+**Key Sensitivity:** Most sensitive to the API-wrapper vs model-hosting split. If more companies at this tier are API-wrappers than assumed, cloud-native non-K8s adoption would be higher because these companies have no GPU orchestration need. The CNCF survey finding that 37% of organizations use managed APIs for AI/ML model hosting ([CNCF Annual Cloud Native Survey 2025](https://www.cncf.io/announcements/2026/01/20/kubernetes-established-as-the-de-facto-operating-system-for-ai-as-production-use-hits-82-in-2025-cncf-annual-cloud-native-survey/)) provides the only available data point on this split.
 
 ---
 
@@ -310,24 +310,24 @@ All 21 cells ranked from strongest to weakest evidence, considering: number of i
 
 | Cell | Architecture | Tier/Geo | Draft Confidence | Revised Confidence | Justification |
 |------|-------------|----------|------------------|-------------------|---------------|
-| 1 | Cloud-native | <$10M | C:6 | **C:5** | Defined by exclusion, not measurement; relies on inverting enterprise K8s data for small companies where no data exists |
+| 1 | Cloud-native | <$10M | C:6 | **C:5** | Defined by exclusion, not measurement; relies on inverting enterprise K8s data for small companies where no data exists ([CNCF 2024](https://www.cncf.io/reports/cncf-annual-survey-2024/) reports 91% of K8s users at 1000+ employees ([Tigera](https://www.tigera.io/learn/guides/kubernetes-security/kubernetes-statistics/))) |
 | 2 | Cloud-native | $10-50M | C:5 | C:5 | Retains score; 30pp agent conflict partially mitigated by definitional clarification |
 | 3 | Cloud-native | $50-200M | C:4 | C:4 | Retains score; Weak evidence density acknowledged |
 | 4 | Cloud-native | $200M+ | C:5 | **C:4** | "Any use" vs "primary" ambiguity unresolved; no named AI SaaS company at this tier uses non-K8s as primary |
-| 5 | Cloud-native | US Avg | C:5 | C:5 | Retains score; Datadog telemetry provides reasonable anchor |
+| 5 | Cloud-native | US Avg | C:5 | C:5 | Retains score; Datadog telemetry provides reasonable anchor ([Datadog 2025](https://www.datadoghq.com/state-of-containers-and-serverless/)) |
 | 6 | Cloud-native | EU Avg | C:3 | C:3 | Retains score; already at appropriate level for evidence available |
 | 7 | Cloud-native | Overall | C:4 | C:4 | Retains score; should not exceed US Avg given US-weighted source base |
 | 8 | Managed K8s | <$10M | C:5 | C:5 | Retains score; wide range (20-35%) appropriately reflects uncertainty |
-| 9 | Managed K8s | $10-50M | C:6 | C:6 | Retains score; two agents converge; case study support |
-| 10 | Managed K8s | $50-200M | C:6 | **C:5** | Should be reclassified from Inferred to Estimated; the chain from general K8s to AI SaaS managed K8s is assumption-dependent |
-| 11 | Managed K8s | $200M+ | C:7 | C:7 | Retains score; strongest cell in the matrix; named company examples |
+| 9 | Managed K8s | $10-50M | C:6 | C:6 | Retains score; two agents converge; case study support ([Jasper](https://www.jasper.ai/blog/devx-renaissance-the-death-of-devops); [Cohere/Oracle](https://www.oracle.com/cloud/technical-case-studies/cohere/)) |
+| 10 | Managed K8s | $50-200M | C:6 | **C:5** | Should be reclassified from Inferred to Estimated; the chain from general K8s to AI SaaS managed K8s is assumption-dependent ([Dynatrace 2023](https://www.dynatrace.com/news/blog/kubernetes-in-the-wild-2023/) measures general enterprise, not AI SaaS) |
+| 11 | Managed K8s | $200M+ | C:7 | C:7 | Retains score; strongest cell in the matrix; named company examples ([Anthropic/GKE](https://cloudnativenow.com/editorial-calendar/best-of-2025/how-anthropic-dogfoods-on-claude-code-2/), [Snowflake/EKS](https://aws.amazon.com/blogs/architecture/snowflake-running-millions-of-simulation-tests-with-amazon-eks/), [Figma/EKS](https://www.figma.com/blog/migrating-onto-kubernetes/), [Notion/EKS](https://www.notion.com/blog/building-and-scaling-notions-data-lake)) |
 | 12 | Managed K8s | US Avg | C:5 | C:5 | Retains score |
 | 13 | Managed K8s | EU Avg | C:3 | C:3 | Retains score; already appropriate |
 | 14 | Managed K8s | Overall | C:5 | C:5 | Retains score |
 | 15 | Self-managed K8s | <$10M | C:5 | C:5 | Retains score; strong structural argument for very low adoption |
 | 16 | Self-managed K8s | $10-50M | C:5 | C:5 | Retains score |
 | 17 | Self-managed K8s | $50-200M | C:4 | C:4 | Retains score |
-| 18 | Self-managed K8s | $200M+ | C:6 | C:6 | Retains score; named company examples provide strong anchor |
+| 18 | Self-managed K8s | $200M+ | C:6 | C:6 | Retains score; named company examples provide strong anchor ([OpenAI](https://openai.com/index/scaling-kubernetes-to-7500-nodes/), [Databricks](https://www.databricks.com/blog/managing-cicd-kubernetes-authentication-using-operators), [Salesforce](https://engineering.salesforce.com/tagged/kubernetes/), [HubSpot](https://www.cncf.io/case-studies/hubspot/)) |
 | 19 | Self-managed K8s | US Avg | C:4 | C:4 | Retains score |
 | 20 | Self-managed K8s | EU Avg | C:3 | C:3 | Retains score; already appropriate |
 | 21 | Self-managed K8s | Overall | C:4 | C:4 | Retains score |
@@ -345,17 +345,17 @@ All 21 cells ranked from strongest to weakest evidence, considering: number of i
 
 1. **Direct survey of 200+ AI SaaS companies segmented by ARR tier and geography.** This is the single highest-impact research action. It would move all 21 cells from Estimated/Inferred to Direct classification. The survey should ask: (a) Primary infrastructure architecture, (b) Secondary architectures used, (c) API-wrapper vs model-hosting split, (d) Team size and infra spend, (e) Geography (US/EU/APAC).
 
-2. **Datadog or New Relic telemetry segmented for AI/ML companies.** Datadog already provides serverless and K8s adoption metrics. If they could segment by vertical (AI SaaS specifically), multiple cells would move to Direct classification with observability-grade data quality.
+2. **Datadog or New Relic telemetry segmented for AI/ML companies.** Datadog already provides serverless and K8s adoption metrics ([Datadog State of Containers and Serverless 2025](https://www.datadoghq.com/state-of-containers-and-serverless/)). If they could segment by vertical (AI SaaS specifically), multiple cells would move to Direct classification with observability-grade data quality.
 
 ### Priority 2 (High -- Would Significantly Improve Precision)
 
-3. **Architecture data for companies under 500 employees.** The invisible population. A CNCF survey expansion to include smaller companies, or VC portfolio infrastructure audits (from a16z, Sequoia, Bessemer), would fill the largest data gap for the <$10M and $10-50M tier cells.
+3. **Architecture data for companies under 500 employees.** The invisible population. A CNCF survey expansion to include smaller companies, or VC portfolio infrastructure audits (from a16z, Sequoia, Bessemer), would fill the largest data gap for the <$10M and $10-50M tier cells. Current CNCF data shows 91% of K8s users at organizations exceeding 1,000 employees ([Tigera Kubernetes Statistics](https://www.tigera.io/learn/guides/kubernetes-security/kubernetes-statistics/); [CommandLinux](https://commandlinux.com/statistics/linux-container-kubernetes-adoption-statistics/)).
 
-4. **API-wrapper vs model-hosting split by revenue tier.** A survey question or market analysis determining what percentage of AI SaaS companies at each tier self-host models vs call external APIs would resolve the most impactful unquantified assumption (X7).
+4. **API-wrapper vs model-hosting split by revenue tier.** A survey question or market analysis determining what percentage of AI SaaS companies at each tier self-host models vs call external APIs would resolve the most impactful unquantified assumption (X7). The only current data point is CNCF's "37% using managed APIs, 25% self-hosting, 13% at the edge" ([CNCF 2025 Survey](https://www.cncf.io/announcements/2026/01/20/kubernetes-established-as-the-de-facto-operating-system-for-ai-as-production-use-hits-82-in-2025-cncf-annual-cloud-native-survey/)), which is not tier-segmented.
 
-5. **EU-specific managed vs self-managed K8s data.** A survey of 50+ EU AI SaaS companies would more than double the EU evidence base (currently 2 case studies) and resolve the sovereignty-driven architecture hypothesis.
+5. **EU-specific managed vs self-managed K8s data.** A survey of 50+ EU AI SaaS companies would more than double the EU evidence base (currently 2 case studies). EU cloud adoption stands at 45.2% versus ~68% in the US ([Eurostat 2023](https://ec.europa.eu/eurostat/web/products-eurostat-news/w/ddn-20231208-1)), and 61% of Western European CIOs plan to increase reliance on local providers ([Gartner November 2025](https://www.gartner.com/en/newsroom/press-releases/2025-11-12-gartner-survey-reveals-geopolitics-will-drive-61-percent-of-cios-and-information-technology-leaders-in-western-europe-to-increase-reliance-on-local-cloud-providers)), but no data resolves the sovereignty-driven architecture hypothesis for AI SaaS specifically.
 
-6. **ECS/Fargate adoption rate for AI workloads.** No equivalent to the Lambda 65% figure exists for ECS/Fargate. Datadog could likely produce this metric from existing telemetry.
+6. **ECS/Fargate adoption rate for AI workloads.** No equivalent to the Lambda 65% figure ([Datadog 2025](https://www.datadoghq.com/blog/containers-and-serverless-2025-study-learnings/)) exists for ECS/Fargate. Datadog could likely produce this metric from existing telemetry.
 
 ### Priority 3 (Medium -- Would Add Nuance)
 
@@ -385,15 +385,15 @@ The following elements of the consolidated draft are verified as well-supported 
 
 6. **The Known Limitations section is unusually honest.** The draft explicitly states "No direct measurement exists for the core research question" as limitation #1. This is appropriate and should remain prominent.
 
-7. **The reconciliation of conflicting serverless data (Appendix B) is well-handled.** The 65-70% (any use), 70% (North America production), and 11% (primary framework) figures are correctly identified as measuring different things, not contradicting each other.
+7. **The reconciliation of conflicting serverless data (Appendix B) is well-handled.** The 65-70% (any use) ([Datadog 2025](https://www.datadoghq.com/blog/containers-and-serverless-2025-study-learnings/)), 70% (North America production) ([CNCF Annual Survey 2024](https://www.cncf.io/reports/cncf-annual-survey-2024/)), and 11% (primary framework) ([CNCF Annual Survey 2024](https://www.cncf.io/reports/cncf-annual-survey-2024/)) figures are correctly identified as measuring different things, not contradicting each other.
 
-8. **The finding that managed K8s is the dominant pattern at $200M+ ARR is well-supported.** Multiple named companies, convergent survey data, and SEC filing signals all point the same direction. This is the strongest finding in the analysis.
+8. **The finding that managed K8s is the dominant pattern at $200M+ ARR is well-supported.** Multiple named companies ([Anthropic/GKE](https://cloudnativenow.com/editorial-calendar/best-of-2025/how-anthropic-dogfoods-on-claude-code-2/), [Snowflake/EKS](https://aws.amazon.com/blogs/architecture/snowflake-running-millions-of-simulation-tests-with-amazon-eks/), [Notion/EKS](https://www.notion.com/blog/building-and-scaling-notions-data-lake), [Figma/EKS](https://www.figma.com/blog/migrating-onto-kubernetes/)), convergent survey data ([CNCF 2024](https://www.cncf.io/reports/cncf-annual-survey-2024/); [Dynatrace 2023](https://www.dynatrace.com/news/blog/kubernetes-in-the-wild-2023/)), and SEC filing signals all point the same direction. This is the strongest finding in the analysis.
 
-9. **The finding that self-managed K8s is declining is well-supported.** Multiple independent time-series data points (45% cloud-hosted in 2022 to 67% in 2025, managed K8s share growing) confirm the directional trend at 7/10 confidence.
+9. **The finding that self-managed K8s is declining is well-supported.** Multiple independent time-series data points (45% cloud-hosted in 2022 to 67% in 2025 ([Dynatrace 2023](https://www.dynatrace.com/news/blog/kubernetes-in-the-wild-2023/); [Tigera](https://www.tigera.io/learn/guides/kubernetes-security/kubernetes-statistics/)), managed K8s share growing) confirm the directional trend at 7/10 confidence.
 
-10. **The finding that early-stage companies (<$10M ARR) default to non-K8s architectures is well-supported.** VC stage guidance, CNCF company size data, and engineering team size constraints all converge. The direction is clear even if the precise percentage (55-70%) carries uncertainty.
+10. **The finding that early-stage companies (<$10M ARR) default to non-K8s architectures is well-supported.** VC stage guidance ([SaaStr](https://www.saastr.com/is-there-a-benchmark-for-of-revenue-that-an-enterprise-saas-business-should-spend-on-systems-infrastructures-like-aws-or-the-equivalent/)), CNCF company size data ([Tigera Kubernetes Statistics](https://www.tigera.io/learn/guides/kubernetes-security/kubernetes-statistics/)), and engineering team size constraints all converge. The direction is clear even if the precise percentage (55-70%) carries uncertainty.
 
-11. **Executive Summary point 7 (multi-architecture is the norm) is an important and well-supported finding.** The Datadog figure (66% of serverless users also use container orchestration) is Direct evidence that challenges the K8s-vs-serverless framing.
+11. **Executive Summary point 7 (multi-architecture is the norm) is an important and well-supported finding.** The Datadog figure (66% of serverless users also use container orchestration) ([Datadog State of Containers and Serverless 2025](https://www.datadoghq.com/state-of-containers-and-serverless/)) is Direct evidence that challenges the K8s-vs-serverless framing.
 
 12. **The agent-level confidence scores in Appendix A are appropriate.** The consolidator's assessments match the self-reported scores, and in one case (Agent 12) the consolidator correctly adjusted slightly downward.
 
@@ -415,7 +415,7 @@ The strongest findings in this analysis are structural arguments (e.g., "small t
 
 ### Observation D: Future Research Should Focus on the Two Biggest Unknowns
 
-The two unknowns that would most improve the entire matrix are: (1) the API-wrapper vs model-hosting split by tier, and (2) a direct survey of AI SaaS infrastructure choices by ARR tier. Everything else is refinement.
+The two unknowns that would most improve the entire matrix are: (1) the API-wrapper vs model-hosting split by tier (only data point: CNCF 37% managed APIs / 25% self-hosting ([CNCF 2025 Survey](https://www.cncf.io/announcements/2026/01/20/kubernetes-established-as-the-de-facto-operating-system-for-ai-as-production-use-hits-82-in-2025-cncf-annual-cloud-native-survey/))), and (2) a direct survey of AI SaaS infrastructure choices by ARR tier. Everything else is refinement.
 
 ---
 
