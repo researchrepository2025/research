@@ -1,0 +1,238 @@
+scope,segment,company,rank,revenue_usd_m,estimated_share_pct,share_confidence
+global,Agent Platforms,Microsoft,3,,15.0,rank_heuristic
+global,Agent Platforms,LangChain,4,,12.0,rank_heuristic
+global,Agent Platforms,CrewAI,5,,10.0,rank_heuristic
+global,Agent Platforms,ServiceNow,2,600.0,7.863695937090433,revenue_derived
+global,Agent Platforms,Salesforce,1,500.0,6.553079947575361,revenue_derived
+global,Code / Software Development,GitHub Copilot,1,2000.0,42.0,stated
+global,Code / Software Development,Cursor,2,2000.0,27.137042062415194,revenue_derived
+global,Code / Software Development,Amazon,3,,11.37,rank_heuristic
+global,Code / Software Development,Windsurf,4,,7.81,rank_heuristic
+global,Code / Software Development,Replit,5,100.0,1.3568521031207599,revenue_derived
+global,Copilots,Anthropic Claude,3,,40.0,stated
+global,Copilots,Google,4,,21.0,stated
+global,Copilots,OpenAI,1,20000.0,14.17,rank_heuristic
+global,Copilots,Microsoft,2,60000.0,10.39,rank_heuristic
+global,Copilots,Perplexity AI,5,174.0,1.2083333333333333,revenue_derived
+global,Creators,Adobe,1,,29.0,stated
+global,Creators,Canva,3,,15.0,rank_heuristic
+global,Creators,Midjourney,2,500.0,11.494252873563218,revenue_derived
+global,Creators,Runway,5,,10.0,rank_heuristic
+global,Creators,Suno,4,300.0,6.896551724137931,revenue_derived
+global,Customer Success,ServiceNow,3,,15.0,rank_heuristic
+global,Customer Success,Salesforce,1,500.0,4.1459369817578775,revenue_derived
+global,Customer Success,Zendesk,2,200.0,1.658374792703151,revenue_derived
+global,Customer Success,Sierra AI,5,150.0,1.2437810945273633,revenue_derived
+global,Customer Success,Intercom,4,100.0,0.8291873963515755,revenue_derived
+global,Data Science & ML Platforms,Microsoft,2,,20.0,rank_heuristic
+global,Data Science & ML Platforms,Google,3,,15.0,rank_heuristic
+global,Data Science & ML Platforms,Snowflake,4,,12.0,rank_heuristic
+global,Data Science & ML Platforms,Databricks,1,5400.0,4.48169972611835,revenue_derived
+global,Data Science & ML Platforms,Dataiku,5,350.0,0.29048053780396715,revenue_derived
+global,Education,Google,1,,23.64,rank_heuristic
+global,Education,Duolingo,2,748.0,21.202174640158276,revenue_derived
+global,Education,Coursera,3,,12.61,rank_heuristic
+global,Education,Khan Academy,4,,8.67,rank_heuristic
+global,Education,Chegg,5,,6.3,rank_heuristic
+global,Finance (Vertical),FICO,1,,22.41,rank_heuristic
+global,Finance (Vertical),Upstart,2,,16.44,rank_heuristic
+global,Finance (Vertical),Featurespace,3,,11.95,rank_heuristic
+global,Finance (Vertical),Socure,4,,8.22,rank_heuristic
+global,Finance (Vertical),Zest AI,5,,5.98,rank_heuristic
+global,Finance + Operations,SAP,1,,24.0,rank_heuristic
+global,Finance + Operations,Oracle,2,,17.6,rank_heuristic
+global,Finance + Operations,Workday,3,,12.8,rank_heuristic
+global,Finance + Operations,Coupa,4,,8.8,rank_heuristic
+global,Finance + Operations,HighRadius,5,500.0,2.788622420524261,revenue_derived
+global,Government,Amazon,3,,15.0,rank_heuristic
+global,Government,Microsoft,2,,13.0,stated
+global,Government,Palantir,1,1570.0,11.883199502268026,revenue_derived
+global,Government,Google,5,,10.0,rank_heuristic
+global,Government,Booz Allen Hamilton,4,800.0,6.055133504340395,revenue_derived
+global,HR,SAP,2,,20.0,rank_heuristic
+global,HR,Oracle,3,,15.0,rank_heuristic
+global,HR,Phenom,4,,13.63,rank_heuristic
+global,HR,Eightfold AI,5,,10.0,rank_heuristic
+global,HR,Workday,1,,9.8,stated
+global,Healthcare,Microsoft,2,,33.0,stated
+global,Healthcare,Epic Systems,1,,25.0,rank_heuristic
+global,Healthcare,GE Healthcare,4,,14.06,rank_heuristic
+global,Healthcare,Tempus AI,3,1300.0,6.602894556599123,revenue_derived
+global,Healthcare,Aidoc,5,60.0,0.30474897953534413,revenue_derived
+global,Home Services,ServiceTitan,1,739.5,96.39,stated
+global,Home Services,Housecall Pro,2,201.0,7.120728227310651,revenue_derived
+global,Home Services,Jobber,3,167.5,5.933940189425542,revenue_derived
+global,IT Operations,ServiceNow,1,,29.0,stated
+global,IT Operations,Dynatrace,2,,17.81,rank_heuristic
+global,IT Operations,Datadog,3,,12.95,rank_heuristic
+global,IT Operations,IBM,4,,8.91,rank_heuristic
+global,IT Operations,BigPanda,5,,6.48,rank_heuristic
+global,Insurance,CCC Intelligent Solutions,1,,22.41,rank_heuristic
+global,Insurance,Lemonade,2,,16.44,rank_heuristic
+global,Insurance,Shift Technology,3,,11.95,rank_heuristic
+global,Insurance,Tractable,4,,8.22,rank_heuristic
+global,Insurance,ZestyAI,5,,5.98,rank_heuristic
+global,Legal,Thomson Reuters,2,,20.0,rank_heuristic
+global,Legal,LexisNexis,4,,12.0,rank_heuristic
+global,Legal,EvenUp,5,,10.0,rank_heuristic
+global,Legal,Ironclad,3,200.0,9.942556877639438,revenue_derived
+global,Legal,Harvey AI,1,192.5,9.569710994727961,revenue_derived
+global,Manufacturing + Supply Chain,Siemens,1,,25.0,rank_heuristic
+global,Manufacturing + Supply Chain,Blue Yonder,2,,20.38,rank_heuristic
+global,Manufacturing + Supply Chain,C3.ai,4,,11.01,rank_heuristic
+global,Manufacturing + Supply Chain,o9 Solutions,5,,8.01,rank_heuristic
+global,Manufacturing + Supply Chain,Kinaxis,3,407.0,0.9224841341795104,revenue_derived
+global,Market Research,Qualtrics,1,,24.93,stated
+global,Market Research,SurveyMonkey,3,,18.62,stated
+global,Market Research,Zappi,4,,12.0,rank_heuristic
+global,Market Research,Crayon,5,,10.0,rank_heuristic
+global,Market Research,AlphaSense,2,400.0,5.018820577164367,revenue_derived
+global,Marketing,HubSpot,2,,38.0,stated
+global,Marketing,Salesforce,1,,22.26,rank_heuristic
+global,Marketing,Adobe,3,,11.87,rank_heuristic
+global,Marketing,Persado,5,,5.93,rank_heuristic
+global,Marketing,Jasper AI,4,100.0,0.3705075954057058,revenue_derived
+global,Note-taking / AI Meeting Assistants,Fireflies.ai,3,,15.0,rank_heuristic
+global,Note-taking / AI Meeting Assistants,Fathom,4,,12.0,rank_heuristic
+global,Note-taking / AI Meeting Assistants,Gong,1,300.0,8.571428571428571,revenue_derived
+global,Note-taking / AI Meeting Assistants,Otter.ai,2,100.0,2.857142857142857,revenue_derived
+global,Note-taking / AI Meeting Assistants,tl;dv,5,4.5,0.12857142857142856,revenue_derived
+global,Presentations,Microsoft,1,,25.0,rank_heuristic
+global,Presentations,Canva,2,,19.67,rank_heuristic
+global,Presentations,Google,4,,9.83,rank_heuristic
+global,Presentations,Beautiful.ai,5,,7.15,rank_heuristic
+global,Presentations,Gamma,3,100.0,5.154639175257731,revenue_derived
+global,Real Estate,Zillow,1,,25.0,rank_heuristic
+global,Real Estate,CoStar Group,2,,19.0,rank_heuristic
+global,Real Estate,Compass,3,,13.82,rank_heuristic
+global,Real Estate,RealPage,5,,6.91,rank_heuristic
+global,Real Estate,EliseAI,4,100.0,0.4244465058396411,revenue_derived
+global,Sales,ZoomInfo,1,,25.0,rank_heuristic
+global,Sales,People.ai,5,,10.0,rank_heuristic
+global,Sales,Clari + Salesloft,2,450.0,5.113636363636364,revenue_derived
+global,Sales,Outreach,4,300.0,3.4090909090909087,revenue_derived
+global,Sales,Gong,3,298.0,3.3863636363636367,revenue_derived
+europe_canada,Agent Platforms,Celonis,1,,22.41,rank_heuristic
+europe_canada,Agent Platforms,Parloa,2,50.0,16.44,rank_heuristic
+europe_canada,Agent Platforms,n8n,3,40.0,11.95,rank_heuristic
+europe_canada,Agent Platforms,Ada,4,71.0,8.22,rank_heuristic
+europe_canada,Agent Platforms,H Company,5,22.0,5.98,rank_heuristic
+europe_canada,Code / Software Development,JetBrains,1,,22.41,rank_heuristic
+europe_canada,Code / Software Development,Lovable,2,300.0,16.44,rank_heuristic
+europe_canada,Code / Software Development,Cohere,3,,11.95,rank_heuristic
+europe_canada,Code / Software Development,n8n,4,40.0,8.22,rank_heuristic
+europe_canada,Code / Software Development,Tessl,5,,5.98,rank_heuristic
+europe_canada,Copilots,Mistral AI,1,324.0,22.41,rank_heuristic
+europe_canada,Copilots,Cohere,2,240.0,16.44,rank_heuristic
+europe_canada,Copilots,DeepL,3,185.0,11.95,rank_heuristic
+europe_canada,Copilots,Aleph Alpha,4,111.0,8.22,rank_heuristic
+europe_canada,Copilots,Coveo,5,,5.98,rank_heuristic
+europe_canada,Creators,Synthesia,1,146.0,22.41,rank_heuristic
+europe_canada,Creators,Black Forest Labs,2,100.0,16.44,rank_heuristic
+europe_canada,Creators,Photoroom,3,94.0,11.95,rank_heuristic
+europe_canada,Creators,Stability AI,4,50.0,8.22,rank_heuristic
+europe_canada,Creators,LANDR Audio,5,6.6,5.98,rank_heuristic
+europe_canada,Customer Success,Coveo,1,,22.41,rank_heuristic
+europe_canada,Customer Success,Ada,2,70.6,16.44,rank_heuristic
+europe_canada,Customer Success,Parloa,3,50.0,11.95,rank_heuristic
+europe_canada,Customer Success,Cognigy*,4,85.0,8.22,rank_heuristic
+europe_canada,Customer Success,PolyAI,5,40.0,5.98,rank_heuristic
+europe_canada,Data Science & ML Platforms,Cohere,1,,22.41,rank_heuristic
+europe_canada,Data Science & ML Platforms,Seldon,2,18.3,16.44,rank_heuristic
+europe_canada,Data Science & ML Platforms,Hopsworks,3,,11.95,rank_heuristic
+europe_canada,Data Science & ML Platforms,integrate.ai,4,,8.22,rank_heuristic
+europe_canada,Data Science & ML Platforms,Valohai,5,,5.98,rank_heuristic
+europe_canada,Education,Babbel,1,380.16,20.53,rank_heuristic
+europe_canada,Education,GoStudent,2,338.0,15.05,rank_heuristic
+europe_canada,Education,Kahoot!,3,,10.95,rank_heuristic
+europe_canada,Education,D2L (Desire2Learn),4,,7.53,rank_heuristic
+europe_canada,Education,Top Hat,5,68.0,5.47,rank_heuristic
+europe_canada,Education,Knowunity,6,,5.47,rank_heuristic
+europe_canada,Finance (Vertical),Wealthsimple,1,365.0,20.53,rank_heuristic
+europe_canada,Finance (Vertical),Mambu,2,128.6,15.05,rank_heuristic
+europe_canada,Finance (Vertical),Quantexa,3,100.0,10.95,rank_heuristic
+europe_canada,Finance (Vertical),Zafin,4,112.0,7.53,rank_heuristic
+europe_canada,Finance (Vertical),Thought Machine,5,70.6,5.47,rank_heuristic
+europe_canada,Finance (Vertical),Featurespace*,6,,5.47,rank_heuristic
+europe_canada,Finance + Operations,SAP,1,,19.31,rank_heuristic
+europe_canada,Finance + Operations,Celonis,2,,14.16,rank_heuristic
+europe_canada,Finance + Operations,Dayforce,3,,10.3,rank_heuristic
+europe_canada,Finance + Operations,Vena Solutions,4,116.0,7.08,rank_heuristic
+europe_canada,Finance + Operations,Basware,5,181.6,5.15,rank_heuristic
+europe_canada,Finance + Operations,Pleo,6,110.3,5.15,rank_heuristic
+europe_canada,Finance + Operations,Sidetrade,7,66.312,3.86,rank_heuristic
+europe_canada,Government,Thales,1,,19.31,rank_heuristic
+europe_canada,Government,Leonardo,2,,14.16,rank_heuristic
+europe_canada,Government,CGI,3,,10.3,rank_heuristic
+europe_canada,Government,Sopra Steria,4,,7.08,rank_heuristic
+europe_canada,Government,Helsing,5,,5.15,rank_heuristic
+europe_canada,Government,Cohere,6,,5.15,rank_heuristic
+europe_canada,Government,MDA Space,7,,3.86,rank_heuristic
+europe_canada,HR,Dayforce,1,,22.41,rank_heuristic
+europe_canada,HR,Personio,2,750.0,16.44,rank_heuristic
+europe_canada,HR,Visier,3,147.3,11.95,rank_heuristic
+europe_canada,HR,Factorial HR,4,100.0,8.22,rank_heuristic
+europe_canada,HR,Beamery,5,112.8,5.98,rank_heuristic
+europe_canada,Healthcare,Intelerad Medical Systems,1,270.0,20.53,rank_heuristic
+europe_canada,Healthcare,Owkin,2,101.0,15.05,rank_heuristic
+europe_canada,Healthcare,League,3,,10.95,rank_heuristic
+europe_canada,Healthcare,BenchSci,4,63.0,7.53,rank_heuristic
+europe_canada,Healthcare,Ada Health,5,64.0,5.47,rank_heuristic
+europe_canada,Healthcare,Vara,6,,5.47,rank_heuristic
+europe_canada,Home Services,IFS,1,,22.41,rank_heuristic
+europe_canada,Home Services,Geotab,2,,16.44,rank_heuristic
+europe_canada,Home Services,Jobber,3,167.5,11.95,rank_heuristic
+europe_canada,Home Services,Planon,4,,8.22,rank_heuristic
+europe_canada,Home Services,Fieldcode,5,5.6,5.98,rank_heuristic
+europe_canada,IT Operations,OpenText,1,,22.41,rank_heuristic
+europe_canada,IT Operations,Apica,2,,16.44,rank_heuristic
+europe_canada,IT Operations,incident.io,3,10.5,11.95,rank_heuristic
+europe_canada,IT Operations,Dash0,4,,8.22,rank_heuristic
+europe_canada,IT Operations,Densify,5,12.0,5.98,rank_heuristic
+europe_canada,Insurance,Alan,1,545.4000000000001,20.53,rank_heuristic
+europe_canada,Insurance,Shift Technology,2,,15.05,rank_heuristic
+europe_canada,Insurance,Tractable,3,,10.95,rank_heuristic
+europe_canada,Insurance,Akur8,4,,7.53,rank_heuristic
+europe_canada,Insurance,Owl.co,5,,5.47,rank_heuristic
+europe_canada,Insurance,Quandri,6,,5.47,rank_heuristic
+europe_canada,Legal,Clio,1,400.0,20.53,rank_heuristic
+europe_canada,Legal,Legora,2,40.0,15.05,rank_heuristic
+europe_canada,Legal,Luminance,3,30.0,10.95,rank_heuristic
+europe_canada,Legal,Blue J,4,,7.53,rank_heuristic
+europe_canada,Legal,Spellbook,5,,5.47,rank_heuristic
+europe_canada,Legal,Noxtua,6,,5.47,rank_heuristic
+europe_canada,Manufacturing + Supply Chain,Siemens,1,,20.53,rank_heuristic
+europe_canada,Manufacturing + Supply Chain,ABB,2,,15.05,rank_heuristic
+europe_canada,Manufacturing + Supply Chain,Dassault Systèmes,3,,10.95,rank_heuristic
+europe_canada,Manufacturing + Supply Chain,Celonis,4,,7.53,rank_heuristic
+europe_canada,Manufacturing + Supply Chain,Kinaxis,5,535.0,5.47,rank_heuristic
+europe_canada,Manufacturing + Supply Chain,Canvass AI,6,,5.47,rank_heuristic
+europe_canada,Market Research,Brandwatch,1,,22.41,rank_heuristic
+europe_canada,Market Research,Léger,2,,16.44,rank_heuristic
+europe_canada,Market Research,Zappi,3,83.4,11.95,rank_heuristic
+europe_canada,Market Research,Attest,4,38.2,8.22,rank_heuristic
+europe_canada,Market Research,Appinio,5,28.7,5.98,rank_heuristic
+europe_canada,Marketing,StackAdapt,1,500.0,22.41,rank_heuristic
+europe_canada,Marketing,Synthesia,2,,16.44,rank_heuristic
+europe_canada,Marketing,Coveo,3,,11.95,rank_heuristic
+europe_canada,Marketing,Smartly,4,101.0,8.22,rank_heuristic
+europe_canada,Marketing,Unbounce,5,50.9,5.98,rank_heuristic
+europe_canada,Note-taking / AI Meeting Assistants,Fellow.ai,1,9.4,22.41,rank_heuristic
+europe_canada,Note-taking / AI Meeting Assistants,tl;dv,2,4.5,16.44,rank_heuristic
+europe_canada,Note-taking / AI Meeting Assistants,Leexi,3,4.32,11.95,rank_heuristic
+europe_canada,Note-taking / AI Meeting Assistants,Noota,4,,8.22,rank_heuristic
+europe_canada,Note-taking / AI Meeting Assistants,MeetGeek,5,2.0,5.98,rank_heuristic
+europe_canada,Presentations,Mentimeter,1,,24.68,rank_heuristic
+europe_canada,Presentations,Freepik / Slidesgo,2,,18.1,rank_heuristic
+europe_canada,Presentations,Pitch,3,10.0,13.16,rank_heuristic
+europe_canada,Presentations,Venngage,4,3.5,9.05,rank_heuristic
+europe_canada,Real Estate,Scout24,1,,22.41,rank_heuristic
+europe_canada,Real Estate,Rightmove,2,,16.44,rank_heuristic
+europe_canada,Real Estate,PriceHubble,3,15.0,11.95,rank_heuristic
+europe_canada,Real Estate,CASAFARI,4,9.0,8.22,rank_heuristic
+europe_canada,Real Estate,nesto,5,,5.98,rank_heuristic
+europe_canada,Sales,Cognism,1,83.0,22.41,rank_heuristic
+europe_canada,Sales,Introhive,2,75.0,16.44,rank_heuristic
+europe_canada,Sales,Dealfront,3,,11.95,rank_heuristic
+europe_canada,Sales,Klue,4,,8.22,rank_heuristic
+europe_canada,Sales,Genesy AI,5,,5.98,rank_heuristic

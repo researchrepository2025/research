@@ -1,0 +1,208 @@
+scope,company,segment_count,summed_segment_revenue_m,capped_revenue_m,segments
+global,Microsoft,6,60000.0,60000.0,Copilots; Agent Platforms; Presentations; Data Science & ML Platforms; Healthcare; Government
+global,OpenAI,1,20000.0,20000.0,Copilots
+global,Databricks,1,5400.0,5400.0,Data Science & ML Platforms
+global,Cursor,1,2000.0,2000.0,Code / Software Development
+global,GitHub Copilot,1,2000.0,2000.0,Code / Software Development
+global,Palantir,1,1570.0,1570.0,Government
+global,Tempus AI,1,1300.0,1300.0,Healthcare
+global,Salesforce,3,1000.0,1000.0,Agent Platforms; Marketing; Customer Success
+global,Booz Allen Hamilton,1,800.0,800.0,Government
+global,Duolingo,1,748.0,748.0,Education
+global,ServiceTitan,1,739.5,739.5,Home Services
+global,ServiceNow,3,600.0,600.0,Agent Platforms; IT Operations; Customer Success
+global,Gong,2,598.0,598.0,Note-taking / AI Meeting Assistants; Sales
+global,HighRadius,1,500.0,500.0,Finance + Operations
+global,Midjourney,1,500.0,500.0,Creators
+global,Clari + Salesloft,1,450.0,450.0,Sales
+global,Kinaxis,1,407.0,407.0,Manufacturing + Supply Chain
+global,AlphaSense,1,400.0,400.0,Market Research
+global,Dataiku,1,350.0,350.0,Data Science & ML Platforms
+global,Outreach,1,300.0,300.0,Sales
+global,Suno,1,300.0,300.0,Creators
+global,Housecall Pro,1,201.0,201.0,Home Services
+global,Ironclad,1,200.0,200.0,Legal
+global,Zendesk,1,200.0,200.0,Customer Success
+global,Harvey AI,1,192.5,192.5,Legal
+global,Perplexity AI,1,174.0,174.0,Copilots
+global,Jobber,1,167.5,167.5,Home Services
+global,Sierra AI,1,150.0,150.0,Customer Success
+global,EliseAI,1,100.0,100.0,Real Estate
+global,Gamma,1,100.0,100.0,Presentations
+global,Intercom,1,100.0,100.0,Customer Success
+global,Jasper AI,1,100.0,100.0,Marketing
+global,Otter.ai,1,100.0,100.0,Note-taking / AI Meeting Assistants
+global,Replit,1,100.0,100.0,Code / Software Development
+global,Aidoc,1,60.0,60.0,Healthcare
+global,tl;dv,1,4.5,4.5,Note-taking / AI Meeting Assistants
+global,Adobe,2,,,Marketing; Creators
+global,Amazon,2,,,Code / Software Development; Government
+global,Angi,1,,,Home Services
+global,Anthropic Claude,1,,,Copilots
+global,Beautiful.ai,1,,,Presentations
+global,BigPanda,1,,,IT Operations
+global,Blue Yonder,1,,,Manufacturing + Supply Chain
+global,C3.ai,1,,,Manufacturing + Supply Chain
+global,CCC Intelligent Solutions,1,,,Insurance
+global,Canva,2,,,Presentations; Creators
+global,Chegg,1,,,Education
+global,CoStar Group,1,,,Real Estate
+global,Compass,1,,,Real Estate
+global,Coupa,1,,,Finance + Operations
+global,Coursera,1,,,Education
+global,Crayon,1,,,Market Research
+global,CrewAI,1,,,Agent Platforms
+global,Datadog,1,,,IT Operations
+global,Dynatrace,1,,,IT Operations
+global,Eightfold AI,1,,,HR
+global,Epic Systems,1,,,Healthcare
+global,EvenUp,1,,,Legal
+global,FICO,1,,,Finance (Vertical)
+global,Fathom,1,,,Note-taking / AI Meeting Assistants
+global,Featurespace,1,,,Finance (Vertical)
+global,Fireflies.ai,1,,,Note-taking / AI Meeting Assistants
+global,GE Healthcare,1,,,Healthcare
+global,GoHighLevel,1,,,Home Services
+global,Google,5,,,Copilots; Presentations; Data Science & ML Platforms; Government; Education
+global,HubSpot,1,,,Marketing
+global,IBM,1,,,IT Operations
+global,Khan Academy,1,,,Education
+global,LangChain,1,,,Agent Platforms
+global,Lemonade,1,,,Insurance
+global,LexisNexis,1,,,Legal
+global,Oracle,2,,,HR; Finance + Operations
+global,People.ai,1,,,Sales
+global,Persado,1,,,Marketing
+global,Phenom,1,,,HR
+global,Qualtrics,1,,,Market Research
+global,RealPage,1,,,Real Estate
+global,Runway,1,,,Creators
+global,SAP,2,,,HR; Finance + Operations
+global,Shift Technology,1,,,Insurance
+global,Siemens,1,,,Manufacturing + Supply Chain
+global,Snowflake,1,,,Data Science & ML Platforms
+global,Socure,1,,,Finance (Vertical)
+global,SurveyMonkey,1,,,Market Research
+global,Thomson Reuters,1,,,Legal
+global,Tractable,1,,,Insurance
+global,Upstart,1,,,Finance (Vertical)
+global,Windsurf,1,,,Code / Software Development
+global,Workday,2,,,HR; Finance + Operations
+global,Zappi,1,,,Market Research
+global,Zest AI,1,,,Finance (Vertical)
+global,ZestyAI,1,,,Insurance
+global,Zillow,1,,,Real Estate
+global,ZoomInfo,1,,,Sales
+global,o9 Solutions,1,,,Manufacturing + Supply Chain
+europe_canada,Personio,1,750.0,750.0,HR
+europe_canada,Alan,1,545.4,545.4,Insurance
+europe_canada,Kinaxis,1,535.0,535.0,Manufacturing + Supply Chain
+europe_canada,StackAdapt,1,500.0,500.0,Marketing
+europe_canada,Clio,1,400.0,400.0,Legal
+europe_canada,Babbel,1,380.16,380.16,Education
+europe_canada,Wealthsimple,1,365.0,365.0,Finance (Vertical)
+europe_canada,GoStudent,1,338.0,338.0,Education
+europe_canada,Mistral AI,1,324.0,324.0,Copilots
+europe_canada,Lovable,1,300.0,300.0,Code / Software Development
+europe_canada,Intelerad Medical Systems,1,270.0,270.0,Healthcare
+europe_canada,Cohere,4,240.0,240.0,Copilots; Code / Software Development; Data Science & ML Platforms; Government
+europe_canada,DeepL,1,185.0,185.0,Copilots
+europe_canada,Basware,1,181.6,181.6,Finance + Operations
+europe_canada,Jobber,1,167.5,167.5,Home Services
+europe_canada,Visier,1,147.3,147.3,HR
+europe_canada,Synthesia,2,146.0,146.0,Marketing; Creators
+europe_canada,Ada,2,141.6,141.6,Agent Platforms; Customer Success
+europe_canada,Mambu,1,128.6,128.6,Finance (Vertical)
+europe_canada,Vena Solutions,1,116.0,116.0,Finance + Operations
+europe_canada,Beamery,1,112.8,112.8,HR
+europe_canada,Zafin,1,112.0,112.0,Finance (Vertical)
+europe_canada,Aleph Alpha,1,111.0,111.0,Copilots
+europe_canada,Pleo,1,110.3,110.3,Finance + Operations
+europe_canada,Owkin,1,101.0,101.0,Healthcare
+europe_canada,Smartly,1,101.0,101.0,Marketing
+europe_canada,Black Forest Labs,1,100.0,100.0,Creators
+europe_canada,Factorial HR,1,100.0,100.0,HR
+europe_canada,Parloa,2,100.0,100.0,Agent Platforms; Customer Success
+europe_canada,Quantexa,1,100.0,100.0,Finance (Vertical)
+europe_canada,Photoroom,1,94.0,94.0,Creators
+europe_canada,Cognigy*,1,85.0,85.0,Customer Success
+europe_canada,Zappi,1,83.4,83.4,Market Research
+europe_canada,Cognism,1,83.0,83.0,Sales
+europe_canada,n8n,2,80.0,80.0,Agent Platforms; Code / Software Development
+europe_canada,Introhive,1,75.0,75.0,Sales
+europe_canada,Thought Machine,1,70.6,70.6,Finance (Vertical)
+europe_canada,Top Hat,1,68.0,68.0,Education
+europe_canada,Sidetrade,1,66.31,66.31,Finance + Operations
+europe_canada,Ada Health,1,64.0,64.0,Healthcare
+europe_canada,BenchSci,1,63.0,63.0,Healthcare
+europe_canada,Unbounce,1,50.9,50.9,Marketing
+europe_canada,Stability AI,1,50.0,50.0,Creators
+europe_canada,Legora,1,40.0,40.0,Legal
+europe_canada,PolyAI,1,40.0,40.0,Customer Success
+europe_canada,Attest,1,38.2,38.2,Market Research
+europe_canada,Luminance,1,30.0,30.0,Legal
+europe_canada,Appinio,1,28.7,28.7,Market Research
+europe_canada,H Company,1,22.0,22.0,Agent Platforms
+europe_canada,Seldon,1,18.3,18.3,Data Science & ML Platforms
+europe_canada,PriceHubble,1,15.0,15.0,Real Estate
+europe_canada,Densify,1,12.0,12.0,IT Operations
+europe_canada,incident.io,1,10.5,10.5,IT Operations
+europe_canada,Pitch,1,10.0,10.0,Presentations
+europe_canada,Fellow.ai,1,9.4,9.4,Note-taking / AI Meeting Assistants
+europe_canada,CASAFARI,1,9.0,9.0,Real Estate
+europe_canada,LANDR Audio,1,6.6,6.6,Creators
+europe_canada,Fieldcode,1,5.6,5.6,Home Services
+europe_canada,tl;dv,1,4.5,4.5,Note-taking / AI Meeting Assistants
+europe_canada,Leexi,1,4.32,4.32,Note-taking / AI Meeting Assistants
+europe_canada,Venngage,1,3.5,3.5,Presentations
+europe_canada,MeetGeek,1,2.0,2.0,Note-taking / AI Meeting Assistants
+europe_canada,ABB,1,,,Manufacturing + Supply Chain
+europe_canada,Akur8,1,,,Insurance
+europe_canada,Apica,1,,,IT Operations
+europe_canada,Blue J,1,,,Legal
+europe_canada,Brandwatch,1,,,Market Research
+europe_canada,CGI,1,,,Government
+europe_canada,Canvass AI,1,,,Manufacturing + Supply Chain
+europe_canada,Celonis,3,,,Agent Platforms; Finance + Operations; Manufacturing + Supply Chain
+europe_canada,Coveo,3,,,Copilots; Marketing; Customer Success
+europe_canada,D2L (Desire2Learn),1,,,Education
+europe_canada,Dash0,1,,,IT Operations
+europe_canada,Dassault Systèmes,1,,,Manufacturing + Supply Chain
+europe_canada,Dayforce,2,,,HR; Finance + Operations
+europe_canada,Dealfront,1,,,Sales
+europe_canada,Featurespace*,1,,,Finance (Vertical)
+europe_canada,Freepik / Slidesgo,1,,,Presentations
+europe_canada,Genesy AI,1,,,Sales
+europe_canada,Geotab,1,,,Home Services
+europe_canada,Helsing,1,,,Government
+europe_canada,Hopsworks,1,,,Data Science & ML Platforms
+europe_canada,IFS,1,,,Home Services
+europe_canada,JetBrains,1,,,Code / Software Development
+europe_canada,Kahoot!,1,,,Education
+europe_canada,Klue,1,,,Sales
+europe_canada,Knowunity,1,,,Education
+europe_canada,League,1,,,Healthcare
+europe_canada,Leonardo,1,,,Government
+europe_canada,Léger,1,,,Market Research
+europe_canada,MDA Space,1,,,Government
+europe_canada,Mentimeter,1,,,Presentations
+europe_canada,Noota,1,,,Note-taking / AI Meeting Assistants
+europe_canada,Noxtua,1,,,Legal
+europe_canada,OpenText,1,,,IT Operations
+europe_canada,Owl.co,1,,,Insurance
+europe_canada,Planon,1,,,Home Services
+europe_canada,Quandri,1,,,Insurance
+europe_canada,Rightmove,1,,,Real Estate
+europe_canada,SAP,1,,,Finance + Operations
+europe_canada,Scout24,1,,,Real Estate
+europe_canada,Shift Technology,1,,,Insurance
+europe_canada,Siemens,1,,,Manufacturing + Supply Chain
+europe_canada,Sopra Steria,1,,,Government
+europe_canada,Spellbook,1,,,Legal
+europe_canada,Tessl,1,,,Code / Software Development
+europe_canada,Thales,1,,,Government
+europe_canada,Tractable,1,,,Insurance
+europe_canada,Valohai,1,,,Data Science & ML Platforms
+europe_canada,Vara,1,,,Healthcare
+europe_canada,integrate.ai,1,,,Data Science & ML Platforms
+europe_canada,nesto,1,,,Real Estate
