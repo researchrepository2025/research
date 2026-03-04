@@ -20,6 +20,10 @@ COMPANY_ALIASES = {
     "Google Public Sector": "Google",
     "Google Cloud AI": "Google",
 
+    # Anthropic variants
+    "Anthropic Claude": "Anthropic",
+    "Anthropic Claude Code": "Anthropic",
+
     # Amazon variants
     "Amazon Q Developer": "Amazon",
     "AWS GovCloud": "Amazon",

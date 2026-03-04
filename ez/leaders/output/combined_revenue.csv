@@ -32,13 +32,12 @@ global,Gamma,1,100.0,100.0,Presentations
 global,Intercom,1,100.0,100.0,Customer Success
 global,Jasper AI,1,100.0,100.0,Marketing
 global,Otter.ai,1,100.0,100.0,Note-taking / AI Meeting Assistants
-global,Replit,1,100.0,100.0,Code / Software Development
 global,Aidoc,1,60.0,60.0,Healthcare
 global,tl;dv,1,4.5,4.5,Note-taking / AI Meeting Assistants
 global,Adobe,2,,,Marketing; Creators
 global,Amazon,2,,,Code / Software Development; Government
 global,Angi,1,,,Home Services
-global,Anthropic Claude,1,,,Copilots
+global,Anthropic,2,,,Copilots; Code / Software Development
 global,Beautiful.ai,1,,,Presentations
 global,BigPanda,1,,,IT Operations
 global,Blue Yonder,1,,,Manufacturing + Supply Chain

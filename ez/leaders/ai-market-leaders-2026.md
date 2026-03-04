@@ -112,15 +112,15 @@ All 23 segments ranked by total addressable market size (2025 estimates, or most
 
 **Market Size:** $7.37B (2025) — [Mordor Intelligence](https://www.mordorintelligence.com/industry-reports/artificial-intelligence-code-tools-market) | Menlo VC enterprise spend: $4.0B (55% of departmental AI)
 
-**Competitive Landscape:** GitHub Copilot and Cursor dominate, both at $2B ARR. Seven companies in this segment have crossed $100M ARR. 50% of developers use AI coding tools daily, and 85% use them regularly. Menlo VC reports 15%+ velocity gains from AI coding tools and 71% startup share in product + engineering AI.
+**Competitive Landscape:** Anthropic has emerged as the dominant player in the coding market with 54% market share (up from 42% six months prior), driven by the popularity of Claude Code. GitHub Copilot and Cursor remain major players, both at $2B ARR. Seven companies in this segment have crossed $100M ARR. 50% of developers use AI coding tools daily, and 85% use them regularly. Menlo VC reports 15%+ velocity gains from AI coding tools and 71% startup share in product + engineering AI.
 
 | Rank | Company | Key Metric | Source |
 |------|---------|------------|--------|
-| 1 | GitHub Copilot | $2B ARR; 20M users; 42% share | [TechCrunch](https://techcrunch.com/2025/07/30/github-copilot-crosses-20-million-all-time-users/) |
-| 2 | Cursor (Anysphere) | $2B ARR (Mar 2026); fastest B2B SaaS scale ever | [SaaStr](https://www.saastr.com/cursor-hit-1b-arr-in-17-months-the-fastest-b2b-to-scale-ever-and-its-not-even-close/) |
-| 3 | Amazon Q Developer | Part of AWS developer toolchain | [CB Insights](https://www.cbinsights.com/research/report/coding-ai-market-share-december-2025/) |
-| 4 | Windsurf / Codeium | Enterprise-focused Cursor competitor | [CB Insights](https://www.cbinsights.com/research/report/coding-ai-market-share-december-2025/) |
-| 5 | Replit | Crossed $100M ARR; browser-based IDE | [getpanto.ai](https://www.getpanto.ai/blog/ai-coding-assistant-statistics) |
+| 1 | Anthropic Claude Code | 54% coding market share (up from 42% six months ago); driven by Claude Code | [Menlo Ventures](https://menlovc.com/perspective/2025-the-state-of-generative-ai-in-the-enterprise/) |
+| 2 | GitHub Copilot | $2B ARR; 20M users; 21% coding market share | [TechCrunch](https://techcrunch.com/2025/07/30/github-copilot-crosses-20-million-all-time-users/) |
+| 3 | Cursor (Anysphere) | $2B ARR (Mar 2026); fastest B2B SaaS scale ever | [SaaStr](https://www.saastr.com/cursor-hit-1b-arr-in-17-months-the-fastest-b2b-to-scale-ever-and-its-not-even-close/) |
+| 4 | Amazon Q Developer | Part of AWS developer toolchain | [CB Insights](https://www.cbinsights.com/research/report/coding-ai-market-share-december-2025/) |
+| 5 | Windsurf / Codeium | Enterprise-focused Cursor competitor | [CB Insights](https://www.cbinsights.com/research/report/coding-ai-market-share-december-2025/) |
 
 ---
 

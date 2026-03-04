@@ -8,10 +8,10 @@ _Generated from the AI Market Leaders database. All revenue figures in USD milli
 
 | Metric | Value |
 |--------|-------|
-| Total unique companies | 199 |
+| Total unique companies | 198 |
 | Total company-segment entries | 239 |
 | Segments tracked (per scope) | 23 |
-| Global entries | 115 across 95 companies |
+| Global entries | 115 across 94 companies |
 | EU+Canada entries | 124 across 112 companies |
 | Revenue entries nullified (corporate-wide / misclassified) | 58 |
 
@@ -19,9 +19,9 @@ _Generated from the AI Market Leaders database. All revenue figures in USD milli
 
 | Method | Count | Description |
 |--------|-------|-------------|
-| Stated | 12 | Explicit market share % from source report |
-| Revenue-derived | 34 | `(segment revenue / segment market size) * 100` |
-| Rank heuristic | 191 | Conservative rank-weighted distribution with 35% long-tail reserve |
+| Stated | 13 | Explicit market share % from source report |
+| Revenue-derived | 33 | `(segment revenue / segment market size) * 100` |
+| Rank heuristic | 189 | Conservative rank-weighted distribution with 35% long-tail reserve |
 
 ### Estimation Parameters
 
@@ -29,7 +29,7 @@ _Generated from the AI Market Leaders database. All revenue figures in USD milli
 - **Per-rank caps:** Rank 1: 25%, Rank 2: 20%, Rank 3: 15%, Rank 4: 12%, Rank 5: 10%
 - **Rank weights:** {1: 30, 2: 22, 3: 16, 4: 11, 5: 8}
 - **Revenue-derived filter:** Only applied when `revenue <= market_size * 0.5`
-- **Segments exceeding 100% share:** 1 (Home Services — source data quality issue)
+- **Segments exceeding 100% share:** 2 (Home Services 109.4%, Code/Dev 102.1% — source data overlaps)
 
 ---
 
@@ -45,11 +45,12 @@ _Generated from the AI Market Leaders database. All revenue figures in USD milli
 | 4 | ServiceNow | 3 | 2.0 | Agent Platforms; IT Operations; Customer Success |
 | 5 | SAP | 2 | 1.5 | HR; Finance + Operations |
 | 6 | Adobe | 2 | 2.0 | Marketing; Creators |
-| 7 | Gong | 2 | 2.0 | Note-taking / AI Meeting Assistants; Sales |
-| 8 | Workday | 2 | 2.0 | HR; Finance + Operations |
-| 9 | Canva | 2 | 2.5 | Presentations; Creators |
-| 10 | Oracle | 2 | 2.5 | HR; Finance + Operations |
-| 11 | Amazon | 2 | 3.0 | Code / Software Development; Government |
+| 7 | Anthropic | 2 | 2.0 | Copilots; Code / Software Development |
+| 8 | Gong | 2 | 2.0 | Note-taking / AI Meeting Assistants; Sales |
+| 9 | Workday | 2 | 2.0 | HR; Finance + Operations |
+| 10 | Canva | 2 | 2.5 | Presentations; Creators |
+| 11 | Oracle | 2 | 2.5 | HR; Finance + Operations |
+| 12 | Amazon | 2 | 3.0 | Code / Software Development; Government |
 
 ### EU+Canada — Companies in 2+ Segments
 
@@ -123,7 +124,7 @@ _Generated from the AI Market Leaders database. All revenue figures in USD milli
 
 | # | Company | Est. Share | Confidence |
 |---|---------|-----------|------------|
-| 1 | Anthropic Claude | 40.0% | stated |
+| 1 | Anthropic | 40.0% | stated |
 | 2 | Google | 21.0% | stated |
 | 3 | OpenAI | 14.2% | rank_heuristic |
 | 4 | Microsoft | 10.4% | rank_heuristic |
@@ -163,11 +164,11 @@ _Generated from the AI Market Leaders database. All revenue figures in USD milli
 
 | # | Company | Est. Share | Confidence |
 |---|---------|-----------|------------|
-| 1 | GitHub Copilot | 42.0% | stated |
+| 1 | Anthropic | 54.0% | stated |
 | 2 | Cursor | 27.1% | revenue_derived |
-| 3 | Amazon | 11.4% | rank_heuristic |
-| 4 | Windsurf | 7.8% | rank_heuristic |
-| 5 | Replit | 1.4% | revenue_derived |
+| 3 | GitHub Copilot | 21.0% | stated |
+
+> Anthropic's 54% coding market share is per the Menlo VC 2025 State of GenAI report, driven by Claude Code adoption. Shares sum to 102.1% due to overlapping methodology between sources.
 
 #### 6. IT Operations
 
@@ -372,8 +373,8 @@ Segment key: 1=Copilots, 2=Agent Platforms, 3=Note-taking, 4=Presentations, 5=Co
 
 - **Most cross-segment presence (global):** Microsoft appears in 6 segments, followed by Google in 5.
 - **Most cross-segment presence (EU+CA):** Cohere appears in 4 segments, followed by Celonis and Coveo in 3.
-- **Highest single-company concentration:** ServiceTitan holds 96.4% stated share in Home Services (global).
+- **Highest single-company concentration:** ServiceTitan holds 96.4% stated share in Home Services; Anthropic holds 54% stated share in Code/Dev (global).
 - **Most competitive segment:** Agent Platforms has the smallest spread (8.4pp) between rank 1 and rank 5.
 - **Companies in both scopes:** Jobber, Kinaxis, SAP, Shift Technology, Siemens, Tractable, Zappi, tl;dv.
-- **Estimation confidence:** 5% stated, 14% revenue-derived, 81% rank heuristic — reflecting the difficulty of obtaining segment-specific revenue data for most companies.
+- **Estimation confidence:** 6% stated, 14% revenue-derived, 80% rank heuristic — reflecting the difficulty of obtaining segment-specific revenue data for most companies.
 - **Conservative bias:** With 35% long-tail reserve and per-rank caps, most segments sum to 65-80% of total market — the unallocated share represents unmodeled competitors and estimation uncertainty.

@@ -4,12 +4,10 @@ global,Agent Platforms,LangChain,4,,12.0,rank_heuristic
 global,Agent Platforms,CrewAI,5,,10.0,rank_heuristic
 global,Agent Platforms,ServiceNow,2,600.0,7.863695937090433,revenue_derived
 global,Agent Platforms,Salesforce,1,500.0,6.553079947575361,revenue_derived
-global,Code / Software Development,GitHub Copilot,1,2000.0,42.0,stated
-global,Code / Software Development,Cursor,2,2000.0,27.137042062415194,revenue_derived
-global,Code / Software Development,Amazon,3,,11.37,rank_heuristic
-global,Code / Software Development,Windsurf,4,,7.81,rank_heuristic
-global,Code / Software Development,Replit,5,100.0,1.3568521031207599,revenue_derived
-global,Copilots,Anthropic Claude,3,,40.0,stated
+global,Code / Software Development,Anthropic,1,,54.0,stated
+global,Code / Software Development,Cursor,3,2000.0,27.137042062415194,revenue_derived
+global,Code / Software Development,GitHub Copilot,2,2000.0,21.0,stated
+global,Copilots,Anthropic,3,,40.0,stated
 global,Copilots,Google,4,,21.0,stated
 global,Copilots,OpenAI,1,20000.0,14.17,rank_heuristic
 global,Copilots,Microsoft,2,60000.0,10.39,rank_heuristic

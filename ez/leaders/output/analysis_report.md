@@ -16,10 +16,10 @@ _Generated from the AI Market Leaders 2026 database. All revenue figures in USD 
 | 4  | ServiceNow | 3        | 2.0      | Agent Platforms; IT Operations; Customer Success                                              |
 | 5  | SAP        | 2        | 1.5      | HR; Finance + Operations                                                                      |
 | 6  | Adobe      | 2        | 2.0      | Marketing; Creators                                                                           |
-| 7  | Gong       | 2        | 2.0      | Note-taking / AI Meeting Assistants; Sales                                                    |
-| 8  | Workday    | 2        | 2.0      | HR; Finance + Operations                                                                      |
-| 9  | Canva      | 2        | 2.5      | Presentations; Creators                                                                       |
-| 10 | Oracle     | 2        | 2.5      | HR; Finance + Operations                                                                      |
+| 7  | Anthropic  | 2        | 2.0      | Copilots; Code / Software Development                                                         |
+| 8  | Gong       | 2        | 2.0      | Note-taking / AI Meeting Assistants; Sales                                                    |
+| 9  | Workday    | 2        | 2.0      | HR; Finance + Operations                                                                      |
+| 10 | Canva      | 2        | 2.5      | Presentations; Creators                                                                       |
 
 ### Top 10 Multi-Segment Companies — EU+Canada
 
@@ -101,13 +101,13 @@ ServiceNow       2               1       3
 
 ### 1. Copilots
 
-| # | Company          | Est. Share | Confidence      |
-| - | ---------------- | ---------- | --------------- |
-| 1 | Anthropic Claude | 40.0%      | stated          |
-| 2 | Google           | 21.0%      | stated          |
-| 3 | OpenAI           | 14.2%      | rank_heuristic  |
-| 4 | Microsoft        | 10.4%      | rank_heuristic  |
-| 5 | Perplexity AI    | 1.2%       | revenue_derived |
+| # | Company       | Est. Share | Confidence      |
+| - | ------------- | ---------- | --------------- |
+| 1 | Anthropic     | 40.0%      | stated          |
+| 2 | Google        | 21.0%      | stated          |
+| 3 | OpenAI        | 14.2%      | rank_heuristic  |
+| 4 | Microsoft     | 10.4%      | rank_heuristic  |
+| 5 | Perplexity AI | 1.2%       | revenue_derived |
 
 ### 2. Agent Platforms
 
@@ -139,15 +139,14 @@ ServiceNow       2               1       3
 | 4 | Beautiful.ai | 7.2%       | rank_heuristic  |
 | 5 | Gamma        | 5.2%       | revenue_derived |
 
-### 5. Code / Software Development
+### 5. Code / Software Development ⚠ shares sum > 100%
 
 | # | Company        | Est. Share | Confidence      |
 | - | -------------- | ---------- | --------------- |
-| 1 | GitHub Copilot | 42.0%      | stated          |
+| 1 | Anthropic      | 54.0%      | stated          |
 | 2 | Cursor         | 27.1%      | revenue_derived |
-| 3 | Amazon         | 11.4%      | rank_heuristic  |
-| 4 | Windsurf       | 7.8%       | rank_heuristic  |
-| 5 | Replit         | 1.4%       | revenue_derived |
+| 3 | GitHub Copilot | 21.0%      | stated          |
+> Data quality note: all companies in this segment sum to 102.1% — likely due to overlapping revenue attribution or double-counted market share figures in source data.
 
 ### 6. IT Operations
 
@@ -335,7 +334,7 @@ ServiceNow       2               1       3
 - Most cross-segment presence (global): Microsoft appears in 6 segments.
 - Highest single-company concentration (global): ServiceTitan holds an estimated 96.4% share in 'Home Services'.
 - Most even competitive distribution (global): 'Agent Platforms' has the smallest spread (8.4pp) between rank-1 and rank-5 estimated shares.
-- Total unique companies in global scope: 95.
+- Total unique companies in global scope: 94.
 - Total unique companies in europe_canada scope: 112.
 - Companies present in both global and EU+CA scopes (8): Jobber, Kinaxis, SAP, Shift Technology, Siemens, Tractable, Zappi, tl;dv.
 - Total segments tracked in global scope: 23.
