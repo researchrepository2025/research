@@ -7,10 +7,10 @@ global,Agent Platforms,Salesforce,1,500.0,6.553079947575361,revenue_derived
 global,Code / Software Development,Anthropic,1,,54.0,stated
 global,Code / Software Development,Cursor,3,2000.0,27.137042062415194,revenue_derived
 global,Code / Software Development,GitHub Copilot,2,2000.0,21.0,stated
-global,Copilots,Anthropic,3,,40.0,stated
-global,Copilots,Google,4,,21.0,stated
-global,Copilots,OpenAI,1,20000.0,14.17,rank_heuristic
-global,Copilots,Microsoft,2,60000.0,10.39,rank_heuristic
+global,Copilots,OpenAI,1,20000.0,24.39,rank_heuristic
+global,Copilots,Microsoft,2,60000.0,17.88,rank_heuristic
+global,Copilots,Anthropic,3,,13.01,rank_heuristic
+global,Copilots,Google,4,,8.94,rank_heuristic
 global,Copilots,Perplexity AI,5,174.0,1.2083333333333333,revenue_derived
 global,Creators,Adobe,1,,29.0,stated
 global,Creators,Canva,3,,15.0,rank_heuristic

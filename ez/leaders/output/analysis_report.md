@@ -103,10 +103,10 @@ ServiceNow       2               1       3
 
 | # | Company       | Est. Share | Confidence      |
 | - | ------------- | ---------- | --------------- |
-| 1 | Anthropic     | 40.0%      | stated          |
-| 2 | Google        | 21.0%      | stated          |
-| 3 | OpenAI        | 14.2%      | rank_heuristic  |
-| 4 | Microsoft     | 10.4%      | rank_heuristic  |
+| 1 | OpenAI        | 24.4%      | rank_heuristic  |
+| 2 | Microsoft     | 17.9%      | rank_heuristic  |
+| 3 | Anthropic     | 13.0%      | rank_heuristic  |
+| 4 | Google        | 8.9%       | rank_heuristic  |
 | 5 | Perplexity AI | 1.2%       | revenue_derived |
 
 ### 2. Agent Platforms

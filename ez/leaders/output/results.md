@@ -19,9 +19,9 @@ _Generated from the AI Market Leaders database. All revenue figures in USD milli
 
 | Method | Count | Description |
 |--------|-------|-------------|
-| Stated | 13 | Explicit market share % from source report |
+| Stated | 11 | Explicit market share % from source report |
 | Revenue-derived | 33 | `(segment revenue / segment market size) * 100` |
-| Rank heuristic | 189 | Conservative rank-weighted distribution with 35% long-tail reserve |
+| Rank heuristic | 191 | Conservative rank-weighted distribution with 35% long-tail reserve |
 
 ### Estimation Parameters
 
@@ -124,10 +124,10 @@ _Generated from the AI Market Leaders database. All revenue figures in USD milli
 
 | # | Company | Est. Share | Confidence |
 |---|---------|-----------|------------|
-| 1 | Anthropic | 40.0% | stated |
-| 2 | Google | 21.0% | stated |
-| 3 | OpenAI | 14.2% | rank_heuristic |
-| 4 | Microsoft | 10.4% | rank_heuristic |
+| 1 | OpenAI | 24.4% | rank_heuristic |
+| 2 | Microsoft | 17.9% | rank_heuristic |
+| 3 | Anthropic | 13.0% | rank_heuristic |
+| 4 | Google | 8.9% | rank_heuristic |
 | 5 | Perplexity AI | 1.2% | revenue_derived |
 
 #### 2. Agent Platforms
@@ -376,5 +376,5 @@ Segment key: 1=Copilots, 2=Agent Platforms, 3=Note-taking, 4=Presentations, 5=Co
 - **Highest single-company concentration:** ServiceTitan holds 96.4% stated share in Home Services; Anthropic holds 54% stated share in Code/Dev (global).
 - **Most competitive segment:** Agent Platforms has the smallest spread (8.4pp) between rank 1 and rank 5.
 - **Companies in both scopes:** Jobber, Kinaxis, SAP, Shift Technology, Siemens, Tractable, Zappi, tl;dv.
-- **Estimation confidence:** 6% stated, 14% revenue-derived, 80% rank heuristic — reflecting the difficulty of obtaining segment-specific revenue data for most companies.
+- **Estimation confidence:** 5% stated, 14% revenue-derived, 81% rank heuristic — reflecting the difficulty of obtaining segment-specific revenue data for most companies.
 - **Conservative bias:** With 35% long-tail reserve and per-rank caps, most segments sum to 65-80% of total market — the unallocated share represents unmodeled competitors and estimation uncertainty.

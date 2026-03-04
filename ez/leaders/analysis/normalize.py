@@ -219,8 +219,14 @@ CORPORATE_WIDE_REVENUES = {
 }
 
 
+MISATTRIBUTED_SHARES = {
+    ("Anthropic", "Copilots"),
+    ("Google", "Copilots"),
+}
+
 def nullify_corporate_revenues(conn):
     """Set revenue_usd_m = NULL for entries identified as corporate-wide or data errors.
+    Also nullifies misattributed market_share_pct (e.g. enterprise LLM share ≠ Copilots share).
     Must run AFTER normalization (so canonical names match) and BEFORE estimation."""
     cur = conn.cursor()
     count = 0
@@ -231,6 +237,15 @@ def nullify_corporate_revenues(conn):
             WHERE company_id IN (SELECT company_id FROM companies WHERE canonical_name = ?)
               AND segment_id IN (SELECT segment_id FROM segments WHERE name = ?)
               AND revenue_usd_m IS NOT NULL
+        """, (company, segment))
+        count += cur.rowcount
+    for (company, segment) in MISATTRIBUTED_SHARES:
+        cur.execute("""
+            UPDATE company_segments
+            SET market_share_pct = NULL
+            WHERE company_id IN (SELECT company_id FROM companies WHERE canonical_name = ?)
+              AND segment_id IN (SELECT segment_id FROM segments WHERE name = ?)
+              AND market_share_pct IS NOT NULL
         """, (company, segment))
         count += cur.rowcount
     conn.commit()
