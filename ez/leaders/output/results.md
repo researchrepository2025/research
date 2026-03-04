@@ -20,8 +20,8 @@ _Generated from the AI Market Leaders database. All revenue figures in USD milli
 | Method | Count | Description |
 |--------|-------|-------------|
 | Stated | 11 | Explicit market share % from source report |
-| Revenue-derived | 33 | `(segment revenue / segment market size) * 100` |
-| Rank heuristic | 191 | Conservative rank-weighted distribution with 35% long-tail reserve |
+| Revenue-derived | 32 | `(segment revenue / segment market size) * 100` |
+| Rank heuristic | 192 | Conservative rank-weighted distribution with 35% long-tail reserve |
 
 ### Estimation Parameters
 
@@ -73,26 +73,28 @@ _Generated from the AI Market Leaders database. All revenue figures in USD milli
 
 | # | Company | Segments | Revenue ($M) | Segment List |
 |---|---------|----------|-------------|--------------|
-| 1 | Microsoft | 6 | $60,000 | Copilots; Agent Platforms; Presentations; Data Science & ML Platforms; Healthcare; Government |
-| 2 | OpenAI | 1 | $20,000 | Copilots |
-| 3 | Databricks | 1 | $5,400 | Data Science & ML Platforms |
-| 4 | Cursor | 1 | $2,000 | Code / Software Development |
-| 5 | GitHub Copilot | 1 | $2,000 | Code / Software Development |
-| 6 | Palantir | 1 | $1,570 | Government |
-| 7 | Tempus AI | 1 | $1,300 | Healthcare |
-| 8 | Salesforce | 3 | $1,000 | Agent Platforms; Marketing; Customer Success |
-| 9 | Booz Allen Hamilton | 1 | $800 | Government |
-| 10 | Duolingo | 1 | $748 | Education |
-| 11 | ServiceTitan | 1 | $740 | Home Services |
-| 12 | ServiceNow | 3 | $600 | Agent Platforms; IT Operations; Customer Success |
-| 13 | Gong | 2 | $598 | Note-taking / AI Meeting Assistants; Sales |
-| 14 | HighRadius | 1 | $500 | Finance + Operations |
-| 15 | Midjourney | 1 | $500 | Creators |
-| 16 | Clari + Salesloft | 1 | $450 | Sales |
-| 17 | Kinaxis | 1 | $407 | Manufacturing + Supply Chain |
-| 18 | AlphaSense | 1 | $400 | Market Research |
-| 19 | Dataiku | 1 | $350 | Data Science & ML Platforms |
-| 20 | Suno | 1 | $300 | Creators |
+| 1 | Databricks | 1 | $5,400 | Data Science & ML Platforms |
+| 2 | GitHub Copilot | 1 | $2,000 | Code / Software Development |
+| 3 | Cursor | 1 | $2,000 | Code / Software Development |
+| 4 | Palantir | 1 | $1,570 | Government |
+| 5 | Tempus AI | 1 | $1,300 | Healthcare |
+| 6 | Booz Allen Hamilton | 1 | $800 | Government |
+| 7 | Duolingo | 1 | $748 | Education |
+| 8 | ServiceTitan | 1 | $740 | Home Services |
+| 9 | ServiceNow | 1 | $600 | Agent Platforms |
+| 10 | Gong | 2 | $598 | Note-taking / AI Meeting Assistants; Sales |
+| 11 | Salesforce | 1 | $500 | Agent Platforms |
+| 12 | Midjourney | 1 | $500 | Creators |
+| 13 | HighRadius | 1 | $500 | Finance + Operations |
+| 14 | Clari + Salesloft | 1 | $450 | Sales |
+| 15 | Kinaxis | 1 | $407 | Manufacturing + Supply Chain |
+| 16 | AlphaSense | 1 | $400 | Market Research |
+| 17 | Dataiku | 1 | $350 | Data Science & ML Platforms |
+| 18 | Outreach | 1 | $300 | Sales |
+| 19 | Suno | 1 | $300 | Creators |
+| 20 | Housecall Pro | 1 | $201 | Home Services |
+
+> Corporate-wide revenues (Microsoft $60B M365, OpenAI $20B total ARR) excluded — only segment-attributable figures shown.
 
 ### EU+Canada — Top 15 by Combined Segment Revenue
 

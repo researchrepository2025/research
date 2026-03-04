@@ -42,21 +42,21 @@ _Generated from the AI Market Leaders 2026 database. All revenue figures in USD 
 
 | #  | Company             | Segments | Summed Revenue | Capped Revenue |
 | -- | ------------------- | -------- | -------------- | -------------- |
-| 1  | Microsoft           | 6        | $60,000M       | $60,000M       |
-| 2  | OpenAI              | 1        | $20,000M       | $20,000M       |
-| 3  | Databricks          | 1        | $5,400M        | $5,400M        |
-| 4  | Cursor              | 1        | $2,000M        | $2,000M        |
-| 5  | GitHub Copilot      | 1        | $2,000M        | $2,000M        |
-| 6  | Palantir            | 1        | $1,570M        | $1,570M        |
-| 7  | Tempus AI           | 1        | $1,300M        | $1,300M        |
-| 8  | Salesforce          | 3        | $1,000M        | $1,000M        |
-| 9  | Booz Allen Hamilton | 1        | $800M          | $800M          |
-| 10 | Duolingo            | 1        | $748M          | $748M          |
-| 11 | ServiceTitan        | 1        | $740M          | $740M          |
-| 12 | ServiceNow          | 3        | $600M          | $600M          |
-| 13 | Gong                | 2        | $598M          | $598M          |
-| 14 | HighRadius          | 1        | $500M          | $500M          |
-| 15 | Midjourney          | 1        | $500M          | $500M          |
+| 1  | Databricks          | 1        | $5,400M        | $5,400M        |
+| 2  | Cursor              | 1        | $2,000M        | $2,000M        |
+| 3  | GitHub Copilot      | 1        | $2,000M        | $2,000M        |
+| 4  | Palantir            | 1        | $1,570M        | $1,570M        |
+| 5  | Tempus AI           | 1        | $1,300M        | $1,300M        |
+| 6  | Booz Allen Hamilton | 1        | $800M          | $800M          |
+| 7  | Duolingo            | 1        | $748M          | $748M          |
+| 8  | ServiceTitan        | 1        | $740M          | $740M          |
+| 9  | ServiceNow          | 3        | $600M          | $600M          |
+| 10 | Gong                | 2        | $598M          | $598M          |
+| 11 | HighRadius          | 1        | $500M          | $500M          |
+| 12 | Midjourney          | 1        | $500M          | $500M          |
+| 13 | Salesforce          | 3        | $500M          | $500M          |
+| 14 | Clari + Salesloft   | 1        | $450M          | $450M          |
+| 15 | Kinaxis             | 1        | $407M          | $407M          |
 
 ### Top 15 Companies by Combined Revenue — EU+Canada
 
@@ -172,8 +172,8 @@ ServiceNow       2               1       3
 
 | # | Company    | Est. Share | Confidence      |
 | - | ---------- | ---------- | --------------- |
-| 1 | ServiceNow | 15.0%      | rank_heuristic  |
-| 2 | Salesforce | 4.1%       | revenue_derived |
+| 1 | Salesforce | 25.0%      | rank_heuristic  |
+| 2 | ServiceNow | 15.0%      | rank_heuristic  |
 | 3 | Zendesk    | 1.7%       | revenue_derived |
 | 4 | Sierra AI  | 1.2%       | revenue_derived |
 | 5 | Intercom   | 0.8%       | revenue_derived |

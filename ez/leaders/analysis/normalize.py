@@ -150,7 +150,10 @@ KNOWN_CORPORATE_REVENUE = {
 # These should NOT be used for market share estimation.
 # Maps (canonical_company_name, segment_name) -> True
 CORPORATE_WIDE_REVENUES = {
-    # GLOBAL — corporate-wide totals (revenue is for entire company, not AI segment)
+    # GLOBAL — bundled/corporate-wide totals (revenue is not segment-specific)
+    ("Microsoft", "Copilots"),            # $60B is total M365 commercial cloud ARR
+    ("OpenAI", "Copilots"),               # $20B is total company ARR, not Copilots-specific
+    ("Salesforce", "Customer Success"),    # $500M Agentforce ARR already counted in Agent Platforms
     ("Datadog", "IT Operations"),          # $2.6B total observability platform
     ("ZoomInfo", "Sales"),                 # $1.25B total data platform
     ("Workday", "HR"),                     # $8B total HCM+Finance ERP

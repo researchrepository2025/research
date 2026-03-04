@@ -1,12 +1,9 @@
 scope,company,segment_count,summed_segment_revenue_m,capped_revenue_m,segments
-global,Microsoft,6,60000.0,60000.0,Copilots; Agent Platforms; Presentations; Data Science & ML Platforms; Healthcare; Government
-global,OpenAI,1,20000.0,20000.0,Copilots
 global,Databricks,1,5400.0,5400.0,Data Science & ML Platforms
 global,Cursor,1,2000.0,2000.0,Code / Software Development
 global,GitHub Copilot,1,2000.0,2000.0,Code / Software Development
 global,Palantir,1,1570.0,1570.0,Government
 global,Tempus AI,1,1300.0,1300.0,Healthcare
-global,Salesforce,3,1000.0,1000.0,Agent Platforms; Marketing; Customer Success
 global,Booz Allen Hamilton,1,800.0,800.0,Government
 global,Duolingo,1,748.0,748.0,Education
 global,ServiceTitan,1,739.5,739.5,Home Services
@@ -14,6 +11,7 @@ global,ServiceNow,3,600.0,600.0,Agent Platforms; IT Operations; Customer Success
 global,Gong,2,598.0,598.0,Note-taking / AI Meeting Assistants; Sales
 global,HighRadius,1,500.0,500.0,Finance + Operations
 global,Midjourney,1,500.0,500.0,Creators
+global,Salesforce,3,500.0,500.0,Agent Platforms; Marketing; Customer Success
 global,Clari + Salesloft,1,450.0,450.0,Sales
 global,Kinaxis,1,407.0,407.0,Manufacturing + Supply Chain
 global,AlphaSense,1,400.0,400.0,Market Research
@@ -69,6 +67,8 @@ global,Khan Academy,1,,,Education
 global,LangChain,1,,,Agent Platforms
 global,Lemonade,1,,,Insurance
 global,LexisNexis,1,,,Legal
+global,Microsoft,6,,,Copilots; Agent Platforms; Presentations; Data Science & ML Platforms; Healthcare; Government
+global,OpenAI,1,,,Copilots
 global,Oracle,2,,,HR; Finance + Operations
 global,People.ai,1,,,Sales
 global,Persado,1,,,Marketing
